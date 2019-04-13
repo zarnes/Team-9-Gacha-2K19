@@ -13,19 +13,16 @@ public class MoveOnClick : MonoBehaviour
     {
         _cam = Camera.main;
         _agent = GetComponent<NavMeshAgent>();
+        InputManager.GetInstance().OnClickLeftMouseButton += () => { MovePlayer(); };
     }
 
-    // Update is called once per frame
-    void Update()
+    void MovePlayer()
     {
-        if (Input.GetMouseButtonDown(1))
+        Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
         {
-            Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                _agent.SetDestination(hit.point);
-            }
+            _agent.SetDestination(hit.point);
         }
     }
 }
