@@ -11,6 +11,10 @@ public class InputManager
         return m_instance_ ?? (m_instance_ = new InputManager());
     }
 
+    // Mouse
+    public delegate void LeftMouseButtonEventHandler();
+    public event LeftMouseButtonEventHandler OnClickLeftMouseButton;
+
     // move forward pressed
     public delegate void MoveForwardKeyboardButtonPressedEventHandler();
     public event MoveForwardKeyboardButtonPressedEventHandler OnKeyboardMoveForwardButtonPressed;
@@ -26,13 +30,21 @@ public class InputManager
     // move backward Released
     public delegate void MoveBackwardKeyboardButtonReleasedEventHandler();
     public event MoveBackwardKeyboardButtonReleasedEventHandler OnKeyboardMoveBackwardButtonReleased;
-
+    
     public void Update()
     {
+        TriggerLeftMouseButtonEventHandler();
         TriggerKeyboardMoveForwardButtonPressed();
         TriggerKeyboardMoveForwardButtonReleased();
+        TriggerKeyboardMoveBackwardButtonPressed();
+        TriggerKeyboardMoveBackwardButtonReleased();
     }
 
+    public void TriggerLeftMouseButtonEventHandler()
+    {
+        if (OnClickLeftMouseButton != null && Input.GetKeyDown(KeyCode.Mouse0))
+            OnClickLeftMouseButton();
+    }
 
     public void TriggerKeyboardMoveForwardButtonPressed()
     {
@@ -57,5 +69,4 @@ public class InputManager
         if (OnKeyboardMoveBackwardButtonReleased != null && Input.GetKeyUp(KeyCode.S))
             OnKeyboardMoveBackwardButtonReleased();
     }
-
 }
