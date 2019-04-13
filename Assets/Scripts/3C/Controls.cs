@@ -23,7 +23,8 @@ public class Controls : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 1000))
+        LayerMask mask = LayerMask.GetMask("Ground");
+        if (Physics.Raycast(ray, out hit, 1000, mask))
             m_nav_mesh_agent_.SetDestination(hit.point);
     }
 
