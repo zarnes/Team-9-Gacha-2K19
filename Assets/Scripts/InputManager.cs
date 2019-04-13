@@ -42,7 +42,7 @@ public class InputManager
 
     // move backward Released
     public delegate void MoveBackwardKeyboardButtonReleasedEventHandler();
-    public event MoveBackwardKeyboardButtonReleasedEventHandler OnKeyboardMoveBackwardButtonReleased
+    public event MoveBackwardKeyboardButtonReleasedEventHandler OnKeyboardMoveBackwardButtonReleased;
     #endregion
 
 
