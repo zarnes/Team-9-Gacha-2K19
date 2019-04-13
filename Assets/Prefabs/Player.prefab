@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4023792869263937719}
   - component: {fileID: 4023792869263937715}
   - component: {fileID: 4023792869263937724}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -113,6 +113,9 @@ MonoBehaviour:
   m_cameraSensibility: 1.75
   m_mouvementSpeed: 7
   m_jumpForce: 100
+  m_bulletPrefab: {fileID: 0}
+  m_muzzleFlashPosition: {fileID: 0}
+  m_crosshair: {fileID: 0}
 --- !u!54 &4023792869263937724
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -141,7 +144,7 @@ GameObject:
   - component: {fileID: 4023792869312487903}
   - component: {fileID: 4023792869312487897}
   - component: {fileID: 4023792869312487902}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
