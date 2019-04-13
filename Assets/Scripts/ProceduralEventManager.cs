@@ -44,7 +44,6 @@ public class ProceduralEventManager : MonoBehaviour
     {
         if(ev.timeActivation <= Time.timeSinceLevelLoad)
         {
-            Debug.Log(ev.type.ToString());
             eventText.text = ev.type.ToString();
             events.Remove(ev);
         }
