@@ -29,7 +29,8 @@ public class RandomSpawnNavMesh : MonoBehaviour
     {
         for (int i = 0; i < _iNumberOfMobs; i++)
         {
-            Instantiate(m_prefabs, GetRandomPointInNavMesh(), Quaternion.identity);
+            GetRandomPointInNavMesh();
+              Instantiate(m_prefabs, GetRandomPointInNavMesh(), Quaternion.identity);
         }
     }
 
@@ -40,10 +41,13 @@ public class RandomSpawnNavMesh : MonoBehaviour
         NavMeshHit hit;
         NavMesh.SamplePosition(randomPosition, out hit, 100, 1);
 
-        if (float.IsInfinity(hit.position.x) || float.IsInfinity(hit.position.y) || float.IsInfinity(hit.position.z))
-            GetRandomPointInNavMesh();
-
-        return hit.position;
+        if (!(float.IsInfinity(hit.position.x) || float.IsInfinity(hit.position.y) || float.IsInfinity(hit.position.z)))
+        {
+            Collider[] hitColliders = Physics.OverlapBox(hit.position, this.m_prefabs.transform.localScale, Quaternion.identity);
+            if (hitColliders.Length == 1 && hitColliders[0].tag == "Ground")
+                return hit.position;
+        }
+        return GetRandomPointInNavMesh();
     }
-
+    
 }
