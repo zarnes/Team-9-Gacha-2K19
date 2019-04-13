@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3288114727	Play_Sound			\Default Work Unit\Play_Sound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	184066887	Philae_UI_Enter	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\SFX\Philae_UI_Enter_B5EBC900.wem		\Actor-Mixer Hierarchy\Default Work Unit\Philae_UI_Enter		160736
+	847782052	Philae_Music_Theme	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\SFX\Philae_Music_Theme_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Philae_Music_Theme		7536756
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Philae_Music_Theme" ID="{10FBD5AB-F632-4222-BBAA-5D8B408D34A0}" ShortID="320849672">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Philae_Music_Theme" ID="{EDC803D1-5EFE-41D6-84A5-AE3FEDD4A21E}" ShortID="847782052">
+							<Language>SFX</Language>
+							<AudioFile>Philae_Music_Theme.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Philae_Music_Theme" ID="{EDC803D1-5EFE-41D6-84A5-AE3FEDD4A21E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Philae_UI_Enter" ID="{525853B1-5245-4F86-AD16-C193C1F80DB3}" ShortID="655319787">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Philae_UI_Enter" ID="{962E81AA-FC9C-485B-9B60-44A043EDF799}" ShortID="184066887">
+							<PropertyList>
+								<Property Name="TrimBegin" Type="Real64" Value="2.77488887696475"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.68573026406006"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Philae_UI_Enter.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Philae_UI_Enter" ID="{962E81AA-FC9C-485B-9B60-44A043EDF799}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
