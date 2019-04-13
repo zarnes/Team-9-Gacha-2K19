@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../Team-9-Gacha-2K19_WwiseProject/Team-9-Gacha-2K19_WwiseProject.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>D:\Wwise 2018.1.6.6858</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>

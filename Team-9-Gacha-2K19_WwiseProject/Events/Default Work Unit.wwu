@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music" ID="{D0B9D999-B1D2-46BF-9B91-E9D389E61996}">
+					<ChildrenList>
+						<Action Name="" ID="{3544B3B2-3731-4795-8FDD-10C1F4CDA0FD}" ShortID="620358108">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Philae_Music_Theme" ID="{10FBD5AB-F632-4222-BBAA-5D8B408D34A0}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Sound" ID="{8480FCAA-730E-46A9-A861-40CFAD82FB4F}">
+					<ChildrenList>
+						<Action Name="" ID="{07935B7E-4341-4C22-80C1-189D3AD776D4}" ShortID="655220348">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Philae_UI_Enter" ID="{525853B1-5245-4F86-AD16-C193C1F80DB3}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
