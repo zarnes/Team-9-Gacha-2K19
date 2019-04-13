@@ -24,15 +24,15 @@ public class InventorySystem : MonoBehaviour
         switch (i.type)
         {
             case itemType.a:
-                bonusAttack = 5f;
+                bonusAttack = i.value;
                 break;
 
             case itemType.b:
-                bonusDefense = 5f;
+                bonusDefense = i.value;
                 break;
 
             case itemType.c:
-                bonusJump = 10f;
+                bonusJump = i.value;
                 break;
 
         }
