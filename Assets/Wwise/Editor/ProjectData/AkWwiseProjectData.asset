@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c5dc286cf0517745b471d81f29eb800, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
+  m_lastPopulateTimePart2: 0
+  m_lastPopulateTimePsrt1: 0
+  AcousticTextureWwu:
+  - Guid: '{B295CECC-9943-4ED3-B7AA-344335066C35}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1889295198
+    ParentPhysicalPath: 
+    PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    List: []
+  AuxBusWwu:
+  - Guid: '{5C9F58AB-BB28-4045-B0D9-205E13B67C63}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1890960755
+    ParentPhysicalPath: 
+    PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    List: []
+  BankWwu:
+  - Guid: '{9CFE3E94-D17C-4DE4-B06E-4FB64969716C}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1889414888
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks\Default Work Unit.wwu
+    List:
+    - Guid: 427d94f38434de46abffa6bc557d9643
+      ID: 1492361636
+      Name: Soundb
+      Path: Default Work Unit\Soundb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Soundb
+        ObjectType: 7
+  EventWwu:
+  - Guid: '{438AD9D3-E189-4507-AC04-ECFA15E19F2A}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1892267268
+    ParentPhysicalPath: 
+    PhysicalPath: Events\Default Work Unit.wwu
+    List:
+    - Guid: 99d9b9d0d2b1bf469b91e9d389e61996
+      ID: -1362926625
+      Name: Play_Music
+      Path: Default Work Unit\Play_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: aafc80840e73a946a86140cfad82fb4f
+      ID: -1006852569
+      Name: Play_Sound
+      Path: Default Work Unit\Play_Sound
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Sound
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems: []
+  RtpcWwu:
+  - Guid: '{CC73B4A8-D4A2-42B6-A649-5CACE87B4886}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1892257247
+    ParentPhysicalPath: 
+    PhysicalPath: Game Parameters\Default Work Unit.wwu
+    List: []
+  StateWwu:
+  - Guid: '{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1889394932
+    ParentPhysicalPath: 
+    PhysicalPath: States\Default Work Unit.wwu
+    List: []
+  SwitchWwu:
+  - Guid: '{654F6AA1-D725-439D-B23C-7E60484133F8}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1889374984
+    ParentPhysicalPath: 
+    PhysicalPath: Switches\Default Work Unit.wwu
+    List: []
+  TriggerWwu:
+  - Guid: '{25AB4792-7827-4E52-ACFB-5BEFB68B83BD}'
+    m_lastTimePart2: -1999192015
+    m_lastTimePsrt1: -1889315148
+    ParentPhysicalPath: 
+    PhysicalPath: Triggers\Default Work Unit.wwu
+    List: []
