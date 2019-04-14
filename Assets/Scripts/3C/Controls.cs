@@ -16,7 +16,7 @@ public class Controls : MonoBehaviour
     [SerializeField]
     private GameObject m_pop_up_confirm;
 
-    private GameObject m_destination_pickup_;
+    private ItemHolder m_destination_pickup_;
     private GameObject m_current_selected_object_;
 
     // Start is called before the first frame update
@@ -59,7 +59,7 @@ public class Controls : MonoBehaviour
         if (m_current_selected_object_ != null && Item != null)
         {
             m_pop_up_confirm.GetComponent<AnchoredSpriteUI>().target = Item.transform;
-            m_destination_pickup_ = Item.gameObject;
+            m_destination_pickup_ = Item;
             m_pop_up_confirm.SetActive(true);
             return;
         }
@@ -86,14 +86,14 @@ public class Controls : MonoBehaviour
         return null;
     }
 
-    private Pickup GetItem()
+    private ItemHolder GetItem()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit[] RayCastAll = Physics.RaycastAll(ray, 100);
-        Pickup item;
+        ItemHolder item;
         for (int i = 0; i < RayCastAll.Length; i++)
         {
-            item = RayCastAll[i].transform.gameObject.GetComponent<Pickup>();
+            item = RayCastAll[i].transform.gameObject.GetComponent<ItemHolder>();
             if (item != null)
             {
                 return item;
