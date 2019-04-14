@@ -6,6 +6,11 @@ public class CampfireCheckSecureZone : MonoBehaviour
 {
     public MapGenerator mapGeneratorScript;
 
+    private void Awake()
+    {
+        mapGeneratorScript = Camera.main.GetComponent<MapGenerator>();    
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Wood")
@@ -19,5 +24,4 @@ public class CampfireCheckSecureZone : MonoBehaviour
             mapGeneratorScript.foodToSpawn++;
         }
     }
-
 }

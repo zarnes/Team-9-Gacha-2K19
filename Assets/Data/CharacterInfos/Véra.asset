@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3af7a41a70540e04ead426a292f068da, type: 3}
-  m_Name: FilleD
+  m_Name: "V\xE9ra"
   m_EditorClassIdentifier: 
-  m_name: FilleD
-  m_sprite: {fileID: 21300000, guid: 00693351b0b429846b29cd5b41bb3faa, type: 3}
+  m_name: "V\xE9ra"
+  m_sprite: {fileID: 21300000, guid: 7cdd1dc091d6dec42af726e0ff222915, type: 3}
