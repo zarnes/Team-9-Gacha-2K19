@@ -1973,7 +1973,7 @@ GameObject:
   - component: {fileID: 932648143}
   - component: {fileID: 932648142}
   m_Layer: 5
-  m_Name: Food Gauge Mask
+  m_Name: Time Gauge Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3301,7 +3301,7 @@ GameObject:
   - component: {fileID: 1344599093}
   - component: {fileID: 1344599092}
   m_Layer: 5
-  m_Name: Food Gauge Mask
+  m_Name: Morale Gauge Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

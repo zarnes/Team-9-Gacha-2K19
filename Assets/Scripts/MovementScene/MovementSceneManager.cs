@@ -34,7 +34,7 @@ public class MovementSceneManager : MonoBehaviour
 
         _animator = GetComponent<Animator>();
 
-        NextEvent();
+        NextEvent(null, true);
     }
 
     public void ReadEvent(EventData data)
@@ -62,6 +62,7 @@ public class MovementSceneManager : MonoBehaviour
 
     public void NextEvent(ChoiceData data = null, bool noAnim = false)
     {
+        UpdateValues();
         StartCoroutine(INextEvent(data, noAnim));
     }
 
@@ -110,5 +111,28 @@ public class MovementSceneManager : MonoBehaviour
             if (child.parent == ViewPortContent.transform && child.name.Contains("Action"))
                 Destroy(child.gameObject);
         }
+    }
+
+    private void UpdateValues()
+    {
+        for (int i = 0; i < 5; ++i)
+        {
+            Transform panel = transform.Find("Children/" + (i + 1));
+            CharacterData child = CharactersData.Characters[i];
+
+            panel.Find("Name").GetComponent<Text>().text = child.Name;
+            float fill = child.Food / child.FoodMax;
+            if (child.State == CharacterState.Dieded)
+            {
+                panel.Find("Food Gauge Mask").gameObject.SetActive(false);
+                panel.Find("Food Icon").gameObject.SetActive(false);
+            }
+            else
+            {
+                panel.Find("Food Gauge Mask/Image").GetComponent<Image>().fillAmount = fill;
+            }
+        }
+
+        transform.Find("Moral/Morale Gauge Mask/Image").GetComponent<Image>().fillAmount = CharactersData.Morale;
     }
 }

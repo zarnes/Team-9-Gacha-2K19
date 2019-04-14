@@ -45,6 +45,7 @@ public class CharacterData
     public string Name;
     public float Speed;
     public float Food;
+    public float FoodMax = 5;
     public CharacterState State;
     
     public CharacterData(string name, float speed = 10, float food = 3, CharacterState state = CharacterState.Good)
