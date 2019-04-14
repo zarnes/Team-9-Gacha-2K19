@@ -10,11 +10,11 @@ public class RoomGenerator : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            Generate();
+            Generate(Vector3.zero);
         }
     }
 
-    public void Generate()
+    public void Generate(Vector3 position)
     {
         Instantiate(RoomPrefab);
     }
