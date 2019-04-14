@@ -29,6 +29,7 @@ public class Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.z * 100f) * -1;
     }
 
     private void OnClickLeftMouseHandler()

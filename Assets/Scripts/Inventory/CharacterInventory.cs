@@ -31,6 +31,8 @@ public class CharacterInventory : Inventory
         }
     }
 
+
+
     private void Update()
     {
         DragItem();

@@ -30,8 +30,17 @@ public class MovementChoice : MonoBehaviour
 
     private bool CheckPossibility()
     {
+        if (Choice.Force)
+            return true;
+
         /*if (Choice.Berries < 0 && Player.Inventory.Berries + Choice.Berries < 0)
             return false;*/
+
+        if (CharactersData.TimeLeft + Choice.Time < 0)
+            return false;
+
+        if (CharactersData.Morale + Choice.Morale < 0)
+            return false;
 
         return true;
     }

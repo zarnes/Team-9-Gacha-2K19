@@ -13,6 +13,8 @@ public class MovementSceneManager : MonoBehaviour
     public Transform ViewPortContent;
     public GameObject ChoicePrefab;
 
+    private Animator _animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,14 +32,9 @@ public class MovementSceneManager : MonoBehaviour
             return;
         }
 
-        EventData data = EventsLoader.Instance.GetEvent(EventType.Random);
-        if (data == null)
-        {
-            Debug.LogError("No event found");
-            return;
-        }
+        _animator = GetComponent<Animator>();
 
-        ReadEvent(data);
+        NextEvent(null, true);
     }
 
     public void ReadEvent(EventData data)
@@ -63,15 +60,42 @@ public class MovementSceneManager : MonoBehaviour
         choiceGo.GetComponent<MovementChoice>().Init(data, true);
     }
 
-    public void NextEvent(ChoiceData data)
+    public void NextEvent(ChoiceData data = null, bool noAnim = false)
     {
-        if (data.Type == EventType.Campement)
+        UpdateValues();
+        StartCoroutine(INextEvent(data, noAnim));
+    }
+
+    private IEnumerator INextEvent(ChoiceData data = null, bool noAnim = false)
+    {
+        if (!noAnim)
         {
-            GetComponent<Animator>().SetTrigger("Quit");
-            return;
+            _animator.SetTrigger("Next");
+            yield return new WaitForSeconds(0.5f);
         }
 
-        EventData eventData = EventsLoader.Instance.GetEvent(data.Type);
+        EventData eventData;
+        if (data == null)
+        {
+            eventData = EventsLoader.Instance.GetEvent();
+        }
+        else
+        {
+            if (data.Type == EventType.Campement)
+            {
+                GetComponent<Animator>().SetTrigger("Quit");
+                yield break;
+            }
+
+            eventData = EventsLoader.Instance.GetEvent(data.Type);
+        }
+
+        if (eventData == null)
+        {
+            Debug.LogError("No event found");
+            yield break;
+        }
+
         ReadEvent(eventData);
     }
 
@@ -87,5 +111,28 @@ public class MovementSceneManager : MonoBehaviour
             if (child.parent == ViewPortContent.transform && child.name.Contains("Action"))
                 Destroy(child.gameObject);
         }
+    }
+
+    private void UpdateValues()
+    {
+        for (int i = 0; i < 5; ++i)
+        {
+            Transform panel = transform.Find("Children/" + (i + 1));
+            CharacterData child = CharactersData.Characters[i];
+
+            panel.Find("Name").GetComponent<Text>().text = child.Name;
+            float fill = child.Food / child.FoodMax;
+            if (child.State == CharacterState.Dieded)
+            {
+                panel.Find("Food Gauge Mask").gameObject.SetActive(false);
+                panel.Find("Food Icon").gameObject.SetActive(false);
+            }
+            else
+            {
+                panel.Find("Food Gauge Mask/Image").GetComponent<Image>().fillAmount = fill;
+            }
+        }
+
+        transform.Find("Moral/Morale Gauge Mask/Image").GetComponent<Image>().fillAmount = CharactersData.Morale;
     }
 }

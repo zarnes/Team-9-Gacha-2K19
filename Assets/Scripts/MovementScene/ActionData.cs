@@ -8,7 +8,11 @@ public class EventData
     public int Id;
     public string Title;
     public string Lore;
-    public EventType Type;
+
+    public EventType Type = EventType.Random;
+    public EventRarity Rarity = EventRarity.Random;
+    public EventGoodness Goodness = EventGoodness.Random;
+
     public ChoiceListData Choices;
 
     public EventData()
@@ -44,10 +48,16 @@ public class ChoiceListData
 public class ChoiceData
 {
     public string Intitulate;
-    public EventType Type;
     public string Feedback;
 
-    public int Time;
+    public EventType Type = EventType.Random;
+    public EventRarity Rarity = EventRarity.Random;
+    public EventGoodness Goodness = EventGoodness.Random;
+
+    public bool Force;
+
+    public float Time;
+    public float Morale;
 
     public int Wood;
     public int Meat;
@@ -57,12 +67,27 @@ public class ChoiceData
 
 public enum EventType
 {
-    SellChild,
     Campement,
     FindCampement,
-    RessourceEvent,
-    TimeEvent,
+    Ressource,
     Random,
     Special,
     Target
+}
+
+public enum EventRarity
+{
+    Often,
+    Regular,
+    Rare,
+    Random
+}
+
+public enum EventGoodness
+{
+    Good,
+    Neutral,
+    Bad,
+    Terrible,
+    Random
 }
