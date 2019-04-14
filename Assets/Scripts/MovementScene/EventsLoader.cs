@@ -35,7 +35,7 @@ public class EventsLoader : MonoBehaviour
         }
     }
 
-    public EventData GetEvent(EventType type)
+    public EventData GetEventOld(EventType type)
     {
         List<EventData> compatibleEvents = new List<EventData>();
         if (type == EventType.Random)
@@ -46,7 +46,36 @@ public class EventsLoader : MonoBehaviour
         {
             compatibleEvents = _events.FindAll(e => e.Type == type);
         }
-        
+
+        if (compatibleEvents.Count == 0)
+            return null;
+
+        int index = _rnd.Next(compatibleEvents.Count);
+        return compatibleEvents[index];
+    }
+
+    public EventData GetEvent(EventType type = EventType.Random, EventRarity rarity = EventRarity.Random, EventGoodness goodness = EventGoodness.Random)
+    {
+        List<EventData> compatibleEvents = new List<EventData>(_events);
+        if (type != EventType.Random)
+            compatibleEvents.RemoveAll(e => e.Type != type);
+
+        if (rarity != EventRarity.Random)
+            compatibleEvents.RemoveAll(e => e.Rarity != rarity);
+        else
+        {
+            int rndRarity = _rnd.Next(9);
+            if (rndRarity <= 3)
+                compatibleEvents.RemoveAll(e => e.Rarity != EventRarity.Often);
+            else if (rndRarity <= 6)
+                compatibleEvents.RemoveAll(e => e.Rarity != EventRarity.Regular);
+            else
+                compatibleEvents.RemoveAll(e => e.Rarity != EventRarity.Rare);
+        }
+
+        if (goodness != EventGoodness.Random)
+            compatibleEvents.RemoveAll(e => e.Goodness != goodness);
+
         if (compatibleEvents.Count == 0)
             return null;
 

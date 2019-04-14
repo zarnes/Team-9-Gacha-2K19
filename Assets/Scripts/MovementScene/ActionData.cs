@@ -54,6 +54,8 @@ public class ChoiceData
     public EventRarity Rarity = EventRarity.Random;
     public EventGoodness Goodness = EventGoodness.Random;
 
+    public bool Force;
+
     public float Time;
     public float Morale;
 
