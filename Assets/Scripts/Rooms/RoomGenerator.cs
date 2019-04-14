@@ -23,6 +23,9 @@ public class RoomGenerator : MonoBehaviour
 
     public void Generate(Vector3 position)
     {
+        GameObject roomGo = Instantiate(RoomPrefab);
+        roomGo.transform.position = position;
+
         for (int a = 0; a < barrelsToSpawn; a++)
         {
             var barrelsToSpawn = Random.Range(0, barrels.Count);

@@ -157,6 +157,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomPrefab: {fileID: 4303641929340886102, guid: d2cc4e1cb3592184e9dea1a4884cc8c0,
     type: 3}
+  floor: {fileID: 0}
+  barrels: []
+  walls: []
+  barrelsToSpawn: 0
+  wallsToSpawn: 0
 --- !u!1 &824043929
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303641929340886102, guid: d2cc4e1cb3592184e9dea1a4884cc8c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4303641929340886101, guid: d2cc4e1cb3592184e9dea1a4884cc8c0,
         type: 3}

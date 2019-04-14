@@ -7,10 +7,12 @@ public class Room : MonoBehaviour
     private Animator _animator;
     private bool _started;
     private bool _ended;
+    private RoomGenerator _rg;
 
     // Start is called before the first frame update
     void Start()
     {
+        _rg = GameObject.Find("ProceduralGenerator").GetComponent<RoomGenerator>();
         _animator = GetComponent<Animator>();
     }
 
@@ -37,6 +39,7 @@ public class Room : MonoBehaviour
         {
             _ended = true;
             _animator.SetTrigger("EndRoom");
+            _rg.Generate(transform.position + Vector3.forward * 20);
         }
     }
 
@@ -49,5 +52,6 @@ public class Room : MonoBehaviour
     {
         _animator.SetTrigger("CloseRoom");
         yield return new WaitForSeconds(2);
+        Destroy(gameObject);
     }
 }
