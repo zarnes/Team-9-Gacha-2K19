@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2018889153716010443}
   - component: {fileID: 610738962164115669}
   - component: {fileID: 1763563933028052860}
+  - component: {fileID: 4747034946383595416}
   m_Layer: 12
   m_Name: Food
   m_TagString: Food
@@ -122,3 +123,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4747034946383595416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345602451940325557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4d8be1548fbe246847d64b83d968cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_item: {fileID: 11400000, guid: b55fee9adab474b488bd0b70effcb922, type: 2}

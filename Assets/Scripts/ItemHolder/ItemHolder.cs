@@ -14,7 +14,6 @@ public class ItemHolder : MonoBehaviour
     {
         if (m_item == null)
             m_item = new WoodItem("Bois", 10);
-
     }
 
     // Update is called once per frame
