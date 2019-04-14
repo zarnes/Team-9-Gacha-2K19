@@ -21,17 +21,242 @@
 			<ShortName>Soundb</ShortName>
 			<Path>Soundb.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
-				<Event Id="3288114727" Name="Play_Sound" ObjectPath="\Events\Default Work Unit\Play_Sound"/>
+				<Event Id="3667605692" Name="Event_Bushes" ObjectPath="\Events\Default Work Unit\Event_Bushes"/>
+				<Event Id="2351498588" Name="Event_Eat" ObjectPath="\Events\Default Work Unit\Event_Eat"/>
+				<Event Id="114057136" Name="Event_Firelog" ObjectPath="\Events\Default Work Unit\Event_Firelog"/>
+				<Event Id="3113608096" Name="Event_Fish" ObjectPath="\Events\Default Work Unit\Event_Fish"/>
+				<Event Id="3199320663" Name="Event_FTPS" ObjectPath="\Events\Default Work Unit\Event_FTPS"/>
+				<Event Id="2170542218" Name="Event_Vegetables" ObjectPath="\Events\Default Work Unit\Event_Vegetables"/>
+				<Event Id="3464303516" Name="Event_Woods" ObjectPath="\Events\Default Work Unit\Event_Woods"/>
+				<Event Id="3715608165" Name="Start_Ambiances" ObjectPath="\Events\Default Work Unit\Start_Ambiances"/>
+				<Event Id="2699622244" Name="Start_BabaYaga" ObjectPath="\Events\Default Work Unit\Start_BabaYaga"/>
+				<Event Id="1196647164" Name="Start_Carriage" ObjectPath="\Events\Default Work Unit\Start_Carriage"/>
+				<Event Id="3632201782" Name="Start_Fire" ObjectPath="\Events\Default Work Unit\Start_Fire"/>
+				<Event Id="1822118041" Name="Start_Hungry" ObjectPath="\Events\Default Work Unit\Start_Hungry"/>
+				<Event Id="3767458032" Name="Start_River" ObjectPath="\Events\Default Work Unit\Start_River"/>
+				<Event Id="871543252" Name="Start_TicToc" ObjectPath="\Events\Default Work Unit\Start_TicToc"/>
+				<Event Id="2296627038" Name="Stop_BabaYaga" ObjectPath="\Events\Default Work Unit\Stop_BabaYaga" MaxAttenuation="0.000000"/>
+				<Event Id="3988459314" Name="Stop_Carriage" ObjectPath="\Events\Default Work Unit\Stop_Carriage" MaxAttenuation="0.000000"/>
+				<Event Id="2012414419" Name="Stop_Hungry" ObjectPath="\Events\Default Work Unit\Stop_Hungry" MaxAttenuation="0.000000"/>
+				<Event Id="2315124534" Name="Stop_River" ObjectPath="\Events\Default Work Unit\Stop_River" MaxAttenuation="0.000000"/>
+				<Event Id="4267364614" Name="Stop_TicToc" ObjectPath="\Events\Default Work Unit\Stop_TicToc"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="184066887" Language="SFX">
-					<ShortName>Philae_UI_Enter.wav</ShortName>
-					<Path>SFX\Philae_UI_Enter_B5EBC900.wem</Path>
+				<File Id="4910905" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_03_56D34C19.wem</Path>
 				</File>
-				<File Id="847782052" Language="SFX">
-					<ShortName>Philae_Music_Theme.wav</ShortName>
-					<Path>SFX\Philae_Music_Theme_56D34C19.wem</Path>
+				<File Id="63278681" Language="SFX">
+					<ShortName>GCH_AMB_Screams_OS_0.wav</ShortName>
+					<Path>SFX\GCH_AMB_Screams_OS_0_56D34C19.wem</Path>
+				</File>
+				<File Id="88164966" Language="SFX">
+					<ShortName>GCH_SFX_Laugh_OS_04.wav</ShortName>
+					<Path>SFX\GCH_SFX_Laugh_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="133015107" Language="SFX">
+					<ShortName>GCH_AMB_Cracks_OS_02.wav</ShortName>
+					<Path>SFX\GCH_AMB_Cracks_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="144802948" Language="SFX">
+					<ShortName>GCH_SFX_Eating_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_Eating_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="159997249" Language="SFX">
+					<ShortName>GCH_AMB_Screams_OS_05.wav</ShortName>
+					<Path>SFX\GCH_AMB_Screams_OS_05_56D34C19.wem</Path>
+				</File>
+				<File Id="189404232" Language="SFX">
+					<ShortName>GCH_SFX_Wood_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_Wood_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="193294615" Language="SFX">
+					<ShortName>GCH_SFX_Dirt_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_Dirt_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="196470791" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_11.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_11_56D34C19.wem</Path>
+				</File>
+				<File Id="211421832" Language="SFX">
+					<ShortName>GCH_SFX_Splash_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_Splash_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="235840689" Language="SFX">
+					<ShortName>GCH_SFX_craftFinish_OS_0.wav</ShortName>
+					<Path>SFX\GCH_SFX_craftFinish_OS_0_56D34C19.wem</Path>
+				</File>
+				<File Id="243805524" Language="SFX">
+					<ShortName>GCH_AMB_Forestnight_LP.wav</ShortName>
+					<Path>SFX\GCH_AMB_Forestnight_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="256349680" Language="SFX">
+					<ShortName>GCH_SFX_Bushes_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_Bushes_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="258527105" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_08.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_08_56D34C19.wem</Path>
+				</File>
+				<File Id="259524498" Language="SFX">
+					<ShortName>GCH_SFX_craftFinish_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_craftFinish_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="275115427" Language="SFX">
+					<ShortName>GCH_SFX_Wood_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_Wood_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="346115073" Language="SFX">
+					<ShortName>GCH_SFX_Bushes_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_Bushes_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="352519569" Language="SFX">
+					<ShortName>GCH_SFX_Eating_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_Eating_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="362185397" Language="SFX">
+					<ShortName>GCH_SFX_Splash_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_Splash_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="399610029" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_09.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_09_56D34C19.wem</Path>
+				</File>
+				<File Id="408973227" Language="SFX">
+					<ShortName>GCH_AMB_Screams_OS_06.wav</ShortName>
+					<Path>SFX\GCH_AMB_Screams_OS_06_56D34C19.wem</Path>
+				</File>
+				<File Id="440688431" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_04.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="453142314" Language="SFX">
+					<ShortName>GCH_SFX_Dirt_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_Dirt_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="500409657" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_06.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_06_56D34C19.wem</Path>
+				</File>
+				<File Id="504415947" Language="SFX">
+					<ShortName>GCH_SFX_LogFire_OS_04.wav</ShortName>
+					<Path>SFX\GCH_SFX_LogFire_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="514746129" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_07.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_07_56D34C19.wem</Path>
+				</File>
+				<File Id="544473889" Language="SFX">
+					<ShortName>GCH_SFX_Laugh_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_Laugh_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="553676841" Language="SFX">
+					<ShortName>GCH_AMB_Cracks_OS_03.wav</ShortName>
+					<Path>SFX\GCH_AMB_Cracks_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="560058366" Language="SFX">
+					<ShortName>GCH_SFX_Eating_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_Eating_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="570674595" Language="SFX">
+					<ShortName>GCH_SFX_Fire_LP.wav</ShortName>
+					<Path>SFX\GCH_SFX_Fire_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="581310106" Language="SFX">
+					<ShortName>GCH_SFX_LogFire_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_LogFire_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="601981704" Language="SFX">
+					<ShortName>GCH_SFX_Carriage_LP.wav</ShortName>
+					<Path>SFX\GCH_SFX_Carriage_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="636549986" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="649133636" Language="SFX">
+					<ShortName>GCH_SFX_Bushes_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_Bushes_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="669014041" Language="SFX">
+					<ShortName>GCH_SFX_ticktock_LP.wav</ShortName>
+					<Path>SFX\GCH_SFX_ticktock_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="682514826" Language="SFX">
+					<ShortName>GCH_AMB_River_LP_01.wav</ShortName>
+					<Path>SFX\GCH_AMB_River_LP_01_8956FC97.wem</Path>
+				</File>
+				<File Id="689889741" Language="SFX">
+					<ShortName>GCH_SFX_Wood_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_Wood_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="691225187" Language="SFX">
+					<ShortName>GCH_SFX_Splash_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_Splash_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="712450372" Language="SFX">
+					<ShortName>GCH_SFX_Hungry_LP.wav</ShortName>
+					<Path>SFX\GCH_SFX_Hungry_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="750623107" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_05.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_05_56D34C19.wem</Path>
+				</File>
+				<File Id="752048360" Language="SFX">
+					<ShortName>GCH_AMB_Screams_OS_04.wav</ShortName>
+					<Path>SFX\GCH_AMB_Screams_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="754564552" Language="SFX">
+					<ShortName>GCH_SFX_Dirt_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_Dirt_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="778636827" Language="SFX">
+					<ShortName>GCH_AMB_Heartbeat_LP.wav</ShortName>
+					<Path>SFX\GCH_AMB_Heartbeat_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="790736883" Language="SFX">
+					<ShortName>GCH_AMB_Cracks_OS_04.wav</ShortName>
+					<Path>SFX\GCH_AMB_Cracks_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="808950145" Language="SFX">
+					<ShortName>GCH_AMB_Screams_OS_03.wav</ShortName>
+					<Path>SFX\GCH_AMB_Screams_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="825555949" Language="SFX">
+					<ShortName>GCH_SFX_craftFinish_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_craftFinish_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="866744796" Language="SFX">
+					<ShortName>GCH_AMB_Screams_OS_02.wav</ShortName>
+					<Path>SFX\GCH_AMB_Screams_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="867696964" Language="SFX">
+					<ShortName>GCH_SFX_Laugh_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_Laugh_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="895348609" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="905136270" Language="SFX">
+					<ShortName>GCH_SFX_Laugh_OS_03.wav</ShortName>
+					<Path>SFX\GCH_SFX_Laugh_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="941269080" Language="SFX">
+					<ShortName>GCH_SFX_LogFire_OS_02.wav</ShortName>
+					<Path>SFX\GCH_SFX_LogFire_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="961516532" Language="SFX">
+					<ShortName>GCH_AMB_Cracks_OS_01.wav</ShortName>
+					<Path>SFX\GCH_AMB_Cracks_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="1009479887" Language="SFX">
+					<ShortName>GCH_SFX_LogFire_OS_01.wav</ShortName>
+					<Path>SFX\GCH_SFX_LogFire_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="1010110415" Language="SFX">
+					<ShortName>GCH_SFX_FTPS_OS_10.wav</ShortName>
+					<Path>SFX\GCH_SFX_FTPS_OS_10_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
