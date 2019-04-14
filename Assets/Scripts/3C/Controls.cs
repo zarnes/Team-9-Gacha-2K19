@@ -11,8 +11,9 @@ public class Controls : MonoBehaviour
     private NavMeshAgent m_nav_mesh_agent;
 
     [SerializeField]
-    private Camera m_main_camera;
-
+    private GameObject m_fire_camp;
+    
+    private GameObject m_destination_pickup_;
     private GameObject m_current_selected_object_;
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class Controls : MonoBehaviour
         if (m_current_selected_object_ != null && Item != null)
         {
             // todo : Run ui condition
+            m_destination_pickup_ = Item;
             m_nav_mesh_agent.SetDestination(Item.transform.position);
             return;
         }
@@ -71,9 +73,21 @@ public class Controls : MonoBehaviour
             if (RayCastAll[i].transform.gameObject.CompareTag(_sTag))
             {
                 return RayCastAll[i].transform.gameObject;
-
             }
         }
         return null;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.GetHashCode() == m_destination_pickup_.GetHashCode())
+            ComeBackBackToCamp();
+    }
+
+    private void ComeBackBackToCamp()
+    {
+        Vector3 RandomPositionComeBack = Random.insideUnitSphere;
+        RandomPositionComeBack += m_fire_camp.transform.position;
+        m_nav_mesh_agent.SetDestination(RandomPositionComeBack);
     }
 }
