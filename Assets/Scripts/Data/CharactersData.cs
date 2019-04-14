@@ -9,6 +9,8 @@ public static class CharactersData
     public static float MaxTimeLeft = 300;
     public static float Morale;
 
+    public static ChanceState Chance;
+
     static CharactersData()
     {
         Characters.Add(new CharacterData("Katérina"));
@@ -19,6 +21,8 @@ public static class CharactersData
 
         TimeLeft = 120;
         Morale = 100;
+
+        Chance = ChanceState.Neutral;
     }
 
     public static bool AddTime (float time)
@@ -48,11 +52,12 @@ public class CharacterData
     public float FoodMax = 5;
     public CharacterState State;
     
-    public CharacterData(string name, float speed = 10, float food = 3, CharacterState state = CharacterState.Good)
+    public CharacterData(string name, float speed = 10, float food = 3, CharacterState state = CharacterState.Dieded)
     {
         Name = name;
         Speed = speed;
         Food = food;
+        State = state;
     }
 }
 
@@ -61,4 +66,12 @@ public enum CharacterState
     Good,
     Injured,
     Dieded
+}
+
+public enum ChanceState
+{
+    Lucky,
+    Neutral,
+    Unlucky,
+    VeryUnlucky
 }

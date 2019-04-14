@@ -12,6 +12,7 @@ public class MovementSceneManager : MonoBehaviour
     public string OtherScene;
     public Transform ViewPortContent;
     public GameObject ChoicePrefab;
+    public Sprite[] Smileys;
 
     private Animator _animator;
 
@@ -26,7 +27,7 @@ public class MovementSceneManager : MonoBehaviour
 
         Instance = this;
 
-        if (ChoicePrefab == null || ViewPortContent == null || OtherScene == "")
+        if (ChoicePrefab == null || ViewPortContent == null || OtherScene == "" || Smileys.Length == 0)
         {
             Debug.LogError("Can't load events, missing attributes", gameObject);
             return;
@@ -36,6 +37,16 @@ public class MovementSceneManager : MonoBehaviour
 
         NextEvent(null, true);
     }
+
+    /*private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+            CharactersData.Morale += 10;
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+            CharactersData.Morale -= 10;
+
+        UpdateValues();
+    }*/
 
     public void ReadEvent(EventData data)
     {
@@ -70,7 +81,8 @@ public class MovementSceneManager : MonoBehaviour
     {
         if (!noAnim)
         {
-            _animator.SetTrigger("Next");
+            if (data != null && data.Type != EventType.Campement)
+                _animator.SetTrigger("Next");
             yield return new WaitForSeconds(0.5f);
         }
 
@@ -84,6 +96,7 @@ public class MovementSceneManager : MonoBehaviour
             if (data.Type == EventType.Campement)
             {
                 GetComponent<Animator>().SetTrigger("Quit");
+                yield break;
             }
             else if (data.Type == EventType.Target)
             {
@@ -137,6 +150,7 @@ public class MovementSceneManager : MonoBehaviour
             {
                 panel.Find("Food Gauge Mask").gameObject.SetActive(false);
                 panel.Find("Food Icon").gameObject.SetActive(false);
+                panel.Find("Skull").gameObject.SetActive(true);
             }
             else
             {
@@ -144,6 +158,22 @@ public class MovementSceneManager : MonoBehaviour
             }
         }
 
-        transform.Find("Moral/Morale Gauge Mask/Image").GetComponent<Image>().fillAmount = CharactersData.Morale;
+        float moral = CharactersData.Morale;
+        Sprite smiley;
+        transform.Find("Moral/Morale Gauge Mask/Image").GetComponent<Image>().fillAmount = moral / 100;
+        if (moral < 20)
+            smiley = Smileys[0];
+        else if (moral < 40)
+            smiley = Smileys[1];
+        else if (moral < 60)
+            smiley = Smileys[2];
+        else if (moral < 80)
+            smiley = Smileys[3];
+        else if (moral < 100)
+            smiley = Smileys[4];
+        else
+            smiley = Smileys[5];
+
+        transform.Find("Moral/Smiley").GetComponent<Image>().sprite = smiley;
     }
 }

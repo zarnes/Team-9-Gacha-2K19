@@ -51,7 +51,7 @@ public class FPSCounter : MonoBehaviour
 
         while (true)
         {
-            int fps = (int)(1f / Time.deltaTime);
+            int fps = (int)((1f / Time.deltaTime) * 1.2f);
             fps = (int) Mathf.Lerp(_oldFps, fps, 0.2f);
             _text.text = fps + " FPS";
             _text.color = fps >= 60 ? GoodColor : BadColor;

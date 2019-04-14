@@ -77,6 +77,8 @@ public class EventsLoader : MonoBehaviour
 
         if (goodness != EventGoodness.Random)
             compatibleEvents.RemoveAll(e => e.Goodness != goodness);
+        else
+            compatibleEvents.RemoveAll(e => e.Goodness != GetGoodness());
 
         if (compatibleEvents.Count == 0)
             return null;
@@ -88,5 +90,56 @@ public class EventsLoader : MonoBehaviour
     public EventData GetEvent(int id)
     {
         return _events.Find(e => e.Id == id);
+    }
+
+    private EventGoodness GetGoodness()
+    {
+        int value;
+        switch (CharactersData.Chance)
+        {
+            case ChanceState.Lucky:
+                value = _rnd.Next(400);
+                if (value < 30)
+                    return EventGoodness.Good;
+                if (value < 53)
+                    return EventGoodness.Neutral;
+                if (value < 76)
+                    return EventGoodness.Bad;
+                else
+                    return EventGoodness.Terrible;
+            case ChanceState.Neutral:
+                value = _rnd.Next(430);
+                if (value < 25)
+                    return EventGoodness.Good;
+                if (value < 50)
+                    return EventGoodness.Neutral;
+                if (value < 75)
+                    return EventGoodness.Bad;
+                else
+                    return EventGoodness.Terrible;
+            case ChanceState.Unlucky:
+                value = _rnd.Next(385);
+                if (value < 22)
+                    return EventGoodness.Good;
+                if (value < 48)
+                    return EventGoodness.Neutral;
+                if (value < 74)
+                    return EventGoodness.Bad;
+                else
+                    return EventGoodness.Terrible;
+            case ChanceState.VeryUnlucky:
+                value = _rnd.Next(370);
+                if (value < 18)
+                    return EventGoodness.Good;
+                if (value < 45)
+                    return EventGoodness.Neutral;
+                if (value < 72)
+                    return EventGoodness.Bad;
+                else
+                    return EventGoodness.Terrible;
+
+        }
+
+        return EventGoodness.Neutral;
     }
 }

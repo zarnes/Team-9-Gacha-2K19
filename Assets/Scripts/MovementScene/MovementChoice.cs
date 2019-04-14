@@ -23,8 +23,6 @@ public class MovementChoice : MonoBehaviour
             // Change inventory values
             CharactersData.Morale += Choice.Morale;
             CharactersData.Morale = Mathf.Clamp(CharactersData.Morale, 0, 100);
-
-            //CharacterData.
             
             MovementSceneManager.Instance.NextEvent(Choice);
         }
@@ -39,10 +37,7 @@ public class MovementChoice : MonoBehaviour
 
         /*if (Choice.Berries < 0 && Player.Inventory.Berries + Choice.Berries < 0)
             return false;*/
-
-        if (CharactersData.TimeLeft + Choice.Time < 0)
-            return false;
-
+            
         if (CharactersData.Morale + Choice.Morale < 0)
             return false;
 
