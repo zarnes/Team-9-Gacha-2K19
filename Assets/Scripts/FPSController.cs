@@ -16,7 +16,7 @@ public class FPSController : MonoBehaviour
 
     void Start()
     {
-        Screen.lockCursor = true;
+       //Screen.lockCursor = true;
     }
 
     void Update()

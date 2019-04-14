@@ -5,30 +5,30 @@ using UnityEngine.AI;
 
 public class NpcMove : MonoBehaviour
 {
-    [SerializeField]
-    Transform _destination;
+    public Transform _destination;
 
-    NavMeshAgent _navMeshAgent;
+    protected NavMeshAgent _navMeshAgent;
 
-    private float distance;
+    protected float distance;
     public float distance_Shoot, minimal_Distance;
 
     // Use this for initialization
-    void Start()
+    protected virtual void Start()
     {
+        Init();
+    }
+
+    protected void Init() {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();
 
-        if (_navMeshAgent == null)
-        {
+        if (_navMeshAgent == null) {
             Debug.LogError("The nav mesh agent component is not attached to " + gameObject.name);
-        }
-        else
-        {
+        } else {
             SetDestination();
         }
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         GetDistance();
         if (distance < minimal_Distance)
@@ -44,7 +44,7 @@ public class NpcMove : MonoBehaviour
 
     }
 
-    private void SetDestination()
+    protected void SetDestination()
     {
         if (_destination != null)
         {
@@ -53,9 +53,9 @@ public class NpcMove : MonoBehaviour
         }
     }
 
-    void GetDistance()
+    protected void GetDistance()
     {
         distance = Vector3.Distance(_destination.position,transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
     }
 }
