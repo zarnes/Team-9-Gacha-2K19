@@ -20,4 +20,9 @@ public class Firecamp : MonoBehaviour
             m_currentTime = 0.0f;
         }
     }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("click on firecamp");
+    }
 }
