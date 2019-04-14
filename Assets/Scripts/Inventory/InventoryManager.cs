@@ -1,40 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public Slot selectedSlot = null;
+    public ItemHandler selectedItem = null;
+    public Slot selectedItemSlotOrigin = null;
     public Image selectionIcon;
-    
+    public Vector3 offset;
+
     public void OnSlotClicked(Slot clickedSlot)
     {
-        if (selectedSlot == null) //get
+        if (selectedItem == null) //get
         {
-            selectedSlot = clickedSlot;
-            selectionIcon.sprite = clickedSlot.item.getIcon();
+            if (clickedSlot.IsEmpty())
+                return;
+            selectedItemSlotOrigin = clickedSlot;
+            selectedItem = selectedItemSlotOrigin.GetItemHandler();
+            selectedItemSlotOrigin.SetItem(null, 0);
+            if (selectionIcon == null)
+            {
+                Debug.LogError("Inventory Manager doesn't have a selection icon.");
+            }
+            selectionIcon.sprite = selectedItem.m_item.getIcon();
         }
         else
         {
-            if (clickedSlot.item == null) //drop
+            if (clickedSlot.IsEmpty()) //drop
             {
-                clickedSlot.item = selectedSlot.item;
-                selectedSlot.item = null;
-                selectedSlot.RefreshUI();
-                selectedSlot = null;
+                clickedSlot.SetItem(selectedItem.m_item, selectedItem.m_quantity);
+                selectedItemSlotOrigin = null;
+                selectedItem = null;
                 selectionIcon.sprite = null;
             }
             else //swap
             {
-                Item itemTemp = clickedSlot.item;
-                clickedSlot.item = selectedSlot.item;
-                selectedSlot.item = itemTemp;
-                selectedSlot.RefreshUI();
-                selectedSlot = clickedSlot;
-                selectionIcon.sprite = selectedSlot.item.getIcon();
+                ItemHandler temp = new ItemHandler(clickedSlot.GetItem(), clickedSlot.GetCount());
+                clickedSlot.SetItem(selectedItem.m_item, selectedItem.m_quantity);
+                selectedItemSlotOrigin = clickedSlot;
+                selectedItem = temp;
+                selectionIcon.sprite = selectedItem.m_item.getIcon();
             }
         }
-        clickedSlot.RefreshUI();
+    }
+
+    public void Update()
+    {
+        if (selectionIcon.sprite != null)
+        {
+            selectionIcon.enabled = true;
+            selectionIcon.transform.position = Input.mousePosition + offset;
+        }
+        else
+        {
+            selectionIcon.enabled = false;
+        }
+
+        if (Input.GetButtonDown("Cancel") && selectedItem != null && selectedItemSlotOrigin != null)
+        {
+            selectedItemSlotOrigin.SetItem(selectedItem.m_item, selectedItem.m_quantity);
+        }
     }
 }

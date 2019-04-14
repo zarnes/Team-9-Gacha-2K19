@@ -1,111 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CharacterInventory : Inventory
 {
+    [SerializeField]
     public List<Slot> slots;
-    public GameObject slotObject;
-    public Vector2 inventoryPosition;
-    public int gridWidth = 0, gridHeight = 0;
-    public float slotWidth, slotOffset;
-
-    public int startSlot = -1;
-    public int endSlot = -1;
-
-    public int inventorySelected = 0;
-
-    public bool isDraging = false;
-
-    public Image dragItem;
-
-   
-    private Slot[] slotsItems;
+    public bool test;
 
     private void Start()
     {
-        foreach (Slot slot in slots)
+        foreach(Slot slot in slots)
         {
-            slot.Init(this);
+            slot.SetInventory(this);
         }
     }
-
-
 
     private void Update()
     {
-        DragItem();
-
-        if(startSlot > 0 && endSlot > 0)
+        if (Input.GetButtonDown("Jump"))
         {
-            //SwapItems();
-            startSlot = -1;
+            AddItem(new WoodItem(Item.Type.WOOD, "Wood", false, 3));
         }
-  
     }
 
-    void DragItem()
+    public bool AddItem(Item _item, int _quantity = 1)
     {
-        if (isDraging)
+        foreach (Slot slot in slots)
         {
-            dragItem.enabled = true;
-            Vector3 p = Input.mousePosition;
-                
-            dragItem.transform.position = p;
-
-            if (Input.GetButtonUp("Fire1"))
+            if (slot.IsEmpty())
             {
-                dragItem.enabled = false;
-                isDraging = false;
+                slot.SetItem(_item, _quantity);
+                return true;
+            }
+            else if (slot.GetItem().name == _item.name)
+            {
+                slot.Add();
+                return true;
             }
         }
+        return false;
     }
-
-    public void SwapItems(Item source, Item destination)
-    {
-        if (endSlot < 0 || startSlot < 0)
-            return;
-
-        Item s = source;
-        source = destination;
-        destination = s;
-
-
-    }
-
-    public void AddItem(Item i, Item[,]inventory)
-    {
-        for(int a = 0; a < gridWidth * gridHeight; a++)
-        {
-            if(inventory[a,inventorySelected] == null)
-            {
-                inventory[a, inventorySelected] = i;
-                return;
-            }
-        }
-    }
-
-    public void AddItemAt(Item i, Item[,] inventory)
-    {
-        Item end = inventory[startSlot, inventorySelected];
-
-        inventory[endSlot, inventorySelected] = i;
-        inventory[startSlot, inventorySelected] = end;
-
-    }
-
-    public void RemoveItem(int index, Item[] inventory)
-    {
-        inventory[index] = null;
-    }
-
-    public void DropItem(int index, Item[] inventory)
-    {
-        inventory[index] = null;
-
-    }
-
-
-
 }
