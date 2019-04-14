@@ -43,8 +43,7 @@ public class Controls : MonoBehaviour
         LayerMask mask = LayerMask.GetMask("Player");
         var HitsList = Physics.RaycastAll(ray, 1000).ToList();
         var Player = HitsList.Find(p => p.transform.gameObject.tag == "Player");
-        if (Player != null )
-            this.m_current_selected_object_ = Player.transform.gameObject;
+       
 
         var Item = HitsList.Find(p => p.transform.gameObject.tag == "Item").transform.gameObject;
         if (this.m_current_selected_object_ != null && Item != null)
@@ -61,9 +60,5 @@ public class Controls : MonoBehaviour
         InputManager.GetInstance().OnClickLeftMouseButton -= OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton -= OnClickRightMouseHandler;
     }
-
-    private GameObject getGameObjectInRaycastAllByTag(string _sTag)
-    {
-
-    }
+    
 }
