@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 64a3a044be74d454885c39f8a2a4cacb
+guid: 4433e2615ea3cf34cabffbe255b91d6e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: set-of-food-icons-in-pixel-style-vector-20040288_0
+    21300000: set-of-food-icons-in-pixel_0
+    21300002: set-of-food-icons-in-pixel_1
+    21300004: set-of-food-icons-in-pixel_2
+    21300006: set-of-food-icons-in-pixel_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -32,7 +35,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -64,7 +67,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,13 +88,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: set-of-food-icons-in-pixel-style-vector-20040288_0
+      name: set-of-food-icons-in-pixel_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 238
-        height: 250
+        y: 91
+        width: 54
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,7 +102,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0920c4f0a7b16fe4aa976a61942f63f0
+      spriteID: 8fce1b42327171f4b894175753f5c286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-of-food-icons-in-pixel_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 91
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b077e8c7b5252194ebc156c46af80961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-of-food-icons-in-pixel_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 91
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c880d4cab0105a40964e34cbbb3cf40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-of-food-icons-in-pixel_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 90
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248e9bd75037a2e42b35c33c19c8b054
       vertices: []
       indices: 
       edges: []
@@ -107,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c4c478827dc163c4d9bab3096bbcf9d8
+    spriteID: 9cce90acbf4dc2d499ae7f9df61ab335
     vertices: []
     indices: 
     edges: []
