@@ -382,6 +382,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418508746}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!84 &474830909
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1122
+  m_Height: 445
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &533116514
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,38 +672,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a03514dc972317a4ebf424afba61bddf, type: 3}
---- !u!84 &719698402
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1920
-  m_Height: 1080
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &886188093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1148,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 12288
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 719698402}
+  m_TargetTexture: {fileID: 474830909}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 09755a4891f8d4526a7e0690a23dec7b, type: 3}
-  spriteLightRT: {fileID: 719698402}
+  spriteLightRT: {fileID: 474830909}
   intensity: 1.35
 --- !u!114 &1014726982
 MonoBehaviour:
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   floor: {fileID: 1839655495}
   woodToSpawnMax: 5
   foodToSpawnMax: 5
-  food: {fileID: 1345602451940325557, guid: eb58ab205b3ce8543879e6b772160849, type: 3}
+  food: {fileID: 7828141717861892596, guid: 600698e16d57a344b9156e3ec8f8c2f5, type: 3}
   wood: {fileID: 988852774465477994, guid: f0b0f7b98526bba4d9941871ebb058c7, type: 3}
   woodToSpawn: 0
   foodToSpawn: 0
