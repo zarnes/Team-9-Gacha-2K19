@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6489072827192396442}
   - component: {fileID: 8578134496936310685}
   - component: {fileID: 8203923972101210201}
-  - component: {fileID: 4861932884050877599}
   - component: {fileID: 5224075300227039320}
+  - component: {fileID: 7621543032242611308}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -77,23 +77,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &4861932884050877599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3141771755377843922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b0f348283c9c64aa10978b3d07f04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  inventory: {fileID: 0}
-  item: {fileID: 0}
-  count: 1
-  image: {fileID: 678420503912059477}
 --- !u!61 &5224075300227039320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120,6 +103,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 20}
   m_EdgeRadius: 0
+--- !u!114 &7621543032242611308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3141771755377843922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbac928f935b5dc41b55e44a4eb8eba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_image: {fileID: 678420503912059477}
+  m_slot:
+    m_item: {fileID: 0}
+    m_count: 1
 --- !u!1 &7734358040184739283
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,23 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Furnace : Inventory
 {
     public List<Slot> slots;
+    public List<SlotUI> slotsUI;
     public Slot woodsSlot;
+    public SlotUI woodsSlotUI;
+    public Slot mealSlot;
+    public SlotUI mealSlotUI;
     public float bakingSpeed = 2f;
 
     public Image bakeBar;
 
     private void Start()
     {
-        foreach (Slot slot in slots)
+        if (slots.Count != slotsUI.Count)
         {
-            slot.Init(this);
+            Debug.LogError("Inventory size doesn't fit with inventory UI", gameObject);
         }
-        woodsSlot.Init(this);
+        for (int i = 0; i < slots.Count; ++i)
+        {
+            slots[i].SetInventory(this);
+            slotsUI[i].Init(slots[i]);
+        }
+        woodsSlot.SetInventory(this);
+        woodsSlotUI.Init(woodsSlot);
+        mealSlot.SetInventory(this);
+        mealSlotUI.Init(mealSlot);
     }
 
     private void Update()
@@ -25,24 +36,16 @@ public class Furnace : Inventory
         BakeFood();
     }
 
-    public void AddItemAtSlot(int index, Item item)
-    {
-        if (!item.consumable)
-            return;
-
-        slots[index].item = item;
-    }
-
     void BakeFood()
     {
-        if (woodsSlot.count == 0)
+        if (woodsSlot.IsEmpty())
             return;
 
         foreach(Slot slot in slots)
         {
-            if (slot.item is FoodItem)
+            if (slot.GetItem() is FoodItem)
             {
-                FoodItem foodItem = (FoodItem)slot.item;
+                FoodItem foodItem = (FoodItem)slot.GetItem();
                 if (foodItem.cooked)
                     continue;
 
@@ -53,7 +56,7 @@ public class Furnace : Inventory
                 if (foodItem.bakingAmount >= foodItem.bakingDuration)
                 {
                     //foodItem.cooked = true;
-                    slot.Init(this);
+                    slot.SetItem(null);
                 }
             }
             

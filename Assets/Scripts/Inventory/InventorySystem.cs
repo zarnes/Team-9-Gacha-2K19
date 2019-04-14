@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CharkkkacterInventory : Inventory
 {
+    /*
     public GameObject slotObject;
     public Vector2 inventoryPosition;
     public int gridWidth = 0, gridHeight = 0;
@@ -102,14 +103,14 @@ public class CharkkkacterInventory : Inventory
     {
         for(int i =0; i< gridHeight * gridWidth; i++)
         {
-            /*if(items[i,inventorySelected] != null)
+            if(items[i,inventorySelected] != null)
             {
                 slotsItems[i].icon.color = Color.red;
             }
             else
             {
                 slotsItems[i].icon.color = Color.white;
-            }*/
+            }
         }
     }
 
@@ -132,7 +133,7 @@ public class CharkkkacterInventory : Inventory
             }
 
         }
-    }*/
+    }
 
     private void GenerateInventoryUI()
     {
@@ -154,4 +155,5 @@ public class CharkkkacterInventory : Inventory
             }
         }
     }
+    */
 }
