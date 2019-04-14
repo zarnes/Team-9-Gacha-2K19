@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class InventorySystem : MonoBehaviour
 {
-    public float bonusAttack = 0f;
-    public float bonusDefense = 0f;
-    public float bonusSpeed = 0f;
-    public float bonusJump = 0f;
 
-    public enum itemType {a,b,c}
+
+    public enum itemType {wood,food,c}
 
     public List<Item> items = new List<Item>();
 
@@ -19,20 +16,31 @@ public class InventorySystem : MonoBehaviour
         items.Add(i);
     }
 
+    public void RemoveItem(Item i)
+    {
+        items.Remove(i);
+    }
+
+    public void DropItem(Item i)
+    {
+        items.Remove(i);
+
+    }
+
     public void UseItem(Item i)
     {
         switch (i.type)
         {
-            case itemType.a:
-                bonusAttack = i.value;
+            case itemType.wood:
+
                 break;
 
-            case itemType.b:
-                bonusDefense = i.value;
+            case itemType.food:
+
                 break;
 
             case itemType.c:
-                bonusJump = i.value;
+
                 break;
 
         }
