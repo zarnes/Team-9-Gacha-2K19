@@ -120,6 +120,8 @@ public class Furnace : Inventory
             yield return null;
         }
 
+        mealSlot
+
         buttonCraft.enabled = true;
 
     }
