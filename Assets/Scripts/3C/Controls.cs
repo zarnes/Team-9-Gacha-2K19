@@ -80,14 +80,12 @@ public class Controls : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.GetHashCode() == m_destination_pickup_.GetHashCode())
+        if(m_destination_pickup_ != null && other.gameObject.GetHashCode() == m_destination_pickup_.GetHashCode())
             ComeBackBackToCamp();
     }
-
+    
     private void ComeBackBackToCamp()
     {
-        Vector3 RandomPositionComeBack = Random.insideUnitSphere;
-        RandomPositionComeBack += m_fire_camp.transform.position;
-        m_nav_mesh_agent.SetDestination(RandomPositionComeBack);
+        m_nav_mesh_agent.SetDestination(m_fire_camp.transform.position);
     }
 }
