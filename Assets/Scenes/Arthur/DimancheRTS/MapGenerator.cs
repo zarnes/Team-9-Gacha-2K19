@@ -11,13 +11,21 @@ public class MapGenerator : MonoBehaviour
     public GameObject food, wood;
     public int woodToSpawn, foodToSpawn;
 
+    public int StageNumber;
+    public GameObject mother;
+    public GameObject[] childrens;
+
+
     /*public List<GameObject> wood = new List<GameObject>();
     public List<GameObject> food = new List<GameObject>();*/
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        mother = GameObject.Find("Mother");
+        mother.SetActive(false);
+        childrens = GameObject.FindGameObjectsWithTag("Player");
+        mother.SetActive(true);
     }
 
     // Update is called once per frame
@@ -25,7 +33,19 @@ public class MapGenerator : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.M))
         {
+            StageNumber++;
             Generate();
+        }
+
+        if(StageNumber >=5)
+        {
+            //Victory Condition
+        }
+
+        if(childrens.Length ==0)
+        {
+            //Loose Condition
+            Debug.Log("You lose");
         }
     }
 
