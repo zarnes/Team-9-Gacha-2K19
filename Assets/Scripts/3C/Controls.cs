@@ -44,7 +44,9 @@ public class Controls : MonoBehaviour
             return;
         }
 
-        var Item = GetGameObjectInRaycastAllByTag("Respawn");
+        var Item = GetGameObjectInRaycastAllByTag("Food");
+        if (Item == null)
+            Item = GetGameObjectInRaycastAllByTag("Wood");
         if (m_current_selected_object_ != null && Item != null)
         {
             // todo : Run ui condition
@@ -64,7 +66,6 @@ public class Controls : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit[] RayCastAll = Physics.RaycastAll(ray, 100);
-        LayerMask mask = LayerMask.GetMask(_sTag);
         for (int i = 0; i < RayCastAll.Length; i++)
         {
             if (RayCastAll[i].transform.gameObject.CompareTag(_sTag))
