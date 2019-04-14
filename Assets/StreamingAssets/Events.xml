@@ -4,13 +4,15 @@
 		<Id>1</Id>
 		<Title>Titre de l'évènement</Title>
 		<Lore>Un passeur vous propose un raccourcis pour 3 morceaux de viande.</Lore>
-		<Type>RessourceEvent</Type>
+		<Type>Ressource</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Neutral</Goodness>
 		<Choices>
 			<Choice>
 				<Intitulate>Accepter</Intitulate>
 				<Type>Random</Type>
 				<Feedback>Vous acceptez l'offre du passeur, il vous guide à travers un passage isolé. Vous gagnez du temps, ils ne trouverons pas ce chemin.</Feedback>
-				<Time>8</Time>
+				<Time>120</Time>
 				<Meat>-5</Meat>
 			</Choice>
 			<Choice>
@@ -25,13 +27,15 @@
 		<Id>2</Id>
 		<Title>Titre de l'évènement 2</Title>
 		<Lore>Un passeur vous propose un raccourcis pour 8 morceaux de bois.</Lore>
-		<Type>RessourceEvent</Type>
+		<Type>Ressource</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Neutral</Goodness>
 		<Choices>
 			<Choice>
 				<Intitulate>Accepter</Intitulate>
 				<Type>Random</Type>
 				<Feedback>Vous acceptez l'offre du passeur, il vous guide à travers un passage isolé. Vous gagnez du temps, ils ne trouverons pas ce chemin.</Feedback>
-				<Time>4</Time>
+				<Time>120</Time>
 				<Wood>-8</Wood>
 			</Choice>
 			<Choice>
@@ -44,21 +48,381 @@
 
 	<EventData>
 		<Id>3</Id>
-		<Title>vous trouvez un coin tranquille</Title>
-		<Lore>Vous vous arrêtez devant une clairière, le coin n'à pas l'air trop dangereux.</Lore>
+		<Title>Vous trouvez un coin tranquille</Title>
+		<Lore>Vous vous arrêtez devant une clairière, le coin n'à pas l'air trop dangereux. Vous trouvez quelques brindilles pour aider un potentiel foyer.</Lore>
 		<Type>FindCampement</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Neutral</Goodness>
 		<Choices>
 			<Choice>
 				<Intitulate>Établir un feu de camp</Intitulate>
 				<Type>Campement</Type>
 				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
-				<Time>4</Time>
+				<Wood>-5</Wood>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>4</Id>
+		<Title>Le voyage continue...</Title>
+		<Lore>Vous continuez votre chemin sans trop d'encombres.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Often</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Maintenir le rythme</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous gagnez un peu de temps.</Feedback>
+				<Time>30</Time>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>5</Id>
+		<Title>Une lisière de forêt</Title>
+		<Lore>Vous repérez un coin au bord d'une forêt. Installer un camp pourrait vous permettre d'économiser un peu de bois</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Often</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-4</Wood>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>6</Id>
+		<Title>Une ferme</Title>
+		<Lore>Vous repérez une ferme au loin. Installer un camp pourrait vous permettre de récupérer quelques vivres</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Often</Rarity>
+		<Goodness>Neutral</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-5</Wood>
+				<Berries>1</Berries>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>7</Id>
+		<Title>Une route</Title>
+		<Lore>Vos pieds vous font mal. Peut-être pourriez vous vous installer sur le bord du chemin pour un temps</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Often</Rarity>
+		<Goodness>Bad</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-7</Wood>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>8</Id>
+		<Title>Une plaine</Title>
+		<Lore>Cette pleine est s'étend à perte de vue. Vous êtes très fatigué, mais s'installer ici serais couteux en bois.</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Often</Rarity>
+		<Goodness>Terrible</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-9</Wood>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>9</Id>
+		<Title>Un ancien camp</Title>
+		<Lore>Les anciens propriétaires de ce foyer n'ont visiblement pas eu de chance. Leurs affaires sont encore ici.</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-3</Wood>
+				<Berries>1</Berries>
+				<Time>15</Time>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>10</Id>
+		<Title>Une route</Title>
+		<Lore>Vos pieds vous font mal. Peut-être pourriez vous vous installer sur le bord du chemin pour un temps</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Bad</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
 				<Wood>-8</Wood>
 			</Choice>
 			<Choice>
 				<Intitulate>Continuer à avancer</Intitulate>
 				<Type>Random</Type>
 				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>11</Id>
+		<Title>Une plaine</Title>
+		<Lore>Cette pleine est s'étend à perte de vue. Vous êtes très fatigué, mais s'installer ici serais couteux en bois.</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Terrible</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-10</Wood>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>12</Id>
+		<Title>Une station service</Title>
+		<Lore>Une station service ! Elle n'a pas l'air dévalisée.</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-5</Wood>
+				<Meat>5</Meat>
+				<Time>30</Time>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>13</Id>
+		<Title>Une station service</Title>
+		<Lore>Une station service ! Elle a l'air vide, mais cela vous permetrait de gagner du temps pour installer un campement.</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Neutral</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-5</Wood>
+				<Time>30</Time>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>14</Id>
+		<Title>Une vieille cabane</Title>
+		<Lore>Une vieille cabane qui tiens à peine debout. Elle est en tôle, elle vous permettra au moins de vous installer plus vite</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Bad</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-5</Wood>
+				<Time>15</Time>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>15</Id>
+		<Title>Une plaine aride</Title>
+		<Lore>Pas de verdure, pas de branches, pas d'énergie.</Lore>
+		<Type>FindCampement</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Terrible</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Établir un feu de camp</Intitulate>
+				<Type>Campement</Type>
+				<Feedback>Vous décidez de vous installer ici, le temps de vous reposer.</Feedback>
+				<Wood>-11</Wood>
+				<Time>-10</Time>
+			</Choice>
+			<Choice>
+				<Intitulate>Continuer à avancer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuez votre chemin.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>16</Id>
+		<Title>Un raccourci</Title>
+		<Lore>Vous trouvez un raccourcis</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Prendre le raccourcis</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous gagnez du temps.</Feedback>
+				<Time>60</Time>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>17</Id>
+		<Title>Une cachette</Title>
+		<Lore>Vous trouvez une cachette rempli de ressources !</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Tout prendre et rapidement partir.</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous récupérer tou le plus vite possible et vous eclipsez. En vous retournant, vous voyez au loin une famille s'approchant de la cache.</Feedback>
+				<Time>5</Time>
+				<Berries>4</Berries>
+				<Meat>4</Meat>
+				<Wood>4</Wood>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>18</Id>
+		<Title>Le voyage continue...</Title>
+		<Lore>Vous continuez votre chemin sans trop d'encombres.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Often</Rarity>
+		<Goodness>Neutral</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Maintenir le rythme</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous gagnez un peu de temps.</Feedback>
+				<Time>10</Time>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>19</Id>
+		<Title>Une maisonette</Title>
+		<Lore>vous repérez une maisonette qui à l'air laissée à l'abandon.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Neutral</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Rentrer dans la maison</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous récupérez les ressources que vous ttrouvez et partez en vitesse.</Feedback>
+				<Berries>1</Berries>
+				<Meat>2</Meat>
+				<Wood>1</Wood>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>19</Id>
+		<Title>Un marchand</Title>
+		<Lore>vous repérez une maisonette qui à l'air laissée à l'abandon.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Neutral</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Rentrer dans la maison</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous récupérez les ressources que vous ttrouvez et partez en vitesse.</Feedback>
+				<Berries>1</Berries>
+				<Meat>2</Meat>
+				<Wood>1</Wood>
 			</Choice>
 		</Choices>
 	</EventData>
