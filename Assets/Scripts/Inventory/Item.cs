@@ -42,7 +42,6 @@ public class FoodItem : Item
     public Sprite cookedImage;
     public FoodItem(Item.Type _type, string _name, bool _consumable, float _value)
     : base(_type, _name, _consumable)
-    
     {
         value = _value;
     }

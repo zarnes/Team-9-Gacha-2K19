@@ -400,7 +400,7 @@
 			<Choice>
 				<Intitulate>Rentrer dans la maison</Intitulate>
 				<Type>Random</Type>
-				<Feedback>Vous récupérez les ressources que vous ttrouvez et partez en vitesse.</Feedback>
+				<Feedback>Vous récupérez les ressources que vous trouvez et partez en vitesse.</Feedback>
 				<Berries>1</Berries>
 				<Meat>2</Meat>
 				<Wood>1</Wood>
@@ -409,20 +409,161 @@
 	</EventData>
 
 	<EventData>
-		<Id>19</Id>
+		<Id>20</Id>
 		<Title>Un marchand</Title>
-		<Lore>vous repérez une maisonette qui à l'air laissée à l'abandon.</Lore>
+		<Lore>Un marchand vous aborde. Il vous propose 2 morceau de viande contre 4 baies</Lore>
 		<Type>Ressource</Type>
-		<Rarity>Rare</Rarity>
-		<Goodness>Neutral</Goodness>
+		<Rarity>Often</Rarity>
+		<Goodness>Bad</Goodness>
 		<Choices>
 			<Choice>
-				<Intitulate>Rentrer dans la maison</Intitulate>
+				<Intitulate>Accepter l'offre.</Intitulate>
 				<Type>Random</Type>
-				<Feedback>Vous récupérez les ressources que vous ttrouvez et partez en vitesse.</Feedback>
-				<Berries>1</Berries>
+				<Feedback>Vous acceptez l'offre.</Feedback>
+				<Berries>-4</Berries>
 				<Meat>2</Meat>
-				<Wood>1</Wood>
+			</Choice>
+			<Choice>
+				<Intitulate>Refuser</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous refusez l'offre du marchand.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>21</Id>
+		<Title>Perte de ressources</Title>
+		<Lore>Vous vous rendez compte que votre sac est troué.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Often</Rarity>
+		<Goodness>Bad</Goodness>
+		<Choices>
+			<Choice>
+				<Force>true</Force>
+				<Intitulate>Vous avez perdu des baies</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuer votre voyage, il faudra réparer ce sac à l'occasion</Feedback>
+				<Berries>-2</Berries>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>22</Id>
+		<Title>Un marchand</Title>
+		<Lore>Un marchand vous aborde. Il vous propose 3 morceau de bois contre 4 baies</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Bad</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Accepter l'offre.</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous acceptez l'offre.</Feedback>
+				<Berries>-4</Berries>
+				<Wood>3</Wood>
+			</Choice>
+			<Choice>
+				<Intitulate>Refuser</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous refusez l'offre du marchand.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>23</Id>
+		<Title>Perte de ressources</Title>
+		<Lore>Vous vous rendez compte que votre sac est troué.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Regular</Rarity>
+		<Goodness>Terrible</Goodness>
+		<Choices>
+			<Choice>
+				<Force>true</Force>
+				<Intitulate>Vous avez perdu de la viande</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuer votre voyage, il faudra réparer ce sac à l'occasion</Feedback>
+				<Meat>-2</Meat>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>24</Id>
+		<Title>Perte de ressources</Title>
+		<Lore>Vous vous rendez compte que votre sac est troué.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Bad</Goodness>
+		<Choices>
+			<Choice>
+				<Force>true</Force>
+				<Intitulate>Vous avez perdu de la viande et des baies</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous continuer votre voyage, il faudra réparer ce sac à l'occasion</Feedback>
+				<Meat>-1</Meat>
+				<Berries>-2</Berries>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>25</Id>
+		<Title>Bandits</Title>
+		<Lore>Vous vous faites encercler par des bandits.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Bad</Goodness>
+		<Choices>
+			<Choice>
+				<Force>true</Force>
+				<Intitulate>Vous donnez des ressources au bandits</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Ils ne voulais heureusement que les contenu de votre sac.</Feedback>
+				<Meat>-3</Meat>
+				<Berries>-3</Berries>
+				<Wood>-3</Wood>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>26</Id>
+		<Title>La carte</Title>
+		<Lore>Vous trouvez une carte avec un emplacement marqué.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Force>true</Force>
+				<Intitulate>Suivre la carte</Intitulate>
+				<Type>Target</Type>
+				<Target>27</Target>
+				<Feedback>Vous suivez la piste de la carte</Feedback>
+			</Choice>
+			<Choice>
+				<Intitulate>Abandonner la carte</Intitulate>
+				<Goodness>Good</Goodness>
+				<Feedback>Vous abandonnez la carte et repartez.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>27</Id>
+		<Title>La carte</Title>
+		<Lore>Vous creusez à l'endroit indiqué et trouver un stock de bois.</Lore>
+		<Type>Special</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Récupérer le bois</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous repartez le sac rempli.</Feedback>
 			</Choice>
 		</Choices>
 	</EventData>

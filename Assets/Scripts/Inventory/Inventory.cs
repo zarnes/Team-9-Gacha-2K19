@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
@@ -14,4 +12,6 @@ public class Inventory : MonoBehaviour
         }
         manager.OnSlotClicked(clickedSlot);
     }
+
+    
 }
