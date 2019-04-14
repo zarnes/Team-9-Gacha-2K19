@@ -528,4 +528,43 @@
 			</Choice>
 		</Choices>
 	</EventData>
+
+	<EventData>
+		<Id>26</Id>
+		<Title>La carte</Title>
+		<Lore>Vous trouvez une carte avec un emplacement marqué.</Lore>
+		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Force>true</Force>
+				<Intitulate>Suivre la carte</Intitulate>
+				<Type>Target</Type>
+				<Target>27</Target>
+				<Feedback>Vous suivez la piste de la carte</Feedback>
+			</Choice>
+			<Choice>
+				<Intitulate>Abandonner la carte</Intitulate>
+				<Goodness>Good</Goodness>
+				<Feedback>Vous abandonnez la carte et repartez.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>27</Id>
+		<Title>La carte</Title>
+		<Lore>Vous creusez à l'endroit indiqué et trouver un stock de bois.</Lore>
+		<Type>Special</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Good</Goodness>
+		<Choices>
+			<Choice>
+				<Intitulate>Récupérer le bois</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Vous repartez le sac rempli.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
 </Events>

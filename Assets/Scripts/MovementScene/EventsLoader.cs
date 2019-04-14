@@ -57,6 +57,8 @@ public class EventsLoader : MonoBehaviour
     public EventData GetEvent(EventType type = EventType.Random, EventRarity rarity = EventRarity.Random, EventGoodness goodness = EventGoodness.Random)
     {
         List<EventData> compatibleEvents = new List<EventData>(_events);
+        compatibleEvents.RemoveAll(e => e.Type == EventType.Special);
+
         if (type != EventType.Random)
             compatibleEvents.RemoveAll(e => e.Type != type);
 
