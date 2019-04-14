@@ -254,6 +254,8 @@ MonoBehaviour:
   foodToSpawnMax: 10
   food: {fileID: 1345602451940325557, guid: eb58ab205b3ce8543879e6b772160849, type: 3}
   wood: {fileID: 988852774465477994, guid: f0b0f7b98526bba4d9941871ebb058c7, type: 3}
+  woodToSpawn: 0
+  foodToSpawn: 0
 --- !u!1 &435274956
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +430,8 @@ GameObject:
   - component: {fileID: 612077166}
   - component: {fileID: 612077165}
   - component: {fileID: 612077169}
+  - component: {fileID: 612077170}
+  - component: {fileID: 612077171}
   m_Layer: 0
   m_Name: Campfire
   m_TagString: Untagged
@@ -515,11 +519,40 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612077164}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 5.01
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &612077170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612077164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99c078cc46ffcb4fa992214303ba308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapGeneratorScript: {fileID: 407329134}
+--- !u!54 &612077171
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612077164}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &619456707
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fac4093a486588429b77b44052457e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_nav_mesh_agent: {fileID: 0}
+  m_main_camera: {fileID: 0}
 --- !u!195 &803631279
 NavMeshAgent:
   m_ObjectHideFlags: 0
