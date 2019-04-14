@@ -9,6 +9,8 @@ public class Furnace : Inventory
     public Slot woodsSlot;
     public float bakingSpeed = 2f;
 
+    public Image bakeBar;
+
     private void Start()
     {
         foreach (Slot slot in slots)
@@ -43,7 +45,11 @@ public class Furnace : Inventory
                 FoodItem foodItem = (FoodItem)slot.item;
                 if (foodItem.cooked)
                     continue;
+
                 foodItem.bakingAmount += bakingSpeed * Time.deltaTime;
+
+                bakeBar.fillAmount = foodItem.bakingAmount / foodItem.bakingDuration;
+
                 if (foodItem.bakingAmount >= foodItem.bakingDuration)
                 {
                     //foodItem.cooked = true;
