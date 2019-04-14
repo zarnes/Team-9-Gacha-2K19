@@ -10,8 +10,6 @@ public class FollowersUI : MonoBehaviour
     public Text textConditions;
     public Image imageIcone;
 
-
-
     private void Start()
     {
         if (textName == null)
@@ -20,10 +18,7 @@ public class FollowersUI : MonoBehaviour
         if (textConditions == null)
             textConditions = transform.Find("Text_Conditions").GetComponent<Text>();
 
-
-
         DefineUI();
-
     }
 
     private void DefineUI()
