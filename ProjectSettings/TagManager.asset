@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - puppet
+  - Wood
+  - Food
+  - Campfire
   layers:
   - Default
   - TransparentFX
@@ -19,7 +22,9 @@ TagManager:
   - Ground
   - Player
   - Bullet
-  - 
+  - shadowcaster
+  - lighting
+  - Item
   - 
   - 
   - 
