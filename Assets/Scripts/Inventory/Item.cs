@@ -40,8 +40,8 @@ public class FoodItem : Item
     public float value = 0f;
     public bool cooked = false;
     public Sprite cookedImage;
-    public FoodItem(Item.Type _type, string _name, bool _consumable, float _value)
-    : base(_type, _name, _consumable)
+    public FoodItem(string _name, bool _consumable, float _value)
+    : base(Item.Type.FOOD, _name, _consumable)
     
     {
         value = _value;
@@ -62,8 +62,8 @@ public class FoodItem : Item
 public class WoodItem : Item
 {
     public int carburant = 3;
-    public WoodItem(Item.Type _type, string _name, bool _consumable, int _carburant)
-    : base(_type, _name, _consumable)
+    public WoodItem(string _name, int _carburant)
+    : base(Item.Type.WOOD, _name, false)
 
     {
         carburant = _carburant;
