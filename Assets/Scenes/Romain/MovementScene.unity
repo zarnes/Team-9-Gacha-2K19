@@ -2533,7 +2533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2844,7 +2844,7 @@ GameObject:
   - component: {fileID: 1234957662}
   - component: {fileID: 1234957663}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Main Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2948,6 +2948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2f8362784e3e041a9571ea6270a31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherScene: MovementScene
   ViewPortContent: {fileID: 1506038282}
   ChoicePrefab: {fileID: 2910778302351030761, guid: 7aca0b46442884540aec315abb5a681b,
     type: 3}

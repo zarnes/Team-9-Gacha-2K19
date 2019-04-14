@@ -9,6 +9,7 @@ public class MovementSceneManager : MonoBehaviour
 {
     public static MovementSceneManager Instance;
 
+    public string OtherScene;
     public Transform ViewPortContent;
     public GameObject ChoicePrefab;
 
@@ -23,7 +24,7 @@ public class MovementSceneManager : MonoBehaviour
 
         Instance = this;
 
-        if (ChoicePrefab == null || ViewPortContent == null)
+        if (ChoicePrefab == null || ViewPortContent == null || OtherScene == "")
         {
             Debug.LogError("Can't load events, missing attributes", gameObject);
             return;
@@ -76,7 +77,7 @@ public class MovementSceneManager : MonoBehaviour
 
     public void SwitchScene()
     {
-        SceneManager.LoadScene("MovementScene");
+        SceneManager.LoadScene(OtherScene);
     }
 
     private void CleanChoices()
