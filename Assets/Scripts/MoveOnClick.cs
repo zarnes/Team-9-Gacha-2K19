@@ -25,4 +25,5 @@ public class MoveOnClick : MonoBehaviour
             _agent.SetDestination(hit.point);
         }
     }
+
 }

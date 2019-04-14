@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,13 +19,11 @@ public class Controls : MonoBehaviour
     {
         InputManager.GetInstance().OnClickLeftMouseButton += OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton += OnClickRightMouseHandler;
-        //m_nav_mesh_agent_ = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //m_nav_mesh_agent_.SetDestination()
     }
 
     private void OnClickLeftMouseHandler()
@@ -38,20 +37,22 @@ public class Controls : MonoBehaviour
 
     private void OnClickRightMouseHandler()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    
-        LayerMask mask = LayerMask.GetMask("Player");
-        var HitsList = Physics.RaycastAll(ray, 1000).ToList();
-        var Player = HitsList.Find(p => p.transform.gameObject.tag == "Player");
-       
-
-        var Item = HitsList.Find(p => p.transform.gameObject.tag == "Item").transform.gameObject;
-        if (this.m_current_selected_object_ != null && Item != null)
+        var Player = GetGameObjectInRaycastAllByTag("Player");
+        if (Player != null)
         {
-            m_nav_mesh_agent.SetDestination(Item.transform.position);
+            m_current_selected_object_ = Player;
             return;
         }
 
+        var Item = GetGameObjectInRaycastAllByTag("Food");
+        if (Item == null)
+            Item = GetGameObjectInRaycastAllByTag("Wood");
+        if (m_current_selected_object_ != null && Item != null)
+        {
+            // todo : Run ui condition
+            m_nav_mesh_agent.SetDestination(Item.transform.position);
+            return;
+        }
         this.m_current_selected_object_ = null;
     }
 
@@ -60,5 +61,19 @@ public class Controls : MonoBehaviour
         InputManager.GetInstance().OnClickLeftMouseButton -= OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton -= OnClickRightMouseHandler;
     }
-    
+
+    private GameObject GetGameObjectInRaycastAllByTag([NotNull] string _sTag)
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] RayCastAll = Physics.RaycastAll(ray, 100);
+        for (int i = 0; i < RayCastAll.Length; i++)
+        {
+            if (RayCastAll[i].transform.gameObject.CompareTag(_sTag))
+            {
+                return RayCastAll[i].transform.gameObject;
+
+            }
+        }
+        return null;
+    }
 }
