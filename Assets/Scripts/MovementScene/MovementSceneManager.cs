@@ -74,7 +74,7 @@ public class MovementSceneManager : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
 
-        EventData eventData;
+        EventData eventData = null;
         if (data == null)
         {
             eventData = EventsLoader.Instance.GetEvent();
@@ -84,16 +84,27 @@ public class MovementSceneManager : MonoBehaviour
             if (data.Type == EventType.Campement)
             {
                 GetComponent<Animator>().SetTrigger("Quit");
-                yield break;
             }
-
-            eventData = EventsLoader.Instance.GetEvent(data.Type);
+            else if (data.Type == EventType.Target)
+            {
+                eventData = EventsLoader.Instance.GetEvent(data.Target);
+                if (eventData == null)
+                {
+                    Debug.LogError("Can't find target event " + data.Target);
+                    eventData = EventsLoader.Instance.GetEvent();
+                }
+            }
+            else
+            {
+                eventData = EventsLoader.Instance.GetEvent(data.Type, data.Rarity, data.Goodness);
+            }
+            
         }
 
         if (eventData == null)
         {
             Debug.LogError("No event found");
-            yield break;
+            eventData = EventsLoader.Instance.GetEvent();
         }
 
         ReadEvent(eventData);

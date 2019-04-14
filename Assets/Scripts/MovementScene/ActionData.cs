@@ -58,6 +58,7 @@ public class ChoiceData
 
     public float Time;
     public float Morale;
+    public int Target;
 
     public int Wood;
     public int Meat;
