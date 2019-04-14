@@ -67,7 +67,7 @@ public class Controls : MonoBehaviour
         LayerMask mask = LayerMask.GetMask(_sTag);
         for (int i = 0; i < RayCastAll.Length; i++)
         {
-           if (RayCastAll[i].transform.gameObject.CompareTag(_sTag))
+            if (RayCastAll[i].transform.gameObject.CompareTag(_sTag))
             {
                 return RayCastAll[i].transform.gameObject;
 
