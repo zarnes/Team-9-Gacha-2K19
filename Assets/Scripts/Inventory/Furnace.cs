@@ -1,11 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Furnace : MonoBehaviour
+public class Furnace : Inventory
 {
-    private Item[] slots = new Item[5];
+    public List<Slot> slots;
+    public Slot woodsSlot;
     public float bakingSpeed = 2f;
+
+    private void Start()
+    {
+        foreach (Slot slot in slots)
+        {
+            slot.Init(this);
+        }
+        woodsSlot.Init(this);
+    }
 
     private void Update()
     {
@@ -17,15 +28,29 @@ public class Furnace : MonoBehaviour
         if (!item.consumable)
             return;
 
-        slots[index] = item;
+        slots[index].item = item;
     }
 
     void BakeFood()
     {
-        foreach(Item i in slots)
+        if (woodsSlot.count == 0)
+            return;
+
+        foreach(Slot slot in slots)
         {
-            i.bakingAmount = Mathf.Clamp(i.bakingAmount,0f,10f);
-            i.bakingAmount += bakingSpeed * Time.deltaTime;
+            if (slot.item is FoodItem)
+            {
+                FoodItem foodItem = (FoodItem)slot.item;
+                if (foodItem.cooked)
+                    continue;
+                foodItem.bakingAmount += bakingSpeed * Time.deltaTime;
+                if (foodItem.bakingAmount >= foodItem.bakingDuration)
+                {
+                    //foodItem.cooked = true;
+                    slot.Init(this);
+                }
+            }
+            
         }
     }
 
