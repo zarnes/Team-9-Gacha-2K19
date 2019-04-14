@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9f9c8e20e8adc6f469681664f1672826
   - enabled: 1
+    path: Assets/Scenes/Arthur/Navmesh.unity
+    guid: 1fc6accc0e3f9b34cbe920d784dbe101
+  - enabled: 1
     path: Assets/Scenes/ClickOnMoveOk.unity
     guid: 562972b8865fba94abf277e7e4c2f35f
   m_configObjects: {}

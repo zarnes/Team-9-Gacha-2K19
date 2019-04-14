@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class FPSCounter : MonoBehaviour
 {
+    private static FPSCounter _instance;
+
     private Text _text;
 
     public Color GoodColor = Color.green;
@@ -13,7 +15,19 @@ public class FPSCounter : MonoBehaviour
 
     private int _oldFps;
     private int _oldOldFps;
-    
+
+    private void Start()
+    {
+        if (_instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        _instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void OnEnable()
     {
         _text = GetComponentInChildren<Text>();
@@ -28,6 +42,11 @@ public class FPSCounter : MonoBehaviour
     // Update is called once per frame
     private IEnumerator UpdateFps()
     {
+        Color color = _text.color;
+        color.a = 0;
+        _text.color = color;
+        yield return new WaitForSeconds(0.5f);
+
         _oldFps = (int)(1f / Time.deltaTime);
 
         while (true)

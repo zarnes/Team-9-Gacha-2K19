@@ -377,11 +377,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4935578807836780285, guid: c47f7e7482f77e547b158b8a433fccc2,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c47f7e7482f77e547b158b8a433fccc2, type: 3}
 --- !u!1 &197597617
@@ -1391,7 +1386,7 @@ RectTransform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.9}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.45, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2518,7 +2513,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138039741
 MonoBehaviour:
@@ -2948,7 +2943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2f8362784e3e041a9571ea6270a31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OtherScene: MovementScene
+  OtherScene: ClickOnMoveOk
   ViewPortContent: {fileID: 1506038282}
   ChoicePrefab: {fileID: 2910778302351030761, guid: 7aca0b46442884540aec315abb5a681b,
     type: 3}
@@ -4254,8 +4249,8 @@ RectTransform:
   m_Father: {fileID: 1234957661}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.9}
-  m_AnchorMax: {x: 0.9041061, y: 1}
+  m_AnchorMin: {x: 0.45, y: 0.9}
+  m_AnchorMax: {x: 0.9, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
