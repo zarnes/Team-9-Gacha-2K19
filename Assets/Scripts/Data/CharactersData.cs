@@ -11,11 +11,11 @@ public static class CharactersData
 
     static CharactersData()
     {
-        Characters.Add(new CharacterData("Batman"));
-        Characters.Add(new CharacterData("Superman"));
-        Characters.Add(new CharacterData("Ton chien"));
-        Characters.Add(new CharacterData("Le voisin"));
-        Characters.Add(new CharacterData("Gargamel"));
+        Characters.Add(new CharacterData("Katérina"));
+        Characters.Add(new CharacterData("Anna"));
+        Characters.Add(new CharacterData("Marina"));
+        Characters.Add(new CharacterData("Tatiana"));
+        Characters.Add(new CharacterData("Véra"));
 
         TimeLeft = 120;
         Morale = 100;
