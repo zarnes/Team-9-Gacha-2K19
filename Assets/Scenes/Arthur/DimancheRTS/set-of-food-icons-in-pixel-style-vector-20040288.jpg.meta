@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 64a3a044be74d454885c39f8a2a4cacb
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: set-of-food-icons-in-pixel-style-vector-20040288_0
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -41,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -83,31 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: set-of-food-icons-in-pixel-style-vector-20040288_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 238
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0920c4f0a7b16fe4aa976a61942f63f0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c4c478827dc163c4d9bab3096bbcf9d8
+    spriteID: 
     vertices: []
     indices: 
     edges: []
