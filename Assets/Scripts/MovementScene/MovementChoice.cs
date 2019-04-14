@@ -21,6 +21,10 @@ public class MovementChoice : MonoBehaviour
         if (_nextEvent)
         {
             // Change inventory values
+            CharactersData.Morale += Choice.Morale;
+            CharactersData.Morale = Mathf.Clamp(CharactersData.Morale, 0, 100);
+
+            //CharacterData.
             
             MovementSceneManager.Instance.NextEvent(Choice);
         }
