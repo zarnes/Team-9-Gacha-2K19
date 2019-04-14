@@ -47,7 +47,7 @@ public class Furnace : Inventory
                     continue;
 
                 foodItem.bakingAmount += bakingSpeed * Time.deltaTime;
-
+                Debug.Log("cook");
                 bakeBar.fillAmount = foodItem.bakingAmount / foodItem.bakingDuration;
 
                 if (foodItem.bakingAmount >= foodItem.bakingDuration)
