@@ -36,8 +36,8 @@ public class MapGenerator : MonoBehaviour
         {
             var xPlane = Random.Range(-floor.GetComponent<Collider>().bounds.size.x / 2, floor.GetComponent<Collider>().bounds.size.x / 2);
             var zPlane = Random.Range(-floor.GetComponent<Collider>().bounds.size.z / 2, floor.GetComponent<Collider>().bounds.size.z / 2);
-            //Vector3 positionToSpawn = new Vector3(xPlane,wood.transform.position.y, zPlane);
-            Vector3 positionToSpawn = Random.onUnitSphere * 25;
+            Vector3 positionToSpawn = new Vector3(xPlane,wood.transform.position.y, zPlane);
+            //Vector3 positionToSpawn = Random.onUnitSphere * 25;
             positionToSpawn.y = 0;
             //Debug.Log(positionToSpawn);
             Instantiate(wood, positionToSpawn, Quaternion.identity);
