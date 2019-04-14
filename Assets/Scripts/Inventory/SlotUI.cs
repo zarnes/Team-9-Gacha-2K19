@@ -9,6 +9,7 @@ public class SlotUI : MonoBehaviour, ISlotListener, IPointerClickHandler
     [Header("Debug")]
     [SerializeField]
     protected Slot m_slot = null;
+    public bool IsDisabled = false;
 
     public void Init(Slot _slot)
     {
@@ -46,6 +47,9 @@ public class SlotUI : MonoBehaviour, ISlotListener, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        m_slot.GetInventory().OnSlotClicked(m_slot);
+        if (!IsDisabled)
+        {
+            m_slot.GetInventory().OnSlotClicked(m_slot);
+        }
     }
 }
