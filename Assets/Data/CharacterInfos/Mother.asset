@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3af7a41a70540e04ead426a292f068da, type: 3}
-  m_Name: Matriarche
+  m_Name: Mother
   m_EditorClassIdentifier: 
-  m_name: Matriache
-  m_sprite: {fileID: 21300000, guid: e7e6bd157aaf76c4c9c15bc9ab4b0305, type: 3}
+  m_name: Mother
+  m_sprite: {fileID: 21300000, guid: 1e8fa388b2966b746b83157b0d37f3bb, type: 3}

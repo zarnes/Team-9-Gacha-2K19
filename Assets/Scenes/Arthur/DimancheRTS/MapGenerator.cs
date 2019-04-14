@@ -42,7 +42,7 @@ public class MapGenerator : MonoBehaviour
             //Victory Condition
         }
 
-        if(childrens.Length ==0)
+        if(childrens.Length == 0)
         {
             //Loose Condition
             Debug.Log("You lose");
