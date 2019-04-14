@@ -15,10 +15,10 @@ public class FollowersUI : MonoBehaviour
     private void Start()
     {
         if (textName == null)
-            textName = transform.FindChild("Text_Name").GetComponent<Text>();
+            textName = transform.Find("Text_Name").GetComponent<Text>();
 
         if (textConditions == null)
-            textConditions = transform.FindChild("Text_Conditions").GetComponent<Text>();
+            textConditions = transform.Find("Text_Conditions").GetComponent<Text>();
 
 
 
