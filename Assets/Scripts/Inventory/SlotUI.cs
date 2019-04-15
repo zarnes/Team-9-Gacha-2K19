@@ -9,6 +9,7 @@ public class SlotUI : MonoBehaviour, ISlotListener, IPointerClickHandler
     [Header("Debug")]
     [SerializeField]
     protected Slot m_slot = null;
+    public Image m_bcg;
     public bool IsDisabled = false;
 
     public void Init(Slot _slot)

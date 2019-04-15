@@ -303,6 +303,7 @@ MonoBehaviour:
   m_skullImage: {fileID: 226497632}
   m_characterName: {fileID: 3030026759772106337}
   m_characterPreview: {fileID: 4603274270548218148}
+  m_bcg: {fileID: 820119229897810119}
 --- !u!1 &820119230919094246
 GameObject:
   m_ObjectHideFlags: 0
