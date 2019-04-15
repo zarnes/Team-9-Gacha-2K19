@@ -18,6 +18,7 @@ public class Controls : MonoBehaviour
     private GameObject m_pop_up_confirm;
 
     private GameObject m_destination_pickup_;
+    private Item m_destination_item_;
     private GameObject m_current_selected_object_;
 
     // Start is called before the first frame update
@@ -34,12 +35,6 @@ public class Controls : MonoBehaviour
 
     private void OnClickLeftMouseHandler()
     {
-        /*
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        LayerMask mask = LayerMask.GetMask("Ground");
-        if (Physics.Raycast(ray, out hit, 1000, mask))
-            m_nav_mesh_agent.SetDestination(hit.point);*/
     }
 
     private void OnClickRightMouseHandler()
@@ -53,8 +48,6 @@ public class Controls : MonoBehaviour
 
         // todo 
         var Item = GetItem();
-        if (Item == null)
-            Item = GetItem();
 
         if (m_current_selected_object_ != null && Item != null)
         {
@@ -105,7 +98,10 @@ public class Controls : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (m_destination_pickup_ != null && other.gameObject.GetHashCode() == m_destination_pickup_.GetHashCode())
+        {
+            PickInInventory(m_destination_item_);
             ComeBackBackToCamp();
+        }
     }
 
     private void ComeBackBackToCamp()
@@ -126,5 +122,8 @@ public class Controls : MonoBehaviour
         m_pop_up_confirm.SetActive(false);
     }
 
-    
+    private void PickInInventory(Item _item)
+    {
+        this.m_current_selected_object_.GetComponent<CharacterInventory>().slots[0].SetItem(_item);
+    }
 }
