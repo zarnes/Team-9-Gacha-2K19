@@ -281,13 +281,13 @@
 				</Event>
 				<Event Name="Play_Bass" ID="{65531D3B-AACF-445E-9119-2A1AB03595E5}">
 					<ChildrenList>
-						<Action Name="" ID="{289D8956-A9F3-4F1D-87CD-9E45E4F728FE}" ShortID="557488232">
+						<Action Name="" ID="{4BD31620-CD0E-4C20-9A0C-9B19C7AC1716}" ShortID="480783034">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Bass" ID="{F7F1BE38-20CC-4C81-87F8-54D2AC778F8A}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Bass" ID="{B5B81111-3523-4410-A849-37D07498D9CE}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -295,13 +295,13 @@
 				</Event>
 				<Event Name="Play_Guitar" ID="{616AB01C-52B9-40E5-B132-87C4E4F7574B}">
 					<ChildrenList>
-						<Action Name="" ID="{E43BF646-662B-4B38-B076-167B0F1E07ED}" ShortID="262449078">
+						<Action Name="" ID="{E146C420-1DF5-4811-AD7D-96A82FE7A26F}" ShortID="223245159">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Guitar" ID="{D2FC6C28-4AF0-405F-9623-CFBF57E29128}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Guitar" ID="{CA0431AF-F6FA-47D6-BE23-E966C7D050F3}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -309,13 +309,13 @@
 				</Event>
 				<Event Name="Play_Piano" ID="{4FEED538-C464-4289-8779-ADF01011F9BA}">
 					<ChildrenList>
-						<Action Name="" ID="{A8D3D988-0AC9-4C12-8FD6-05A818FB5D88}" ShortID="150786959">
+						<Action Name="" ID="{C40000FD-FF68-4CDF-A21C-CE3FC5E94D12}" ShortID="354695294">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Piano" ID="{E98D5D3A-FC6A-41B6-BF96-AD620693FEB0}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Piano" ID="{4BE06EAA-3C0D-4D83-9DA5-81D565DFCF9F}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -323,13 +323,13 @@
 				</Event>
 				<Event Name="Play_Voice" ID="{35A72428-AB98-4849-9CE5-960F0661EA8E}">
 					<ChildrenList>
-						<Action Name="" ID="{4B268F41-C1F1-4EA0-B002-FC610B11A06E}" ShortID="533343827">
+						<Action Name="" ID="{A9FCD4FD-8B7C-45A0-B312-98CBC2FED67E}" ShortID="93081962">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Voices" ID="{2572AE8D-7C64-4EE7-901E-086968FA9360}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -337,13 +337,13 @@
 				</Event>
 				<Event Name="Play_Drum" ID="{F245C1A6-1FA9-4970-AF49-D8D187ADC7C7}">
 					<ChildrenList>
-						<Action Name="" ID="{4F0E3B00-E4A8-4381-A3D6-741B33DECD9E}" ShortID="1003007834">
+						<Action Name="" ID="{C748E73E-9EB5-4330-996F-671985537B86}" ShortID="240014592">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Drum" ID="{59917824-C845-4DBE-9C12-040C75C74982}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Drum" ID="{351A14B4-F6CA-4B68-BFB2-B56F9807E63D}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -351,13 +351,13 @@
 				</Event>
 				<Event Name="Play_Violon" ID="{6EF46F81-C5F5-4422-ACB4-271757F9FCC1}">
 					<ChildrenList>
-						<Action Name="" ID="{4FC25D1E-37ED-424A-9673-FE246BE27D8B}" ShortID="343424178">
+						<Action Name="" ID="{B3ED2BE4-BA16-4FB9-9916-6D160CCA5D9E}" ShortID="744102317">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Violons" ID="{F51DD02A-3FC0-4AF9-8B9B-E45E38E79330}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Violons" ID="{63BDC5B3-4DF2-4AC9-8D16-02B4BCA4B2F2}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -365,63 +365,183 @@
 				</Event>
 				<Event Name="Play_Mus_Test" ID="{C564FCA5-2BDE-4F6F-A9EE-D5976C8DBBCC}">
 					<ChildrenList>
-						<Action Name="" ID="{9749835C-DA67-4D41-8DC0-83A30C03B417}" ShortID="617570746">
+						<Action Name="" ID="{A367C7C6-14EB-414A-9C56-01715A8F49B0}" ShortID="936440235">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Bass" ID="{F7F1BE38-20CC-4C81-87F8-54D2AC778F8A}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{0CCA512B-5F42-4625-94AB-FB1C00D3E16F}" ShortID="697748722">
+						<Action Name="" ID="{36AFF8A1-A727-41E4-9A31-9CF2926BA24B}" ShortID="25353575">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Drum" ID="{59917824-C845-4DBE-9C12-040C75C74982}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Violons" ID="{63BDC5B3-4DF2-4AC9-8D16-02B4BCA4B2F2}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{3CFD5902-893D-4665-8DA4-FAAEE1045415}" ShortID="152491337">
+						<Action Name="" ID="{04A6359D-A579-4F81-B96F-3E6BEF433FA7}" ShortID="716096782">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Guitar" ID="{D2FC6C28-4AF0-405F-9623-CFBF57E29128}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Piano" ID="{4BE06EAA-3C0D-4D83-9DA5-81D565DFCF9F}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{8970E5CA-E28D-4E5A-8ED0-DE2128F8E005}" ShortID="647173147">
+						<Action Name="" ID="{7E2A2A2C-D1FC-49A6-B1DC-DEB9D66B78DA}" ShortID="837381374">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Piano" ID="{E98D5D3A-FC6A-41B6-BF96-AD620693FEB0}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Guitar" ID="{CA0431AF-F6FA-47D6-BE23-E966C7D050F3}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{F0DCF638-5A24-4ED8-9449-709F691ACA44}" ShortID="799697737">
+						<Action Name="" ID="{B51E542B-D289-4795-A873-04DEAE37038E}" ShortID="525435793">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Violons" ID="{F51DD02A-3FC0-4AF9-8B9B-E45E38E79330}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Drum" ID="{351A14B4-F6CA-4B68-BFB2-B56F9807E63D}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{BF917868-9757-46EA-B3DC-5DB445060191}" ShortID="91226753">
+						<Action Name="" ID="{7E5D0432-7ED4-412C-BA4B-70F854E66AA5}" ShortID="699777190">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mus_Voices" ID="{2572AE8D-7C64-4EE7-901E-086968FA9360}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+									<ObjectRef Name="Bass" ID="{B5B81111-3523-4410-A849-37D07498D9CE}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_Piano" ID="{676358C2-9EE6-40A1-94A6-583BABE2EB38}">
+					<ChildrenList>
+						<Action Name="" ID="{98529329-01C8-41E7-92A8-331CB7BC6901}" ShortID="795585745">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dead_Pia" ID="{495885BF-08EE-4D33-81AD-850C86A6A46D}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4D95C322-D45A-4DA0-BF99-71EF8CEBF6C2}" ShortID="1027015051">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano" ID="{4BE06EAA-3C0D-4D83-9DA5-81D565DFCF9F}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_Violo" ID="{D00E74AB-921E-4D87-9406-1E40247CEECF}">
+					<ChildrenList>
+						<Action Name="" ID="{59272EFC-D3B3-499D-8D31-7792EFDC4EBB}" ShortID="364926675">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dead_Vio" ID="{95D94D5C-2432-4CE6-97F4-495E836C117A}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FCBDC461-69DB-4D11-A3E6-1412236B8C3E}" ShortID="140024176">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Violons" ID="{63BDC5B3-4DF2-4AC9-8D16-02B4BCA4B2F2}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_Drum" ID="{B0C3DA9B-911C-43B0-B33B-DA2E1FDF2CAF}">
+					<ChildrenList>
+						<Action Name="" ID="{FD04FDEF-6DB0-48D0-AB37-7D30E724BB06}" ShortID="639458324">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dead_Drum" ID="{CABD91BD-26D8-4D35-8365-B7B091B56031}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{73572FE1-3444-4DFC-9967-F2C88B7A2E3C}" ShortID="538786532">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drum" ID="{351A14B4-F6CA-4B68-BFB2-B56F9807E63D}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_Guitare" ID="{77E31F81-F954-4C8F-A2C0-4D8D1C658A4C}">
+					<ChildrenList>
+						<Action Name="" ID="{BD8CBA14-4417-4489-85DC-8B122DF7D7BF}" ShortID="12244612">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dead_Guita" ID="{33AFF00B-36AD-4452-B9A6-3ECA1454B898}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{90E29123-AC87-4918-AAE9-05E2E9183E33}" ShortID="72996641">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar" ID="{CA0431AF-F6FA-47D6-BE23-E966C7D050F3}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_Voice" ID="{E619D92D-D3D5-46E9-A19F-AC687AF598AA}">
+					<ChildrenList>
+						<Action Name="" ID="{F25A1480-C8A4-4106-9D2D-DC4F9193318E}" ShortID="641267386">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dead_Voice" ID="{5BA928BC-6DCF-4415-8872-5E517DD9F976}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{20DE753F-C40D-4599-8883-EC015BA97F4A}" ShortID="71716525">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

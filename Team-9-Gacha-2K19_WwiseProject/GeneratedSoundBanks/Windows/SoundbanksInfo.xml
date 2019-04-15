@@ -21,13 +21,25 @@
 			<ShortName>Soundb</ShortName>
 			<Path>Soundb.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2324489794" Name="Dead_Drum" ObjectPath="\Events\Default Work Unit\Dead_Drum"/>
+				<Event Id="22441161" Name="Dead_Guitare" ObjectPath="\Events\Default Work Unit\Dead_Guitare"/>
+				<Event Id="3389925521" Name="Dead_Piano" ObjectPath="\Events\Default Work Unit\Dead_Piano"/>
+				<Event Id="885690827" Name="Dead_Violo" ObjectPath="\Events\Default Work Unit\Dead_Violo"/>
+				<Event Id="1345360188" Name="Dead_Voice" ObjectPath="\Events\Default Work Unit\Dead_Voice"/>
 				<Event Id="3667605692" Name="Event_Bushes" ObjectPath="\Events\Default Work Unit\Event_Bushes"/>
 				<Event Id="2351498588" Name="Event_Eat" ObjectPath="\Events\Default Work Unit\Event_Eat"/>
-				<Event Id="114057136" Name="Event_Firelog" ObjectPath="\Events\Default Work Unit\Event_Firelog"/>
+				<Event Id="114057136" Name="Event_Firelog" ObjectPath="\Events\Default Work Unit\Event_Firelog" MaxAttenuation="100.000000"/>
 				<Event Id="3113608096" Name="Event_Fish" ObjectPath="\Events\Default Work Unit\Event_Fish"/>
 				<Event Id="3199320663" Name="Event_FTPS" ObjectPath="\Events\Default Work Unit\Event_FTPS"/>
 				<Event Id="2170542218" Name="Event_Vegetables" ObjectPath="\Events\Default Work Unit\Event_Vegetables"/>
 				<Event Id="3464303516" Name="Event_Woods" ObjectPath="\Events\Default Work Unit\Event_Woods"/>
+				<Event Id="1560528335" Name="Play_Bass" ObjectPath="\Events\Default Work Unit\Play_Bass"/>
+				<Event Id="2376459254" Name="Play_Drum" ObjectPath="\Events\Default Work Unit\Play_Drum"/>
+				<Event Id="3564911592" Name="Play_Guitar" ObjectPath="\Events\Default Work Unit\Play_Guitar"/>
+				<Event Id="3968878682" Name="Play_Mus_Test" ObjectPath="\Events\Default Work Unit\Play_Mus_Test"/>
+				<Event Id="1479974693" Name="Play_Piano" ObjectPath="\Events\Default Work Unit\Play_Piano"/>
+				<Event Id="3342728339" Name="Play_Violon" ObjectPath="\Events\Default Work Unit\Play_Violon"/>
+				<Event Id="1642680936" Name="Play_Voice" ObjectPath="\Events\Default Work Unit\Play_Voice"/>
 				<Event Id="3715608165" Name="Start_Ambiances" ObjectPath="\Events\Default Work Unit\Start_Ambiances"/>
 				<Event Id="2699622244" Name="Start_BabaYaga" ObjectPath="\Events\Default Work Unit\Start_BabaYaga"/>
 				<Event Id="1196647164" Name="Start_Carriage" ObjectPath="\Events\Default Work Unit\Start_Carriage"/>
@@ -46,6 +58,34 @@
 					<ShortName>GCH_SFX_FTPS_OS_03.wav</ShortName>
 					<Path>SFX\GCH_SFX_FTPS_OS_03_56D34C19.wem</Path>
 				</File>
+				<File Id="18223428" Language="SFX">
+					<ShortName>GCH_MUS_Pia2_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia2_P2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="27860310" Language="SFX">
+					<ShortName>GCH_MUS_Drm_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Drm_P2.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="36213343" Language="SFX">
+					<ShortName>GCH_MUS_Vio1_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio1_P2.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="37046739" Language="SFX">
+					<ShortName>GCH_MUS_Vio2_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio2_P3.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="38688095" Language="SFX">
+					<ShortName>GCH_MUS_Gui_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Gui_P3.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="50717419" Language="SFX">
+					<ShortName>GCH_MUS_END2.wav</ShortName>
+					<Path>SFX\GCH_MUS_END2_8956FC97.wem</Path>
+				</File>
+				<File Id="59470657" Language="SFX">
+					<ShortName>GCH_MUS_Drm_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Drm_P2.1_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="63278681" Language="SFX">
 					<ShortName>GCH_AMB_Screams_OS_0.wav</ShortName>
 					<Path>SFX\GCH_AMB_Screams_OS_0_56D34C19.wem</Path>
@@ -54,17 +94,69 @@
 					<ShortName>GCH_SFX_Laugh_OS_04.wav</ShortName>
 					<Path>SFX\GCH_SFX_Laugh_OS_04_56D34C19.wem</Path>
 				</File>
+				<File Id="94821757" Language="SFX">
+					<ShortName>GCH_MUS_Voic2_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic2_P3.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="121017976" Language="SFX">
+					<ShortName>GCH_MUS_Pia1_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia1_P2_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="133015107" Language="SFX">
 					<ShortName>GCH_AMB_Cracks_OS_02.wav</ShortName>
 					<Path>SFX\GCH_AMB_Cracks_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="139690248" Language="SFX">
+					<ShortName>GCH_MUS_Vio2_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio2_P2.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="141419750" Language="SFX">
+					<ShortName>GCH_MUS_Vio2_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio2_P1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="143877902" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Drum_OS_03.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Drum_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="144382301" Language="SFX">
+					<ShortName>GCH_MUS_Voic2_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic2_P2_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="144802948" Language="SFX">
 					<ShortName>GCH_SFX_Eating_OS_03.wav</ShortName>
 					<Path>SFX\GCH_SFX_Eating_OS_03_56D34C19.wem</Path>
 				</File>
+				<File Id="152732207" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Pia_OS_01.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Pia_OS_01_56D34C19.wem</Path>
+				</File>
 				<File Id="159997249" Language="SFX">
 					<ShortName>GCH_AMB_Screams_OS_05.wav</ShortName>
 					<Path>SFX\GCH_AMB_Screams_OS_05_56D34C19.wem</Path>
+				</File>
+				<File Id="163425449" Language="SFX">
+					<ShortName>GCH_MUS_Vio1_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio1_P3.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="164045765" Language="SFX">
+					<ShortName>GCH_MUS_Gui_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Gui_P3_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="167230902" Language="SFX">
+					<ShortName>GCH_MUS_Voic1_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic1_P3.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="183298009" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Gui_OS_03.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Gui_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="183629814" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Vio_OS_03.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Vio_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="184348062" Language="SFX">
+					<ShortName>GCH_MUS_Bss_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Bss_P2.2_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="189404232" Language="SFX">
 					<ShortName>GCH_SFX_Wood_OS_01.wav</ShortName>
@@ -78,9 +170,25 @@
 					<ShortName>GCH_SFX_FTPS_OS_11.wav</ShortName>
 					<Path>SFX\GCH_SFX_FTPS_OS_11_56D34C19.wem</Path>
 				</File>
+				<File Id="203223223" Language="SFX">
+					<ShortName>GCH_MUS_Voic2_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic2_P2.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="206089739" Language="SFX">
+					<ShortName>GCH_MUS_Voic1_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic1_P3.2_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="211421832" Language="SFX">
 					<ShortName>GCH_SFX_Splash_OS_03.wav</ShortName>
 					<Path>SFX\GCH_SFX_Splash_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="214388696" Language="SFX">
+					<ShortName>GCH_MUS_Drm_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Drm_P3.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="221112464" Language="SFX">
+					<ShortName>GCH_MUS_Vio1_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio1_P2.1_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="235840689" Language="SFX">
 					<ShortName>GCH_SFX_craftFinish_OS_0.wav</ShortName>
@@ -89,6 +197,22 @@
 				<File Id="243805524" Language="SFX">
 					<ShortName>GCH_AMB_Forestnight_LP.wav</ShortName>
 					<Path>SFX\GCH_AMB_Forestnight_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="245944760" Language="SFX">
+					<ShortName>GCH_MUS_Pia1_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia1_P3.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="252371553" Language="SFX">
+					<ShortName>GCH_MUS_Vio1_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio1_P3.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="252919268" Language="SFX">
+					<ShortName>GCH_MUS_END13.wav</ShortName>
+					<Path>SFX\GCH_MUS_END13_8956FC97.wem</Path>
+				</File>
+				<File Id="254448537" Language="SFX">
+					<ShortName>GCH_MUS_Voic1_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic1_P3_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="256349680" Language="SFX">
 					<ShortName>GCH_SFX_Bushes_OS_03.wav</ShortName>
@@ -102,9 +226,53 @@
 					<ShortName>GCH_SFX_craftFinish_OS_02.wav</ShortName>
 					<Path>SFX\GCH_SFX_craftFinish_OS_02_56D34C19.wem</Path>
 				</File>
+				<File Id="271651724" Language="SFX">
+					<ShortName>GCH_MUS_Drm_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Drm_P2_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="275115427" Language="SFX">
 					<ShortName>GCH_SFX_Wood_OS_02.wav</ShortName>
 					<Path>SFX\GCH_SFX_Wood_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="286594977" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Voic_OS_03.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Voic_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="302636100" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Drum_OS_01.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Drum_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="312906874" Language="SFX">
+					<ShortName>GCH_MUS_Vio1_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio1_P2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="312929678" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Gui_OS_02.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Gui_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="312969750" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Voic_OS_01.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Voic_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="318984121" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Vio_OS_01.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Vio_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="319466741" Language="SFX">
+					<ShortName>GCH_MUS_Voic2_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic2_P1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="321097916" Language="SFX">
+					<ShortName>GCH_MUS_Bss_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Bss_P2.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="329770579" Language="SFX">
+					<ShortName>GCH_MUS_Gui_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Gui_P3.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="332126634" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Vio_OS_02.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Vio_OS_02_56D34C19.wem</Path>
 				</File>
 				<File Id="346115073" Language="SFX">
 					<ShortName>GCH_SFX_Bushes_OS_02.wav</ShortName>
@@ -118,29 +286,89 @@
 					<ShortName>GCH_SFX_Splash_OS_01.wav</ShortName>
 					<Path>SFX\GCH_SFX_Splash_OS_01_56D34C19.wem</Path>
 				</File>
+				<File Id="366539297" Language="SFX">
+					<ShortName>GCH_MUS_Voic2_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic2_P3.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="372927618" Language="SFX">
+					<ShortName>GCH_MUS_Pia2_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia2_P3.2_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="399610029" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_09.wav</ShortName>
 					<Path>SFX\GCH_SFX_FTPS_OS_09_56D34C19.wem</Path>
+				</File>
+				<File Id="402740456" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Drum_OS_02.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Drum_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="404752183" Language="SFX">
+					<ShortName>GCH_MUS_Vio2_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio2_P2.2_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="408973227" Language="SFX">
 					<ShortName>GCH_AMB_Screams_OS_06.wav</ShortName>
 					<Path>SFX\GCH_AMB_Screams_OS_06_56D34C19.wem</Path>
 				</File>
+				<File Id="410049531" Language="SFX">
+					<ShortName>GCH_MUS_Voic2_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic2_P3_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="410495987" Language="SFX">
+					<ShortName>GCH_MUS_Pia2_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia2_P1_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="440688431" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_04.wav</ShortName>
 					<Path>SFX\GCH_SFX_FTPS_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="441646856" Language="SFX">
+					<ShortName>GCH_MUS_Gui_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Gui_P2.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="443276011" Language="SFX">
+					<ShortName>GCH_MUS_Bss1_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Bss1_P2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="445221671" Language="SFX">
+					<ShortName>GCH_MUS_Vio2_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio2_P3_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="453142314" Language="SFX">
 					<ShortName>GCH_SFX_Dirt_OS_03.wav</ShortName>
 					<Path>SFX\GCH_SFX_Dirt_OS_03_56D34C19.wem</Path>
 				</File>
+				<File Id="466398344" Language="SFX">
+					<ShortName>GCH_MUS_Drm_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Drm_P3_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="483025587" Language="SFX">
+					<ShortName>GCH_MUS_Voic1_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic1_P2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="485386794" Language="SFX">
+					<ShortName>GCH_MUS_Pia2_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia2_P3_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="489523983" Language="SFX">
+					<ShortName>GCH_MUS_Voic1_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic1_P2.1_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="500409657" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_06.wav</ShortName>
 					<Path>SFX\GCH_SFX_FTPS_OS_06_56D34C19.wem</Path>
 				</File>
+				<File Id="503348307" Language="SFX">
+					<ShortName>GCH_MUS_Vio2_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio2_P3.1_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="504415947" Language="SFX">
 					<ShortName>GCH_SFX_LogFire_OS_04.wav</ShortName>
 					<Path>SFX\GCH_SFX_LogFire_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="505947055" Language="SFX">
+					<ShortName>GCH_MUS_Bss1_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Bss1_P1_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="514746129" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_07.wav</ShortName>
@@ -162,13 +390,29 @@
 					<ShortName>GCH_SFX_Fire_LP.wav</ShortName>
 					<Path>SFX\GCH_SFX_Fire_LP_8956FC97.wem</Path>
 				</File>
+				<File Id="577115166" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Pia_OS_04.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Pia_OS_04_56D34C19.wem</Path>
+				</File>
 				<File Id="581310106" Language="SFX">
 					<ShortName>GCH_SFX_LogFire_OS_03.wav</ShortName>
 					<Path>SFX\GCH_SFX_LogFire_OS_03_56D34C19.wem</Path>
 				</File>
+				<File Id="582073182" Language="SFX">
+					<ShortName>GCH_MUS_Voic1_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic1_P1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="590543684" Language="SFX">
+					<ShortName>GCH_MUS_Bss_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Bss_P3.2_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="601981704" Language="SFX">
 					<ShortName>GCH_SFX_Carriage_LP.wav</ShortName>
 					<Path>SFX\GCH_SFX_Carriage_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="633777386" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Voic_OS_02.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Voic_OS_02_56D34C19.wem</Path>
 				</File>
 				<File Id="636549986" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_02.wav</ShortName>
@@ -178,6 +422,14 @@
 					<ShortName>GCH_SFX_Bushes_OS_01.wav</ShortName>
 					<Path>SFX\GCH_SFX_Bushes_OS_01_56D34C19.wem</Path>
 				</File>
+				<File Id="657219780" Language="SFX">
+					<ShortName>GCH_MUS_Pia1_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia1_P1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="668379077" Language="SFX">
+					<ShortName>GCH_MUS_Pia1_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia1_P2.2_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="669014041" Language="SFX">
 					<ShortName>GCH_SFX_ticktock_LP.wav</ShortName>
 					<Path>SFX\GCH_SFX_ticktock_LP_8956FC97.wem</Path>
@@ -185,6 +437,10 @@
 				<File Id="682514826" Language="SFX">
 					<ShortName>GCH_AMB_River_LP_01.wav</ShortName>
 					<Path>SFX\GCH_AMB_River_LP_01_8956FC97.wem</Path>
+				</File>
+				<File Id="683208804" Language="SFX">
+					<ShortName>GCH_MUS_Bss_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Bss_P3.1_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="689889741" Language="SFX">
 					<ShortName>GCH_SFX_Wood_OS_03.wav</ShortName>
@@ -194,9 +450,41 @@
 					<ShortName>GCH_SFX_Splash_OS_02.wav</ShortName>
 					<Path>SFX\GCH_SFX_Splash_OS_02_56D34C19.wem</Path>
 				</File>
+				<File Id="693368996" Language="SFX">
+					<ShortName>GCH_MUS_Drm_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Drm_P1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="710545176" Language="SFX">
+					<ShortName>GCH_MUS_Voic2_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic2_P2.2_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="712450372" Language="SFX">
 					<ShortName>GCH_SFX_Hungry_LP.wav</ShortName>
 					<Path>SFX\GCH_SFX_Hungry_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="715199925" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Pia_OS_02.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Pia_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="722476062" Language="SFX">
+					<ShortName>GCH_MUS_Bss1_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Bss1_P3_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="729477891" Language="SFX">
+					<ShortName>GCH_MUS_Gui_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Gui_P2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="731047605" Language="SFX">
+					<ShortName>GCH_MUS_Vio1_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio1_P3_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="732762121" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Drum_OS_05.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Drum_OS_05_56D34C19.wem</Path>
+				</File>
+				<File Id="736522109" Language="SFX">
+					<ShortName>GCH_MUS_Pia1_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia1_P3.1_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="750623107" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_05.wav</ShortName>
@@ -210,21 +498,61 @@
 					<ShortName>GCH_SFX_Dirt_OS_02.wav</ShortName>
 					<Path>SFX\GCH_SFX_Dirt_OS_02_56D34C19.wem</Path>
 				</File>
+				<File Id="757770127" Language="SFX">
+					<ShortName>GCH_MUS_END4.wav</ShortName>
+					<Path>SFX\GCH_MUS_END4_8956FC97.wem</Path>
+				</File>
+				<File Id="769114893" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Vio_OS_04.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Vio_OS_04_56D34C19.wem</Path>
+				</File>
 				<File Id="778636827" Language="SFX">
 					<ShortName>GCH_AMB_Heartbeat_LP.wav</ShortName>
 					<Path>SFX\GCH_AMB_Heartbeat_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="783815350" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Gui_OS_01.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Gui_OS_01_56D34C19.wem</Path>
 				</File>
 				<File Id="790736883" Language="SFX">
 					<ShortName>GCH_AMB_Cracks_OS_04.wav</ShortName>
 					<Path>SFX\GCH_AMB_Cracks_OS_04_56D34C19.wem</Path>
 				</File>
+				<File Id="804163990" Language="SFX">
+					<ShortName>GCH_MUS_Gui_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Gui_P1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="804785566" Language="SFX">
+					<ShortName>GCH_MUS_Pia2_P3.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia2_P3.1_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="808950145" Language="SFX">
 					<ShortName>GCH_AMB_Screams_OS_03.wav</ShortName>
 					<Path>SFX\GCH_AMB_Screams_OS_03_56D34C19.wem</Path>
 				</File>
+				<File Id="816552168" Language="SFX">
+					<ShortName>GCH_MUS_Drm_P3.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Drm_P3.2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="825419909" Language="SFX">
+					<ShortName>GCH_MUS_END1.wav</ShortName>
+					<Path>SFX\GCH_MUS_END1_8956FC97.wem</Path>
+				</File>
 				<File Id="825555949" Language="SFX">
 					<ShortName>GCH_SFX_craftFinish_OS_01.wav</ShortName>
 					<Path>SFX\GCH_SFX_craftFinish_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="833543982" Language="SFX">
+					<ShortName>GCH_MUS_Pia1_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia1_P2.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="838046250" Language="SFX">
+					<ShortName>GCH_MUS_Vio2_P2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio2_P2_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="842438090" Language="SFX">
+					<ShortName>GCH_MUS_Pia2_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia2_P2.2_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="866744796" Language="SFX">
 					<ShortName>GCH_AMB_Screams_OS_02.wav</ShortName>
@@ -234,13 +562,29 @@
 					<ShortName>GCH_SFX_Laugh_OS_02.wav</ShortName>
 					<Path>SFX\GCH_SFX_Laugh_OS_02_56D34C19.wem</Path>
 				</File>
+				<File Id="879988845" Language="SFX">
+					<ShortName>GCH_MUS_Vio1_P1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Vio1_P1_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="895348609" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_01.wav</ShortName>
 					<Path>SFX\GCH_SFX_FTPS_OS_01_56D34C19.wem</Path>
 				</File>
+				<File Id="898352809" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Drum_OS_04.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Drum_OS_04_56D34C19.wem</Path>
+				</File>
+				<File Id="899256698" Language="SFX">
+					<ShortName>GCH_MUS_Dead_Pia_OS_03.wav</ShortName>
+					<Path>SFX\GCH_MUS_Dead_Pia_OS_03_56D34C19.wem</Path>
+				</File>
 				<File Id="905136270" Language="SFX">
 					<ShortName>GCH_SFX_Laugh_OS_03.wav</ShortName>
 					<Path>SFX\GCH_SFX_Laugh_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="927294324" Language="SFX">
+					<ShortName>GCH_MUS_Voic1_P2.2_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Voic1_P2.2_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="941269080" Language="SFX">
 					<ShortName>GCH_SFX_LogFire_OS_02.wav</ShortName>
@@ -250,6 +594,10 @@
 					<ShortName>GCH_AMB_Cracks_OS_01.wav</ShortName>
 					<Path>SFX\GCH_AMB_Cracks_OS_01_56D34C19.wem</Path>
 				</File>
+				<File Id="963931780" Language="SFX">
+					<ShortName>GCH_MUS_Pia2_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia2_P2.1_LP_8956FC97.wem</Path>
+				</File>
 				<File Id="1009479887" Language="SFX">
 					<ShortName>GCH_SFX_LogFire_OS_01.wav</ShortName>
 					<Path>SFX\GCH_SFX_LogFire_OS_01_56D34C19.wem</Path>
@@ -257,6 +605,14 @@
 				<File Id="1010110415" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_10.wav</ShortName>
 					<Path>SFX\GCH_SFX_FTPS_OS_10_56D34C19.wem</Path>
+				</File>
+				<File Id="1010503258" Language="SFX">
+					<ShortName>GCH_MUS_Gui_P2.1_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Gui_P2.1_LP_8956FC97.wem</Path>
+				</File>
+				<File Id="1030172783" Language="SFX">
+					<ShortName>GCH_MUS_Pia1_P3_LP.wav</ShortName>
+					<Path>SFX\GCH_MUS_Pia1_P3_LP_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
