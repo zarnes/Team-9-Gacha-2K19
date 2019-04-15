@@ -132,7 +132,17 @@ public class Controls : MonoBehaviour
     public void MoveToDestination()
     {
         if (m_current_selected_object_ != null && m_current_selected_object_.CompareTag("Player") && m_destination_pickup_ != null)
+        {
             m_nav_mesh_agent.SetDestination(m_destination_pickup_.transform.position);
+            if (m_nav_mesh_agent.destination.x < m_current_selected_object_.transform.position.x)
+            {
+                m_current_selected_object_.transform.localScale = new Vector3(scale.x, scale.y, scale.z);
+            }
+            else if (m_nav_mesh_agent.destination.x > m_current_selected_object_.transform.position.x)
+            {
+                m_current_selected_object_.transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
+            }
+        }              
         m_pop_up_confirm.SetActive(false);
     }
 
