@@ -26,6 +26,7 @@ public class DeathManager : MonoBehaviour
         }
 
         Instance = this;
+        DontDestroyOnLoad(gameObject);
         SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
     }
 
@@ -34,7 +35,7 @@ public class DeathManager : MonoBehaviour
         if (arg1.name == "ClickOnMoveOk")
         {
             CharactersData.IncreaseStep();
-            Debug.Log(CharactersData.Step);
+            Debug.Log(CharactersData.Step); 
         }
         else if (arg1.name == "MovementScene" && CharactersData.Step >= 5)
         {
