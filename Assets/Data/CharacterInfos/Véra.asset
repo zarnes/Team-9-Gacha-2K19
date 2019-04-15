@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: "V\xE9ra"
   m_sprite: {fileID: 21300000, guid: fa85ccf74889e264893cf599ec62dc71, type: 3}
+  m_slot: {fileID: 21300000, guid: c7ce961c2a22cb949ba6bd65190ead75, type: 3}
+  m_back: {fileID: 21300000, guid: 8f1af25676f18d54ca717a610301f352, type: 3}
