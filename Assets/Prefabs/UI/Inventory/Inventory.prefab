@@ -462,8 +462,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50.00001, y: 42.3}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 45.000004, y: 35.9}
+  m_SizeDelta: {x: 38.24, y: 37}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!222 &1532428382785234228
 CanvasRenderer:
@@ -493,7 +493,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7cdd1dc091d6dec42af726e0ff222915, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa85ccf74889e264893cf599ec62dc71, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -550,15 +550,15 @@ RectTransform:
   m_GameObject: {fileID: 3321437520046988710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.08086, y: 0.08086, z: 0.16172}
   m_Children: []
   m_Father: {fileID: 820119229897810114}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45.574993, y: 6.0999985}
-  m_SizeDelta: {x: 195.7, y: 42.35}
+  m_AnchoredPosition: {x: 45, y: 8.4983}
+  m_SizeDelta: {x: 1113, y: 210.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1349444116707011738
 CanvasRenderer:
@@ -590,16 +590,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_FontSize: 200
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 200
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: New Text
 --- !u!114 &531370483691489774
