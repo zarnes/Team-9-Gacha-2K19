@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,6 +21,7 @@
 			<ShortName>Soundb</ShortName>
 			<Path>Soundb.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4247712563" Name="Dead_Bass" ObjectPath="\Events\Default Work Unit\Dead_Bass"/>
 				<Event Id="2324489794" Name="Dead_Drum" ObjectPath="\Events\Default Work Unit\Dead_Drum"/>
 				<Event Id="22441161" Name="Dead_Guitare" ObjectPath="\Events\Default Work Unit\Dead_Guitare"/>
 				<Event Id="3389925521" Name="Dead_Piano" ObjectPath="\Events\Default Work Unit\Dead_Piano"/>
@@ -31,6 +32,8 @@
 				<Event Id="114057136" Name="Event_Firelog" ObjectPath="\Events\Default Work Unit\Event_Firelog" MaxAttenuation="100.000000"/>
 				<Event Id="3113608096" Name="Event_Fish" ObjectPath="\Events\Default Work Unit\Event_Fish"/>
 				<Event Id="3199320663" Name="Event_FTPS" ObjectPath="\Events\Default Work Unit\Event_FTPS"/>
+				<Event Id="1319153178" Name="Event_Menu_Close" ObjectPath="\Events\Default Work Unit\Event_Menu_Close" MaxAttenuation="0.000000"/>
+				<Event Id="1272787271" Name="Event_MenuOpen" ObjectPath="\Events\Default Work Unit\Event_MenuOpen" MaxAttenuation="0.000000"/>
 				<Event Id="1049942240" Name="Event_UI" ObjectPath="\Events\Default Work Unit\Event_UI"/>
 				<Event Id="2170542218" Name="Event_Vegetables" ObjectPath="\Events\Default Work Unit\Event_Vegetables"/>
 				<Event Id="3464303516" Name="Event_Woods" ObjectPath="\Events\Default Work Unit\Event_Woods"/>
@@ -227,7 +230,7 @@
 				</File>
 				<File Id="256349680" Language="SFX">
 					<ShortName>GCH_SFX_Bushes_OS_03.wav</ShortName>
-					<Path>SFX\GCH_SFX_Bushes_OS_03_56D34C19.wem</Path>
+					<Path>SFX\GCH_SFX_Bushes_OS_03_23EC5B2B.wem</Path>
 				</File>
 				<File Id="258527105" Language="SFX">
 					<ShortName>GCH_SFX_FTPS_OS_08.wav</ShortName>
@@ -291,7 +294,11 @@
 				</File>
 				<File Id="346115073" Language="SFX">
 					<ShortName>GCH_SFX_Bushes_OS_02.wav</ShortName>
-					<Path>SFX\GCH_SFX_Bushes_OS_02_56D34C19.wem</Path>
+					<Path>SFX\GCH_SFX_Bushes_OS_02_FD3522BE.wem</Path>
+				</File>
+				<File Id="346382379" Language="SFX">
+					<ShortName>GCH_SFX_Dead_Cello_OS.wav</ShortName>
+					<Path>SFX\GCH_SFX_Dead_Cello_OS_56D34C19.wem</Path>
 				</File>
 				<File Id="352519569" Language="SFX">
 					<ShortName>GCH_SFX_Eating_OS_02.wav</ShortName>
@@ -439,7 +446,7 @@
 				</File>
 				<File Id="649133636" Language="SFX">
 					<ShortName>GCH_SFX_Bushes_OS_01.wav</ShortName>
-					<Path>SFX\GCH_SFX_Bushes_OS_01_56D34C19.wem</Path>
+					<Path>SFX\GCH_SFX_Bushes_OS_01_CCF0E766.wem</Path>
 				</File>
 				<File Id="657219780" Language="SFX">
 					<ShortName>GCH_MUS_Pia1_P1_LP.wav</ShortName>

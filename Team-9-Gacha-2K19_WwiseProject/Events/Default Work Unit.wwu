@@ -647,6 +647,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64" Value="-16"/>
 							</PropertyList>
 							<ReferenceList>
@@ -659,6 +660,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64" Value="-16"/>
 							</PropertyList>
 							<ReferenceList>
@@ -671,6 +673,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64" Value="-16"/>
 							</PropertyList>
 							<ReferenceList>
@@ -683,6 +686,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64" Value="-16"/>
 							</PropertyList>
 							<ReferenceList>
@@ -695,6 +699,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64" Value="-16"/>
 							</PropertyList>
 							<ReferenceList>
@@ -707,11 +712,36 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64" Value="-16"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4DCCFC7C-C344-4AE7-993C-148B487C3470}" ShortID="806752202">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiances_Bl" ID="{FAAFB266-6B55-450D-86CD-FC9432DE264D}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C8285C5D-7AAC-4C8C-8A6F-7B0968E38C3A}" ShortID="116413785">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GCH_SFX_Fire_LP" ID="{864B05C6-F95A-4CCC-9B0C-E5D7D7DB41FC}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -723,6 +753,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="16"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -734,6 +765,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="16"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -745,6 +777,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="16"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -756,6 +789,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="16"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -767,6 +801,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="16"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -778,10 +813,33 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="16"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{22363B26-B046-4825-A2ED-85C840EA2813}" ShortID="452921284">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GCH_SFX_Fire_LP" ID="{864B05C6-F95A-4CCC-9B0C-E5D7D7DB41FC}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B10C2E9A-B732-4A99-896D-EC665ADBE34C}" ShortID="45027895">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiances_Bl" ID="{FAAFB266-6B55-450D-86CD-FC9432DE264D}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -807,6 +865,22 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Bass" ID="{B5B81111-3523-4410-A849-37D07498D9CE}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Fire" ID="{917A592F-D4C3-4B09-A598-964B9EEC3546}">
+					<ChildrenList>
+						<Action Name="" ID="{904D0482-6943-4385-A542-D180A1B185E0}" ShortID="187986024">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GCH_SFX_Fire_LP" ID="{864B05C6-F95A-4CCC-9B0C-E5D7D7DB41FC}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
