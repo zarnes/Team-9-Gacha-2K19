@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public static class CharactersData
 {
@@ -11,6 +12,7 @@ public static class CharactersData
     public static int Food;
 
     public static ChanceState Chance;
+    public static int Step { get; private set; }
 
     static CharactersData()
     {
@@ -26,6 +28,15 @@ public static class CharactersData
         Food = 0;
 
         Chance = ChanceState.Neutral;
+    }
+
+    public static void IncreaseStep()
+    {
+        ++Step;
+        if (Step >= 5)
+        {
+            SceneManager.LoadScene("Win");
+        }
     }
 
     public static bool AddTime (float time)
@@ -53,7 +64,7 @@ public class CharacterData
     public float Speed;
     public float Food;
     public float FoodMax = 5;
-    public CharacterState State;
+    public CharacterState State { get; private set; }
     public List<Slot> Slots = null;
     
     public CharacterData(string name, float speed = 10, float food = 3, CharacterState state = CharacterState.Good)
@@ -62,6 +73,13 @@ public class CharacterData
         Speed = speed;
         Food = food;
         State = state;
+    }
+
+    public void SetState(CharacterState state)
+    {
+        State = state;
+        if (state == CharacterState.Dieded)
+            DeathManager.Instance.Die(Name);
     }
 }
 
