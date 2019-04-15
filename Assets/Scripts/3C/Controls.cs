@@ -30,7 +30,6 @@ public class Controls : MonoBehaviour
     {
         scale = transform.localScale;
         Character_Animator = GetComponent<Animator>();
-        InputManager.GetInstance().OnClickLeftMouseButton += OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton += OnClickRightMouseHandler;
     }
 
