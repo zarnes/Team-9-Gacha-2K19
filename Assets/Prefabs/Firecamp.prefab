@@ -188,6 +188,7 @@ MonoBehaviour:
   m_minLightIntensity: 40
   m_maxLightIntensity: 60
   m_currentTime: 0
+  m_crafting_menu: {fileID: 0}
 --- !u!135 &5851513375402620171
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -324,7 +325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2831794481270065576}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.32249987, y: -0.65, z: 0.80000013}
+  m_LocalPosition: {x: -0.23, y: -2.49, z: 0.8}
   m_LocalScale: {x: 2.5, y: 2.5000005, z: 2.5000005}
   m_Children: []
   m_Father: {fileID: 2831794480320751346}

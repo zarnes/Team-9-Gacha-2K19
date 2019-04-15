@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
