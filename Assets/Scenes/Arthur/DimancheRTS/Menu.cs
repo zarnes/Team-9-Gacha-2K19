@@ -6,9 +6,19 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject MainMenu, OptionMenu, CreditsMenu;
-    public void Play()
+    public string m_gameSceneName;
+
+    IEnumerator StartGameScene() 
     {
-        SceneManager.LoadScene("ClickOnMoveOk");
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(m_gameSceneName);
+        while (!asyncOperation.isDone) {
+            //m_asyncOperationProgressText.text = "Loading progress: " + (asyncOperation.progress * 100) + "%";
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
+    public void OnPlayButtonClicked() {
+        StartCoroutine(StartGameScene());
     }
 
     public void Options()
@@ -36,5 +46,15 @@ public class Menu : MonoBehaviour
             CreditsMenu.SetActive(false);
             MainMenu.SetActive(true);
         }
+    }
+
+    public void StopApplication() {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_WEBPLAYER
+         Application.OpenURL(webplayerQuitURL);
+#else
+         Application.Quit();
+#endif
     }
 }

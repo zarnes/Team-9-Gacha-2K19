@@ -25,7 +25,6 @@ public class RandomDialogue : MonoBehaviour
         while (isActive)
         {
             yield return new WaitForSeconds(Random.Range(0f, 20f));
-            Debug.Log("perform text");
             textScript.gameObject.SetActive(true);
             int index = Random.Range(0, randomDialogues.Count);
             textScript.Setup(randomDialogues[index]);
