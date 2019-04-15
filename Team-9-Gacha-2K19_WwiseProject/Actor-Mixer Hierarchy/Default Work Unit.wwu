@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Philae_Music_Theme" ID="{10FBD5AB-F632-4222-BBAA-5D8B408D34A0}" ShortID="320849672">
+				<BlendContainer Name="Ambiances_Bl" ID="{FAAFB266-6B55-450D-86CD-FC9432DE264D}" ShortID="394727353">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -13,38 +13,1338 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Philae_Music_Theme" ID="{EDC803D1-5EFE-41D6-84A5-AE3FEDD4A21E}" ShortID="847782052">
-							<Language>SFX</Language>
-							<AudioFile>Philae_Music_Theme.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Philae_Music_Theme" ID="{EDC803D1-5EFE-41D6-84A5-AE3FEDD4A21E}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Philae_UI_Enter" ID="{525853B1-5245-4F86-AD16-C193C1F80DB3}" ShortID="655319787">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Philae_UI_Enter" ID="{962E81AA-FC9C-485B-9B60-44A043EDF799}" ShortID="184066887">
+						<RandomSequenceContainer Name="Cracks_Rand" ID="{AE1277B9-6FD5-42AE-A0E7-6424CB7A5B74}" ShortID="325626436">
 							<PropertyList>
-								<Property Name="TrimBegin" Type="Real64" Value="2.77488887696475"/>
-								<Property Name="TrimEnd" Type="Real64" Value="3.68573026406006"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A21F4728-88EC-4A98-BFB4-A5D5EF8717F9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Philae_UI_Enter.wav</AudioFile>
-						</AudioFileSource>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_AMB_Cracks_OS_01" ID="{884B31EB-2C66-4885-BD42-0EC685BBFD06}" ShortID="991008681">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Cracks_OS_01" ID="{FA77FF1D-3A7F-4B92-A274-14EB94003B91}" ShortID="961516532">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Cracks_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Cracks_OS_01" ID="{FA77FF1D-3A7F-4B92-A274-14EB94003B91}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Cracks_OS_02" ID="{0BFE64F3-C852-4E1B-AA0E-7BD77B5C8A34}" ShortID="103272555">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Cracks_OS_02" ID="{ECCA9275-E86F-473D-834D-592533E502BC}" ShortID="133015107">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Cracks_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Cracks_OS_02" ID="{ECCA9275-E86F-473D-834D-592533E502BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Cracks_OS_03" ID="{42F01632-1924-4A99-9295-82FB62F1EFCD}" ShortID="368785069">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Cracks_OS_03" ID="{18D654A7-ADE4-4E07-B54C-B258BBB5D0AE}" ShortID="553676841">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Cracks_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Cracks_OS_03" ID="{18D654A7-ADE4-4E07-B54C-B258BBB5D0AE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Cracks_OS_04" ID="{09ED1D57-8EBD-4972-B4F1-D7245D572E64}" ShortID="882602033">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Cracks_OS_04" ID="{41DFD017-2CCE-483A-B0E3-363C54BB2028}" ShortID="790736883">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Cracks_OS_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Cracks_OS_04" ID="{41DFD017-2CCE-483A-B0E3-363C54BB2028}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="GCH_AMB_Forestnight_LP" ID="{218C9EA9-B1FE-452D-9C06-37254983565B}" ShortID="151045674">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_AMB_Forestnight_LP" ID="{A2663C8C-F1D2-47A6-A9F7-ECDBD5B6A823}" ShortID="243805524">
+									<Language>SFX</Language>
+									<AudioFile>GCH_AMB_Forestnight_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_AMB_Forestnight_LP" ID="{A2663C8C-F1D2-47A6-A9F7-ECDBD5B6A823}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Screams_Rand" ID="{B0A1BBA2-726B-4772-9E13-093E2BEC0973}" ShortID="483145501">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A88F8087-34C5-4826-AFC9-9CDB6F75A738}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_AMB_Screams_OS_0" ID="{0C87369D-6FAE-4676-8FFC-39927155EAB9}" ShortID="582478402">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Screams_OS_0" ID="{6295CC18-1A70-4DE6-AD6D-AFAC8993FEA9}" ShortID="63278681">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Screams_OS_0.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Screams_OS_0" ID="{6295CC18-1A70-4DE6-AD6D-AFAC8993FEA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Screams_OS_02" ID="{405C0DDF-447A-4736-A0D0-B72034ED1009}" ShortID="804719102">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Screams_OS_02" ID="{5204213E-21AC-4B4D-8EE6-C870FA489F0F}" ShortID="866744796">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Screams_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Screams_OS_02" ID="{5204213E-21AC-4B4D-8EE6-C870FA489F0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Screams_OS_03" ID="{3D845007-18A6-4AEE-A185-14E13BD15F2F}" ShortID="107804810">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Screams_OS_03" ID="{41C91C76-7685-44F8-8537-D48D4F7FD814}" ShortID="808950145">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Screams_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Screams_OS_03" ID="{41C91C76-7685-44F8-8537-D48D4F7FD814}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Screams_OS_04" ID="{67E1AA20-032A-4B43-9F16-4DA352513A2E}" ShortID="940962418">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Screams_OS_04" ID="{D598175A-7BCF-4E13-A13E-457D11EFDEDA}" ShortID="752048360">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Screams_OS_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Screams_OS_04" ID="{D598175A-7BCF-4E13-A13E-457D11EFDEDA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Screams_OS_05" ID="{4A7DC0DB-9FF0-4E25-A26F-67A910410C87}" ShortID="76283501">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Screams_OS_05" ID="{6609654C-0FC6-4A28-A771-97A7CC501CC7}" ShortID="159997249">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Screams_OS_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Screams_OS_05" ID="{6609654C-0FC6-4A28-A771-97A7CC501CC7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_AMB_Screams_OS_06" ID="{B4C2A6F0-D145-43D9-8BA1-C0C3F1C9EC73}" ShortID="868400213">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_AMB_Screams_OS_06" ID="{401AE682-95AF-4A4D-8404-32B3CA98F86E}" ShortID="408973227">
+											<Language>SFX</Language>
+											<AudioFile>GCH_AMB_Screams_OS_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_AMB_Screams_OS_06" ID="{401AE682-95AF-4A4D-8404-32B3CA98F86E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Philae_UI_Enter" ID="{962E81AA-FC9C-485B-9B60-44A043EDF799}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</BlendContainer>
+				<BlendContainer Name="BabaYaga_Bl" ID="{A286FF0A-29D6-424D-BE82-BD608C9E56BC}" ShortID="478367293">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="GCH_AMB_Heartbeat_LP" ID="{2EEFD2E2-E0E3-4849-87DB-E8B6250EF0A2}" ShortID="615187978">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_AMB_Heartbeat_LP" ID="{236A6BE8-FDA1-4C4D-B10F-6A1A68460C0F}" ShortID="778636827">
+									<Language>SFX</Language>
+									<AudioFile>GCH_AMB_Heartbeat_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_AMB_Heartbeat_LP" ID="{236A6BE8-FDA1-4C4D-B10F-6A1A68460C0F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Lol_Rand" ID="{A1140115-FBAE-4845-90EA-BA118E2D48F8}" ShortID="632825833">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{23177407-9C66-4C30-B156-59B062701F1A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Laugh_OS_01" ID="{53EFBF38-8AFB-4823-B294-CA373CEB04F3}" ShortID="14718108">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Laugh_OS_01" ID="{B009A528-005B-4092-B22A-DBFEC2BC88E4}" ShortID="544473889">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Laugh_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Laugh_OS_01" ID="{B009A528-005B-4092-B22A-DBFEC2BC88E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Laugh_OS_02" ID="{E42B99AD-61AB-4820-9E96-E9EE39CA27DF}" ShortID="320553945">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Laugh_OS_02" ID="{EC4DBFF9-F03D-4FC8-A955-B031EBCF4EAA}" ShortID="867696964">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Laugh_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Laugh_OS_02" ID="{EC4DBFF9-F03D-4FC8-A955-B031EBCF4EAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Laugh_OS_03" ID="{44E81E31-E7DA-400E-B5E6-30B1806BB532}" ShortID="715799659">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Laugh_OS_03" ID="{78948C0E-0F45-4F34-8863-F19E18B20F24}" ShortID="905136270">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Laugh_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Laugh_OS_03" ID="{78948C0E-0F45-4F34-8863-F19E18B20F24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Laugh_OS_04" ID="{D4B8615A-9A25-4F79-AD99-922C3461F458}" ShortID="825185549">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Laugh_OS_04" ID="{FC0ACFE5-187B-45E0-B328-2B252245C629}" ShortID="88164966">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Laugh_OS_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Laugh_OS_04" ID="{FC0ACFE5-187B-45E0-B328-2B252245C629}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<Folder Name="Fire" ID="{76CB2AC0-4C4C-45F2-A256-4E347F7B45A9}" ShortID="308719675">
+					<ChildrenList>
+						<Sound Name="GCH_SFX_Fire_LP" ID="{864B05C6-F95A-4CCC-9B0C-E5D7D7DB41FC}" ShortID="91431742">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_SFX_Fire_LP" ID="{9286AF0D-9788-4315-B753-1BD5A4D4A3EC}" ShortID="570674595">
+									<Language>SFX</Language>
+									<AudioFile>GCH_SFX_Fire_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_SFX_Fire_LP" ID="{9286AF0D-9788-4315-B753-1BD5A4D4A3EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Firelog_Rand" ID="{07592EA0-D0FB-4C91-A990-CEBCC1F7101D}" ShortID="864393786">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_LogFire_OS_01" ID="{31B902DB-27DA-4A15-B19A-23A6E375957E}" ShortID="218103786">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_LogFire_OS_01" ID="{10ED1816-7EB3-42F4-A445-CFD460C32E80}" ShortID="1009479887">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_LogFire_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_LogFire_OS_01" ID="{10ED1816-7EB3-42F4-A445-CFD460C32E80}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_LogFire_OS_02" ID="{BBD3182B-7AE0-4FB9-B936-AA756BD8AB97}" ShortID="234732174">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_LogFire_OS_02" ID="{CA1B0850-111F-4650-B454-C39ADE3AC134}" ShortID="941269080">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_LogFire_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_LogFire_OS_02" ID="{CA1B0850-111F-4650-B454-C39ADE3AC134}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_LogFire_OS_03" ID="{7E9369F4-7D88-4D91-A4D1-56C536165E3B}" ShortID="898907073">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_LogFire_OS_03" ID="{4D305AC0-328B-431D-96D7-B53E9BF5FDD1}" ShortID="581310106">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_LogFire_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_LogFire_OS_03" ID="{4D305AC0-328B-431D-96D7-B53E9BF5FDD1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_LogFire_OS_04" ID="{D21ED330-A4D7-401D-9D61-1C4E16B199FD}" ShortID="453473701">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_LogFire_OS_04" ID="{235A4116-0FBE-4B7A-A4F9-1F6D1780FD97}" ShortID="504415947">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_LogFire_OS_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_LogFire_OS_04" ID="{235A4116-0FBE-4B7A-A4F9-1F6D1780FD97}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Events" ID="{7D102060-CD7A-4E5D-AD49-4E23515F8A77}" ShortID="693038381">
+					<ChildrenList>
+						<RandomSequenceContainer Name="FTPS_Rand" ID="{12422F0E-883C-48C6-8D7F-5DB3200BF5EA}" ShortID="262227849">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_FTPS_OS_01" ID="{4596458B-01E8-452B-A93B-B62E529F627F}" ShortID="247230454">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_01" ID="{50ABC4FB-BC13-4CB4-9DCD-E1580B2DD3AC}" ShortID="895348609">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_01" ID="{50ABC4FB-BC13-4CB4-9DCD-E1580B2DD3AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_02" ID="{95656AD4-9B66-48C2-B1E0-F41F101C65F5}" ShortID="867462388">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_02" ID="{1C6072D4-DBE9-4D93-9C8D-B2B1C274BD0B}" ShortID="636549986">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_02" ID="{1C6072D4-DBE9-4D93-9C8D-B2B1C274BD0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_03" ID="{2069CFD2-D9C7-4271-9B62-A715A390A45E}" ShortID="610885653">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_03" ID="{E19C36DE-4098-4CCA-9B95-BEBB0589DDD6}" ShortID="4910905">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_03" ID="{E19C36DE-4098-4CCA-9B95-BEBB0589DDD6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_04" ID="{50FCAABB-E414-4FE7-B929-01629BB41217}" ShortID="572887746">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_04" ID="{D193B03F-EA30-475F-8165-19B020964DEB}" ShortID="440688431">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_04" ID="{D193B03F-EA30-475F-8165-19B020964DEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_05" ID="{42FEED12-BAF9-4EA3-8BBF-3D37DFF28E45}" ShortID="806725287">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_05" ID="{931819F6-EB92-4416-9DC8-3F6BC5198824}" ShortID="750623107">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_05" ID="{931819F6-EB92-4416-9DC8-3F6BC5198824}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_06" ID="{22C0E0D2-E7D1-4E34-B91A-E515D2A14C12}" ShortID="364318587">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_06" ID="{8B20BD00-C1FE-4F61-BC55-6D335EC27F73}" ShortID="500409657">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_06" ID="{8B20BD00-C1FE-4F61-BC55-6D335EC27F73}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_07" ID="{577200B3-B696-4595-9D6E-81EEE2762103}" ShortID="743342348">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_07" ID="{2DE6812F-EA5B-4C2A-9539-A40FAC25E582}" ShortID="514746129">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_07" ID="{2DE6812F-EA5B-4C2A-9539-A40FAC25E582}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_08" ID="{27F08FA5-3E84-41B6-AC4F-39BFCF1DDF50}" ShortID="1031692486">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_08" ID="{D9E97137-22F5-4801-8307-601452F45724}" ShortID="258527105">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_08" ID="{D9E97137-22F5-4801-8307-601452F45724}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_09" ID="{56B01346-79E2-4958-9C7C-A5799725BF65}" ShortID="596680775">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_09" ID="{785FD4A5-52BC-4E55-87C3-E046BBEC9243}" ShortID="399610029">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_09" ID="{785FD4A5-52BC-4E55-87C3-E046BBEC9243}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_10" ID="{E08B3404-46A1-4E8B-B061-EE81B8DF1351}" ShortID="465242489">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_10" ID="{82DB4342-CB0E-4DB9-B445-4032AA49A558}" ShortID="1010110415">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_10" ID="{82DB4342-CB0E-4DB9-B445-4032AA49A558}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_FTPS_OS_11" ID="{70E3EBF2-6505-4011-A2D4-D4EAFBD1C4A5}" ShortID="1000961684">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_FTPS_OS_11" ID="{F63659A0-FC5D-4F6B-ABBE-4C484B2C310E}" ShortID="196470791">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_FTPS_OS_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_FTPS_OS_11" ID="{F63659A0-FC5D-4F6B-ABBE-4C484B2C310E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Heal_Rand" ID="{88A3D414-245B-435D-A84B-AA97B7240578}" ShortID="303696335">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Heal_OS_01" ID="{F792C6DA-4F01-42CD-9E8C-7FA1AA513AB2}" ShortID="961523690">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Heal_OS_01" ID="{0563B7D5-1A02-4794-8543-2CF2A0927129}" ShortID="29928070">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Heal_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Heal_OS_01" ID="{0563B7D5-1A02-4794-8543-2CF2A0927129}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Heal_OS_02" ID="{7AA99E92-1F1B-4536-9BF5-133D664264F2}" ShortID="267016813">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Heal_OS_02" ID="{0E12B569-44DF-4E68-B948-95D2EFDE8443}" ShortID="663141973">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Heal_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Heal_OS_02" ID="{0E12B569-44DF-4E68-B948-95D2EFDE8443}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Fish_Rand" ID="{978BAEED-FDA3-4CCE-BDF4-B398D044B6D1}" ShortID="740043032">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Splash_OS_01" ID="{9644C5F1-D481-407F-9996-F493D2529F26}" ShortID="851644421">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Splash_OS_01" ID="{25ECD421-116A-4F63-801F-241A5388759A}" ShortID="362185397">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Splash_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Splash_OS_01" ID="{25ECD421-116A-4F63-801F-241A5388759A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Splash_OS_02" ID="{2AC7C078-6D27-47FD-8305-8FFE885FB3AC}" ShortID="36915058">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Splash_OS_02" ID="{F176E3EC-8239-4C53-9AD1-1FC8505C096E}" ShortID="691225187">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Splash_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Splash_OS_02" ID="{F176E3EC-8239-4C53-9AD1-1FC8505C096E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Splash_OS_03" ID="{D236FB0A-80CF-4768-89FF-368E97F2BED8}" ShortID="319950325">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Splash_OS_03" ID="{36EA8C69-4864-4961-AD35-1F79534C529D}" ShortID="211421832">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Splash_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Splash_OS_03" ID="{36EA8C69-4864-4961-AD35-1F79534C529D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Woods_Rand" ID="{F825AC75-65AA-4715-9A2C-420E989A2435}" ShortID="188077386">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Wood_OS_01" ID="{9A04E87C-DEDF-4964-B8AE-927743AEF514}" ShortID="287515027">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Wood_OS_01" ID="{EF72F853-5114-4F88-A671-58A14DA3514E}" ShortID="189404232">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Wood_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Wood_OS_01" ID="{EF72F853-5114-4F88-A671-58A14DA3514E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Wood_OS_02" ID="{D7AA8FE3-E46D-499C-BAC9-CBC62248DB6F}" ShortID="480478460">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Wood_OS_02" ID="{E2578469-21CD-4BBB-85AF-DE9F5E881B89}" ShortID="275115427">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Wood_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Wood_OS_02" ID="{E2578469-21CD-4BBB-85AF-DE9F5E881B89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Wood_OS_03" ID="{3DFE013B-0FC2-4BA2-9E26-EE96D8DACBD1}" ShortID="171663405">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Wood_OS_03" ID="{D42019B9-2A3C-4E59-ADB7-0E4E234660EE}" ShortID="689889741">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Wood_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Wood_OS_03" ID="{D42019B9-2A3C-4E59-ADB7-0E4E234660EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Eat_Rand" ID="{9162F2DB-C5C2-421F-A1E7-E8D2BE5BE9AF}" ShortID="138252154">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Eating_OS_01" ID="{0CDC3D80-0C7D-4A02-A926-F06B09DF7679}" ShortID="713758697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Eating_OS_01" ID="{F23513A6-1EC9-4815-99E6-7DDAE6910FB1}" ShortID="560058366">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Eating_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Eating_OS_01" ID="{F23513A6-1EC9-4815-99E6-7DDAE6910FB1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Eating_OS_02" ID="{7386B9D6-E558-45EB-AA93-94E98C729DF8}" ShortID="804009790">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Eating_OS_02" ID="{057C87F6-ADB5-4741-A90A-D76C97A33B68}" ShortID="352519569">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Eating_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Eating_OS_02" ID="{057C87F6-ADB5-4741-A90A-D76C97A33B68}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Eating_OS_03" ID="{0E583C11-1E80-4C7F-A435-D0911B060747}" ShortID="707702288">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Eating_OS_03" ID="{4E4D9685-6789-4A57-9D6F-86D6F472B864}" ShortID="144802948">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Eating_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Eating_OS_03" ID="{4E4D9685-6789-4A57-9D6F-86D6F472B864}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Vegetables_Rand" ID="{0A1E6750-10A8-4BB7-86C6-3706533FE5D5}" ShortID="329604219">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Dirt_OS_01" ID="{ECC9C9AE-E9C6-4560-92FF-FF5CBE21F821}" ShortID="298992982">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Dirt_OS_01" ID="{4F409C77-619D-47A5-8D3A-DE447E7A4810}" ShortID="193294615">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Dirt_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Dirt_OS_01" ID="{4F409C77-619D-47A5-8D3A-DE447E7A4810}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Dirt_OS_02" ID="{8708C7E4-2FF1-4D68-B028-CF5B65924D5D}" ShortID="608800699">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Dirt_OS_02" ID="{8E8F7CAB-6568-48C1-B818-FDE47A50FF5F}" ShortID="754564552">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Dirt_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Dirt_OS_02" ID="{8E8F7CAB-6568-48C1-B818-FDE47A50FF5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Dirt_OS_03" ID="{BE05BE37-A59A-4FFA-B322-8CF2CB6A0DB8}" ShortID="584980782">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Dirt_OS_03" ID="{936A3E8C-593E-4040-9029-3C220A15662D}" ShortID="453142314">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Dirt_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Dirt_OS_03" ID="{936A3E8C-593E-4040-9029-3C220A15662D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Craft_finish_Rand" ID="{A2C09C6A-E059-4938-A00F-FD550D463E68}" ShortID="670873465">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_craftFinish_OS_0" ID="{F554EF70-2542-4E43-A97B-B2A3B83C1D00}" ShortID="913067173">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_craftFinish_OS_0" ID="{F9111647-0214-4A1B-9D63-81547468CA0A}" ShortID="235840689">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_craftFinish_OS_0.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_craftFinish_OS_0" ID="{F9111647-0214-4A1B-9D63-81547468CA0A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_craftFinish_OS_01" ID="{F42D40FD-E8E5-4FAA-9782-72284DD3804C}" ShortID="1066924345">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_craftFinish_OS_01" ID="{07FF640F-996D-45A8-9425-BFD98E57F8DE}" ShortID="825555949">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_craftFinish_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_craftFinish_OS_01" ID="{07FF640F-996D-45A8-9425-BFD98E57F8DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_craftFinish_OS_02" ID="{145CC34B-CE6A-4201-BFCE-A7DC95E9CC5A}" ShortID="724496444">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_craftFinish_OS_02" ID="{332C7732-DE69-427A-A5A6-4C6FFF62C3F2}" ShortID="259524498">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_craftFinish_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_craftFinish_OS_02" ID="{332C7732-DE69-427A-A5A6-4C6FFF62C3F2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bushes_Rand" ID="{85BF2B6D-5AE2-4E14-9545-A5F686A80B7F}" ShortID="146078192">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Bushes_OS_01" ID="{C1C01C21-5071-4BF2-AFB6-49E693621238}" ShortID="500109754">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Bushes_OS_01" ID="{157F6E1F-048F-4ACB-9ADF-64A750BC6840}" ShortID="649133636">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Bushes_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Bushes_OS_01" ID="{157F6E1F-048F-4ACB-9ADF-64A750BC6840}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Bushes_OS_02" ID="{C71F77DE-CAE8-423A-9A76-BEBD4DB1081C}" ShortID="733394438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Bushes_OS_02" ID="{FEFEE188-47D5-49F7-8712-172D6406B40A}" ShortID="346115073">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Bushes_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Bushes_OS_02" ID="{FEFEE188-47D5-49F7-8712-172D6406B40A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Bushes_OS_03" ID="{B70EAAB7-3E9C-42FC-AC01-1FEB70743321}" ShortID="965047816">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Bushes_OS_03" ID="{F7953108-CC95-4677-9ECD-49AA0455F311}" ShortID="256349680">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Bushes_OS_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Bushes_OS_03" ID="{F7953108-CC95-4677-9ECD-49AA0455F311}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Loops" ID="{7FC0BA94-E796-4CA8-B41D-76FC1B2767C8}" ShortID="1072229790">
+					<ChildrenList>
+						<Sound Name="GCH_SFX_ticktock_LP" ID="{6E7DFA1D-A0FF-4326-AB06-D775A15D07DD}" ShortID="482662817">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_SFX_ticktock_LP" ID="{DF79BAE8-1638-4313-BD6C-5DAA08EC69B9}" ShortID="669014041">
+									<Language>SFX</Language>
+									<AudioFile>GCH_SFX_ticktock_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_SFX_ticktock_LP" ID="{DF79BAE8-1638-4313-BD6C-5DAA08EC69B9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GCH_SFX_Hungry_LP" ID="{FFBF6287-42D4-48C1-870D-0E95B532BB73}" ShortID="353436434">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_SFX_Hungry_LP" ID="{0244BC75-3DEC-4681-8151-161280CAFCC7}" ShortID="712450372">
+									<Language>SFX</Language>
+									<AudioFile>GCH_SFX_Hungry_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_SFX_Hungry_LP" ID="{0244BC75-3DEC-4681-8151-161280CAFCC7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GCH_SFX_Carriage_LP" ID="{C5AF51A6-D6A6-487F-B125-EBEFF5A4D916}" ShortID="56410476">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_SFX_Carriage_LP" ID="{1F556BAE-8FBD-4144-BEC3-17C8426E53E3}" ShortID="601981704">
+									<Language>SFX</Language>
+									<AudioFile>GCH_SFX_Carriage_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_SFX_Carriage_LP" ID="{1F556BAE-8FBD-4144-BEC3-17C8426E53E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GCH_AMB_River_LP_01" ID="{A94D2155-50F1-4C43-A279-F17D3B33DE6F}" ShortID="922485465">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_AMB_River_LP_01" ID="{4725839A-FEDF-4491-95B8-843BB919B873}" ShortID="682514826">
+									<Language>SFX</Language>
+									<AudioFile>GCH_AMB_River_LP_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_AMB_River_LP_01" ID="{4725839A-FEDF-4491-95B8-843BB919B873}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GCH_AMB_River_LP_02" ID="{FCFB3E4D-2199-4FC6-83D3-49B0870DAF83}" ShortID="870533353">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_AMB_River_LP_02" ID="{91A01EE7-FAEA-4185-AA75-7D16AFF42AD2}" ShortID="758921306">
+									<Language>SFX</Language>
+									<AudioFile>GCH_AMB_River_LP_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_AMB_River_LP_02" ID="{91A01EE7-FAEA-4185-AA75-7D16AFF42AD2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

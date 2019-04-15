@@ -22,9 +22,14 @@ public class Controls : MonoBehaviour
     private GameObject m_current_selected_object_;
     private CharacterInventory m_charactere_inventory_;
 
+
+    public Animator Character_Animator;
+    private Vector3 scale;
     // Start is called before the first frame update
     void Start()
     {
+        scale = transform.localScale;
+        Character_Animator = GetComponent<Animator>();
         InputManager.GetInstance().OnClickLeftMouseButton += OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton += OnClickRightMouseHandler;
     }
@@ -32,6 +37,18 @@ public class Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.z * 100f) * -1;
+
+        if (Character_Animator != null)
+        {
+            if (m_nav_mesh_agent.velocity != Vector3.zero)
+            {
+                Character_Animator.SetBool("Walk", true);
+            }
+            else
+                Character_Animator.SetBool("Walk", false);
+        }
+
     }
 
     private void OnClickLeftMouseHandler()
@@ -47,7 +64,7 @@ public class Controls : MonoBehaviour
             return;
         }
 
-        // todo 
+        // todo
         var Item = GetItem();
 
         if (m_current_selected_object_ != null && Item != null)

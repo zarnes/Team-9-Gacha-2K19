@@ -121,6 +121,8 @@ public class Furnace : Inventory
             yield return null;
         }
 
+        
+
         buttonCraft.enabled = true;
 
     }
