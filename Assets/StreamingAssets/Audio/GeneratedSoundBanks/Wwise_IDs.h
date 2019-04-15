@@ -41,6 +41,7 @@ namespace AK
         static const AkUniqueID START_TICTOC = 871543252U;
         static const AkUniqueID STOP_BABAYAGA = 2296627038U;
         static const AkUniqueID STOP_CARRIAGE = 3988459314U;
+        static const AkUniqueID STOP_FIRE = 2526624148U;
         static const AkUniqueID STOP_HUNGRY = 2012414419U;
         static const AkUniqueID STOP_RIVER = 2315124534U;
         static const AkUniqueID STOP_TICTOC = 4267364614U;
