@@ -54,7 +54,7 @@ public class EventsLoader : MonoBehaviour
         return compatibleEvents[index];
     }
 
-    public EventData GetEvent(EventType type = EventType.Random, EventRarity rarity = EventRarity.Random, EventGoodness goodness = EventGoodness.Random)
+    public EventData GetEvent(EventType type = EventType.Random, EventRarity rarity = EventRarity.Random, EventGoodness goodness = EventGoodness.Random, bool force = true)
     {
         List<EventData> compatibleEvents = new List<EventData>(_events);
         compatibleEvents.RemoveAll(e => e.Type == EventType.Special);
@@ -81,7 +81,12 @@ public class EventsLoader : MonoBehaviour
             compatibleEvents.RemoveAll(e => e.Goodness != GetGoodness());
 
         if (compatibleEvents.Count == 0)
-            return null;
+        {
+            if (force)
+                compatibleEvents = _events;
+            else
+                return null;
+        }
 
         int index = _rnd.Next(compatibleEvents.Count);
         return compatibleEvents[index];

@@ -9,9 +9,9 @@ public class Character : MonoBehaviour
     [SerializeField]
     protected bool isDead;
 
-    public void SetDead()
+    public void SetDead(bool dead)
     {
-        isDead = true;
+        isDead = dead;
     }
 
     public bool IsDead()

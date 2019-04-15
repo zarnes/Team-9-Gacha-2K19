@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6144217946115558227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6144217946115558229}
+  - component: {fileID: 6144217946115558226}
+  m_Layer: 0
+  m_Name: DeathManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6144217946115558229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6144217946115558227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 596.7772, y: 301.16513, z: -32.131042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6144217946115558226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6144217946115558227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38720d6febbdf664e898c900670dfa4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathPrefabs:
+  - {fileID: 1957847972792345041, guid: 793c1de9f90d63e44bb969ce9f8c414f, type: 3}
+  - {fileID: 3390869199813942844, guid: 4b8a2ec3d45e3fa478e2959ce8965645, type: 3}
+  - {fileID: 5102339660542019939, guid: ab1cb35fedc7d8041824dcfdf7d60c13, type: 3}
+  - {fileID: 3123393558096436524, guid: bbbe9316c1cc41f40a1f8d40c134f569, type: 3}
+  - {fileID: 2233738348725576382, guid: 0c6abf28915106a43834847fe90463fc, type: 3}
+  - {fileID: 7643892456868202966, guid: 81cf019a502dcf34cb6f942e75b458d4, type: 3}
+  Names:
+  - Anna
+  - "Kat\xE9rina"
+  - Marina
+  - Mother
+  - Tatiana
+  - "V\xE9ra"
