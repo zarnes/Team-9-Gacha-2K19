@@ -37,9 +37,9 @@ public class MovementSceneManager : MonoBehaviour
 
         _animator = GetComponent<Animator>();
 
-        NextEvent(null, true);
+        //NextEvent(null, true);
 
-        //ReadEvent(EventsLoader.Instance.GetEvent(28));
+        ReadEvent(EventsLoader.Instance.GetEvent(28));
     }
 
     private void Update()
@@ -70,8 +70,22 @@ public class MovementSceneManager : MonoBehaviour
 
         if (data.Type == EventType.Moral && CharactersData.Morale < data.Value)
         {
-            foreach(CharacterData charData in CharactersData.Characters)
+            System.Random r = new System.Random();
+            int[] order = { 1, 2, 3, 4, 5 };
+            for (int i = 0; i < order.Length; ++i)
             {
+                int index = r.Next(order.Length);
+                int backup = order[i];
+                order[i] = order[index];
+                order[index] = backup;
+            }
+
+            foreach(int index in order)
+            {
+                CharacterData charData = CharactersData.Characters[index];
+            /*}
+            foreach (CharacterData charData in CharactersData.Characters)
+            {*/
                 if (charData.State == CharacterState.Good)
                 {
                     charData.State = CharacterState.Injured;
@@ -81,8 +95,12 @@ public class MovementSceneManager : MonoBehaviour
                 }
             }
 
-            foreach(CharacterData charData in CharactersData.Characters)
+            foreach (int index in order)
             {
+                CharacterData charData = CharactersData.Characters[index];
+            /*}
+            foreach(CharacterData charData in CharactersData.Characters)
+            {*/
                 if (charData.State == CharacterState.Injured)
                 {
                     charData.State = CharacterState.Dieded;
