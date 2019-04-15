@@ -281,6 +281,16 @@
 				</Event>
 				<Event Name="Play_Bass" ID="{65531D3B-AACF-445E-9119-2A1AB03595E5}">
 					<ChildrenList>
+						<Action Name="" ID="{E2A51AF5-6F69-436F-80B3-9CA9ECC3D18C}" ShortID="1042998326">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Playing" ID="{8CADAF1C-CF5B-4F55-88D3-1A26071D4F75}" WorkUnitID="{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{4BD31620-CD0E-4C20-9A0C-9B19C7AC1716}" ShortID="480783034">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -295,6 +305,16 @@
 				</Event>
 				<Event Name="Play_Guitar" ID="{616AB01C-52B9-40E5-B132-87C4E4F7574B}">
 					<ChildrenList>
+						<Action Name="" ID="{F0B82624-29A5-4410-B722-6D2CEE411C9D}" ShortID="437769170">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Playing" ID="{8CADAF1C-CF5B-4F55-88D3-1A26071D4F75}" WorkUnitID="{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{E146C420-1DF5-4811-AD7D-96A82FE7A26F}" ShortID="223245159">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -309,6 +329,16 @@
 				</Event>
 				<Event Name="Play_Piano" ID="{4FEED538-C464-4289-8779-ADF01011F9BA}">
 					<ChildrenList>
+						<Action Name="" ID="{AB647665-4706-4E74-A191-EA34F815669C}" ShortID="528259691">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Playing" ID="{8CADAF1C-CF5B-4F55-88D3-1A26071D4F75}" WorkUnitID="{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{C40000FD-FF68-4CDF-A21C-CE3FC5E94D12}" ShortID="354695294">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -323,6 +353,16 @@
 				</Event>
 				<Event Name="Play_Voice" ID="{35A72428-AB98-4849-9CE5-960F0661EA8E}">
 					<ChildrenList>
+						<Action Name="" ID="{B224354E-FF7E-4A3F-84D0-D5C6718E64D5}" ShortID="929306799">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Playing" ID="{8CADAF1C-CF5B-4F55-88D3-1A26071D4F75}" WorkUnitID="{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{A9FCD4FD-8B7C-45A0-B312-98CBC2FED67E}" ShortID="93081962">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -337,6 +377,16 @@
 				</Event>
 				<Event Name="Play_Drum" ID="{F245C1A6-1FA9-4970-AF49-D8D187ADC7C7}">
 					<ChildrenList>
+						<Action Name="" ID="{F782E296-695F-4887-989F-1D1B6660C140}" ShortID="466714512">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Playing" ID="{8CADAF1C-CF5B-4F55-88D3-1A26071D4F75}" WorkUnitID="{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{C748E73E-9EB5-4330-996F-671985537B86}" ShortID="240014592">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -351,6 +401,16 @@
 				</Event>
 				<Event Name="Play_Violon" ID="{6EF46F81-C5F5-4422-ACB4-271757F9FCC1}">
 					<ChildrenList>
+						<Action Name="" ID="{845F1975-B5C4-47EC-8C45-44710E26D25C}" ShortID="450249625">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Playing" ID="{8CADAF1C-CF5B-4F55-88D3-1A26071D4F75}" WorkUnitID="{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{B3ED2BE4-BA16-4FB9-9916-6D160CCA5D9E}" ShortID="744102317">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -542,6 +602,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Start_Rabbit" ID="{13037385-4A3F-4C2F-9774-EE4E0EB29B2B}">
+					<ChildrenList>
+						<Action Name="" ID="{6A7EE66A-0DDB-4FA0-870B-40E1FE0C91D4}" ShortID="508200290">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GCH_SFX_Rabbit_LP" ID="{6855C65E-03B8-4834-AB7B-F0220A809773}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI" ID="{EF0AFDED-813F-4E6B-8BC0-C8D28ABEB292}">
+					<ChildrenList>
+						<Action Name="" ID="{1B89B514-69A0-48BF-A8C2-3AB693A3B7B0}" ShortID="695646931">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Rand" ID="{F40D61B8-4E8F-486C-BC3A-C0945390E3FF}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

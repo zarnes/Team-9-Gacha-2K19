@@ -26,12 +26,14 @@
 						<ObjectRef Name="Start_BabaYaga" ID="{4EA1AEE5-1C09-4AA4-948D-7B1D58F2CBD4}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Start_Ambiances" ID="{075F92D5-C9F5-4AB2-86AB-BCC340E0FE77}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Event_Woods" ID="{1407F606-2248-4C2F-9AEA-0244EFFEE642}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Start_Rabbit" ID="{13037385-4A3F-4C2F-9774-EE4E0EB29B2B}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dead_Guitare" ID="{77E31F81-F954-4C8F-A2C0-4D8D1C658A4C}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Event_Eat" ID="{15852E89-0700-4CE6-9E37-8D0E35959D67}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Hungry" ID="{CA5C89A9-F3B0-4CF2-AA42-633C4E0CAD69}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Carriage" ID="{55C1B207-377B-4D17-B466-8CF7202CC629}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dead_Violo" ID="{D00E74AB-921E-4D87-9406-1E40247CEECF}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Event_FTPS" ID="{F6B921B0-8439-4DC9-A3DF-5C76F68CA12E}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Event_UI" ID="{EF0AFDED-813F-4E6B-8BC0-C8D28ABEB292}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_BabaYaga" ID="{80AE31B1-B16E-4EF7-8ABC-0934CFC645DE}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Event_Bushes" ID="{16E4C4F9-850B-4F05-AB7F-DB0A5956A8B3}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Start_Carriage" ID="{9E51CAF4-AD84-4F18-A157-8782E971D732}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
