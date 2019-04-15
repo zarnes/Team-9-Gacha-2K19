@@ -2,6 +2,8 @@
 using JetBrains.Annotations;
 using UnityEngine;
 
+
+
 [System.Serializable]
 public class ItemHandler
 {
@@ -17,6 +19,8 @@ public class ItemHandler
 [System.Serializable]
 public class Slot
 {
+    public enum Type { ALL, INGREDIENT, COMBUSTIBLE };
+    public Type m_type;
     protected Inventory m_inventory;
     [SerializeField]
     protected ItemHandler m_itemHandler;

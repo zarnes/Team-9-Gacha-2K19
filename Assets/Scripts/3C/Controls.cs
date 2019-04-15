@@ -21,17 +21,21 @@ public class Controls : MonoBehaviour
     private Pickup m_destination_item_;
     private GameObject m_current_selected_object_;
     private CharacterInventory m_charactere_inventory_;
-
-
+    
     public Animator Character_Animator;
     private Vector3 scale;
+
+    public CharacterState stateCharacter;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         scale = transform.localScale;
-        Character_Animator = GetComponent<Animator>();
-        InputManager.GetInstance().OnClickLeftMouseButton += OnClickLeftMouseHandler;
+        if(gameObject.name != "Mother")
+            Character_Animator = GetComponent<Animator>();
         InputManager.GetInstance().OnClickRightMouseButton += OnClickRightMouseHandler;
+      
+        stateCharacter = CharactersData.Characters.Find(character => character.Name == name).State;
+        
     }
 
     // Update is called once per frame
@@ -49,14 +53,34 @@ public class Controls : MonoBehaviour
                 Character_Animator.SetBool("Walk", false);
         }
 
-    }
-
-    private void OnClickLeftMouseHandler()
-    {
+        if (stateCharacter == CharacterState.Injured)
+        {
+            if (Character_Animator != null)
+                Character_Animator.SetBool("Injured", true);
+        }
+        else if (stateCharacter == CharacterState.Good)
+        {
+            if (Character_Animator != null)
+                Character_Animator.SetBool("Injured", false);
+        }
+        else
+        {
+            var isDeadInst = GetComponent<Character>().IsDead();
+            isDeadInst = true;
+            if (isDeadInst)
+            {
+                gameObject.SetActive(false);
+            }
+        }
     }
 
     private void OnClickRightMouseHandler()
     {
+        if(m_current_selected_object_ != null)
+        {
+            var shader = m_current_selected_object_.GetComponent<Renderer>().material;
+            shader.SetColor("_OutlineColor", Color.clear);
+        }
         var Player = GetGameObjectInRaycastAllByTag("Player");
         if (Player != null && Player.name == this.gameObject.name)
         {
@@ -85,7 +109,6 @@ public class Controls : MonoBehaviour
 
     private void OnDestroy()
     {
-        InputManager.GetInstance().OnClickLeftMouseButton -= OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton -= OnClickRightMouseHandler;
     }
 
