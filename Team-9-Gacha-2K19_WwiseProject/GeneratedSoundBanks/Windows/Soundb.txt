@@ -18,6 +18,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2324489794	Dead_Drum			\Default Work Unit\Dead_Drum	
 	2351498588	Event_Eat			\Default Work Unit\Event_Eat	
 	2376459254	Play_Drum			\Default Work Unit\Play_Drum	
+	2526624148	Stop_Fire			\Default Work Unit\Stop_Fire	
 	2699622244	Start_BabaYaga			\Default Work Unit\Start_BabaYaga	
 	3113608096	Event_Fish			\Default Work Unit\Event_Fish	
 	3199320663	Event_FTPS			\Default Work Unit\Event_FTPS	

@@ -7,12 +7,28 @@ public class CharacterInventory : Inventory
     public List<Slot> slots;
     public bool test;
 
+    private CharacterData character;
+
     private void Start()
     {
+        character = CharactersData.Characters.Find(c => c.Name == gameObject.name);
+        if (character == null)
+            Debug.LogError("Can't find character in data");
+
+        if (character.Slots == null)
+            character.Slots = slots;
+        else
+            slots = character.Slots;
+
         foreach(Slot slot in slots)
         {
             slot.SetInventory(this);
         }
+    }
+
+    private void OnDestroy()
+    {
+        character.Slots = slots;
     }
 
     private void Update()

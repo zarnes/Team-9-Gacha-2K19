@@ -8,19 +8,22 @@ public static class CharactersData
     public static float TimeLeft;
     public static float MaxTimeLeft = 300;
     public static float Morale;
+    public static int Food;
 
     public static ChanceState Chance;
 
     static CharactersData()
     {
+        Characters.Add(new CharacterData("Mother"));
         Characters.Add(new CharacterData("Katérina"));
         Characters.Add(new CharacterData("Anna"));
         Characters.Add(new CharacterData("Marina"));
         Characters.Add(new CharacterData("Tatiana"));
         Characters.Add(new CharacterData("Véra"));
 
-        TimeLeft = 120;
+        //TimeLeft = 120;
         Morale = 100;
+        Food = 0;
 
         Chance = ChanceState.Neutral;
     }
@@ -51,6 +54,7 @@ public class CharacterData
     public float Food;
     public float FoodMax = 5;
     public CharacterState State;
+    public List<Slot> Slots = null;
     
     public CharacterData(string name, float speed = 10, float food = 3, CharacterState state = CharacterState.Good)
     {
