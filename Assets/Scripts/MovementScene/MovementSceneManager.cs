@@ -166,7 +166,11 @@ public class MovementSceneManager : MonoBehaviour
 
         if (eventData == null)
         {
-            Debug.LogError("No event found (" + data.Type + ", " + data.Rarity + ", " + data.Goodness + ")");
+            if (data != null)
+                Debug.LogError("No event found (" + data.Type + ", " + data.Rarity + ", " + data.Goodness + ")");
+            else
+                Debug.LogError("No event found");
+
             eventData = EventsLoader.Instance.GetEvent();
         }
 
