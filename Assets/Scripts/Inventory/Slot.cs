@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 [System.Serializable]
@@ -26,22 +27,16 @@ public class Slot
         return m_itemHandler == null || m_itemHandler.m_item == null;
     }
 
-    public void SetItem(Item _item, int _count = 1)
+    public void SetItem([NotNull] Item _item, int _count = 1)
     {
-        if (_item == null)
-        {
-            m_itemHandler = null;
-        }
-        else
-        {
-            m_itemHandler = new ItemHandler(_item, _count);
-        }
+        m_itemHandler = new ItemHandler(_item, _count);
+
         NotifyListeners();
     }
 
     public Item GetItem()
     {
-        return m_itemHandler != null ? m_itemHandler.m_item : null;
+        return m_itemHandler?.m_item;
     }
 
     public void Add()
@@ -54,6 +49,15 @@ public class Slot
         NotifyListeners();
     }
 
+    public void Add([NotNull] Item _item)
+    {
+        if (IsEmpty())
+        {
+            SetItem(_item);
+        }
+        m_itemHandler.m_quantity++;
+        NotifyListeners();
+    }
     public void NotifyListeners()
     {
         foreach (ISlotListener listener in m_listeners)

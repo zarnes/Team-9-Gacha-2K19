@@ -48,7 +48,8 @@ public class Furnace : Inventory
         mealSlotUI.Init(mealSlot);
 
         cm = new CraftManager();
-        buttonCraft.onClick.AddListener(Craft);
+        // todo error
+       // buttonCraft.onClick.AddListener(Craft);
     }
 
     private void Update()
