@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8964444716375055682}
   - component: {fileID: 8964444716375055683}
   - component: {fileID: 8964444716375055708}
+  - component: {fileID: 4556697297924341881}
   m_Layer: 0
   m_Name: "Kat\xE9rina"
   m_TagString: Player
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!195 &8964444716375055681
@@ -119,7 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_nav_mesh_agent: {fileID: 8964444716375055681}
-  m_main_camera: {fileID: 0}
+  m_fire_camp: {fileID: 0}
+  m_pop_up_confirm: {fileID: 0}
+  Character_Animator: {fileID: 0}
 --- !u!1818360609 &8964444716375055683
 RotationConstraint:
   m_ObjectHideFlags: 0
@@ -152,6 +155,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.25, y: 8.000002, z: 0.20000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &4556697297924341881
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964444716375055709}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 450a145b63511ff418cc7b40eda724a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8964444716463390358
 GameObject:
   m_ObjectHideFlags: 0

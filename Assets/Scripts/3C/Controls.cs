@@ -20,9 +20,14 @@ public class Controls : MonoBehaviour
     private GameObject m_destination_pickup_;
     private GameObject m_current_selected_object_;
 
+
+    public Animator Character_Animator;
+    private Vector3 scale;
     // Start is called before the first frame update
     void Start()
     {
+        scale = transform.localScale;
+        Character_Animator = GetComponent<Animator>();
         InputManager.GetInstance().OnClickLeftMouseButton += OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton += OnClickRightMouseHandler;
     }
@@ -30,16 +35,41 @@ public class Controls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.z * 100f) * -1;
+
+        if (Character_Animator != null)
+        {
+            if (m_nav_mesh_agent.velocity != Vector3.zero)
+            {
+                Character_Animator.SetBool("Walk", true);
+            }
+            else
+                Character_Animator.SetBool("Walk", false);
+        }
+
     }
 
     private void OnClickLeftMouseHandler()
     {
-        /*
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         LayerMask mask = LayerMask.GetMask("Ground");
         if (Physics.Raycast(ray, out hit, 1000, mask))
-            m_nav_mesh_agent.SetDestination(hit.point);*/
+        {
+            m_nav_mesh_agent.SetDestination(hit.point);
+            if(m_nav_mesh_agent.destination.x < transform.position.x)
+            {
+                Debug.Log("Face Left");
+                transform.localScale = new Vector3(scale.x,scale.y,scale.z);
+            }
+            else if(m_nav_mesh_agent.destination.x > transform.position.x)
+            {
+                Debug.Log("Face Right");
+                transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
+            }
+
+        }
+           
     }
 
     private void OnClickRightMouseHandler()
@@ -125,6 +155,4 @@ public class Controls : MonoBehaviour
         m_destination_pickup_ = null;
         m_pop_up_confirm.SetActive(false);
     }
-
-    
 }
