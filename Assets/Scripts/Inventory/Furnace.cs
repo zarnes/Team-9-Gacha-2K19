@@ -1,18 +1,35 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
+
 using UnityEngine;
 using UnityEngine.UI;
+
+using System.Linq;
+
 
 public class Furnace : Inventory
 {
     public List<Slot> slots;
     public List<SlotUI> slotsUI;
+
     public Slot woodsSlot;
     public SlotUI woodsSlotUI;
+
     public Slot mealSlot;
     public SlotUI mealSlotUI;
+
     public float bakingSpeed = 2f;
 
     public Image bakeBar;
+    public Text textFoodGain;
+    public Button buttonCraft;
+
+    private CraftManager cm;
+    private FoodItem resultItem;
+    private List<FoodItem> items;
+
+
+    private IEnumerator bakeFoodCoroutine;
 
     private void Start()
     {
@@ -29,38 +46,84 @@ public class Furnace : Inventory
         woodsSlotUI.Init(woodsSlot);
         mealSlot.SetInventory(this);
         mealSlotUI.Init(mealSlot);
+
+        cm = new CraftManager();
+        buttonCraft.onClick.AddListener(Craft);
     }
 
     private void Update()
     {
-        BakeFood();
+        
+        RefreshResult();
     }
 
-    void BakeFood()
+    public void RefreshResult()
     {
-        if (woodsSlot.IsEmpty())
-            return;
+        items = new List<FoodItem>();
 
-        foreach(Slot slot in slots)
+        foreach (Slot slot in slots)
         {
             if (slot.GetItem() is FoodItem)
             {
                 FoodItem foodItem = (FoodItem)slot.GetItem();
-                if (foodItem.cooked)
-                    continue;
-
-                foodItem.bakingAmount += bakingSpeed * Time.deltaTime;
-                Debug.Log("cook");
-                bakeBar.fillAmount = foodItem.bakingAmount / foodItem.bakingDuration;
-
-                if (foodItem.bakingAmount >= foodItem.bakingDuration)
-                {
-                    //foodItem.cooked = true;
-                    slot.SetItem(null);
-                }
+                items.Add(foodItem);
             }
-            
         }
+
+        resultItem = cm.GetCraft(items);
+
+        textFoodGain.text = "Food : " + resultItem.value;
+    } 
+
+    public void Craft()
+    {
+        bakeFoodCoroutine = BakeFood();
+        StartCoroutine(bakeFoodCoroutine);
+    }
+
+    IEnumerator BakeFood()
+    {
+        /*
+        if (woodsSlot.IsEmpty())
+            return;
+            */
+
+        buttonCraft.enabled = false;
+
+
+        while (items.Count(c => c.cooked)<2 && !woodsSlot.IsEmpty())
+        {
+            foreach (Slot slot in slots)
+            {
+                if (slot.GetItem() is FoodItem)
+                {
+                    FoodItem foodItem = (FoodItem)slot.GetItem();
+                    if (foodItem.cooked)
+                        continue;
+
+                    foodItem.bakingAmount += bakingSpeed * Time.deltaTime;
+
+                    Debug.Log("cook");
+
+                    bakeBar.fillAmount = foodItem.bakingAmount / foodItem.bakingDuration;
+
+                    if (foodItem.bakingAmount >= foodItem.bakingDuration)
+                    {
+                        foodItem.cooked = true;
+                        slot.SetItem(null);
+
+                    }
+                }
+
+            }
+
+            yield return null;
+        }
+
+        
+
+        buttonCraft.enabled = true;
+
     }
 
 }

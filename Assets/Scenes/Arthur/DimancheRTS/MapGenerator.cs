@@ -59,7 +59,7 @@ public class MapGenerator : MonoBehaviour
             Vector3 positionToSpawn = new Vector3(xPlane,wood.transform.position.y, zPlane);
             //Vector3 positionToSpawn = Random.onUnitSphere * 25;
             //Debug.Log(positionToSpawn);
-            Instantiate(wood, positionToSpawn, Quaternion.identity);
+            Instantiate(wood, positionToSpawn, this.transform.rotation);
         }
 
         foodToSpawn = Random.Range(1, foodToSpawnMax);
@@ -69,7 +69,7 @@ public class MapGenerator : MonoBehaviour
             var zPlane = Random.Range(-floor.GetComponent<Collider>().bounds.size.z / 2, floor.GetComponent<Collider>().bounds.size.z / 2);
             Vector3 positionToSpawn = new Vector3(xPlane, food.transform.position.y, zPlane);
             //Debug.Log(positionToSpawn);
-            Instantiate(food, positionToSpawn, Quaternion.identity);
+            Instantiate(food, positionToSpawn, this.transform.rotation);
         }
     }
 }

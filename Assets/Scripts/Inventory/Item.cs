@@ -6,12 +6,13 @@ using UnityEngine.UI;
 [CreateAssetMenu()]
 public class Item : ScriptableObject
 {
-    public enum Type { WOOD, FOOD }
+    public enum Type { WOOD,FOOD}
 
     public Type type;
     public Sprite icon;
     public string name;
     public bool consumable = false;
+    
     
     public float bakingAmount = 0f;
     public float bakingDuration = 2.0f;
@@ -40,6 +41,7 @@ public class FoodItem : Item
     public float value = 0f;
     public bool cooked = false;
     public Sprite cookedImage;
+
     public FoodItem(Item.Type _type, string _name, bool _consumable, float _value)
     : base(_type, _name, _consumable)
     {
