@@ -49,6 +49,15 @@ public class Slot
         NotifyListeners();
     }
 
+    public void Add([NotNull] Item _item)
+    {
+        if (IsEmpty())
+        {
+            SetItem(_item);
+        }
+        m_itemHandler.m_quantity++;
+        NotifyListeners();
+    }
     public void NotifyListeners()
     {
         foreach (ISlotListener listener in m_listeners)

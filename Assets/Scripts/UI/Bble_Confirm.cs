@@ -16,4 +16,12 @@ public class Bble_Confirm : MonoBehaviour
         txtDuration.text = duration;
         barRisk.value = percent;
     }
+
+    public void Setup(Item item)
+    {
+        img.sprite = item.icon;
+        txtQty.text = item.bakingAmount.ToString();
+        txtDuration.text = item.bakingDuration.ToString();
+        barRisk.value = 0;
+    }
 }

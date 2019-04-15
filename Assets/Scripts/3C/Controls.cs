@@ -18,8 +18,9 @@ public class Controls : MonoBehaviour
     private GameObject m_pop_up_confirm;
 
     private GameObject m_destination_pickup_;
-    private Item m_destination_item_;
+    private Pickup m_destination_item_;
     private GameObject m_current_selected_object_;
+    private CharacterInventory m_charactere_inventory_;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class Controls : MonoBehaviour
     private void OnClickRightMouseHandler()
     {
         var Player = GetGameObjectInRaycastAllByTag("Player");
-        if (Player != null)
+        if (Player != null && Player.name == this.gameObject.name)
         {
             m_current_selected_object_ = Player;
             return;
@@ -53,7 +54,9 @@ public class Controls : MonoBehaviour
         {
             m_pop_up_confirm.GetComponent<AnchoredSpriteUI>().target = Item.transform;
             m_destination_pickup_ = Item.gameObject;
+            m_destination_item_ = Item;
             m_pop_up_confirm.SetActive(true);
+            m_pop_up_confirm.GetComponent<Bble_Confirm>().Setup(Item.m_item);
             return;
         }
         this.m_current_selected_object_ = null;
@@ -99,7 +102,7 @@ public class Controls : MonoBehaviour
     {
         if (m_destination_pickup_ != null && other.gameObject.GetHashCode() == m_destination_pickup_.GetHashCode())
         {
-            PickInInventory(m_destination_item_);
+            PickInInventory(m_destination_item_.m_item);
             ComeBackBackToCamp();
         }
     }
@@ -111,7 +114,7 @@ public class Controls : MonoBehaviour
 
     public void MoveToDestination()
     {
-        if (m_destination_pickup_ != null)
+        if (m_current_selected_object_ != null && m_current_selected_object_.CompareTag("Player") && m_destination_pickup_ != null)
             m_nav_mesh_agent.SetDestination(m_destination_pickup_.transform.position);
         m_pop_up_confirm.SetActive(false);
     }
@@ -124,6 +127,9 @@ public class Controls : MonoBehaviour
 
     private void PickInInventory(Item _item)
     {
-        this.m_current_selected_object_.GetComponent<CharacterInventory>().slots[0].SetItem(_item);
+        if (m_current_selected_object_ != null && m_current_selected_object_.CompareTag("Player"))
+            m_charactere_inventory_ = m_current_selected_object_.GetComponent<CharacterInventory>();
+
+        m_charactere_inventory_.slots[0].Add(_item);
     }
 }
