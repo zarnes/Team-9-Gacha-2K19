@@ -15,6 +15,8 @@ public class CharacterInventory : Inventory
         if (character == null)
             Debug.LogError("Can't find character in data");
 
+        GetComponent<Character>().SetDead(character.State == CharacterState.Dieded);
+
         if (character.Slots == null)
             character.Slots = slots;
         else

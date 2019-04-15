@@ -88,7 +88,7 @@ public class MovementSceneManager : MonoBehaviour
             {*/
                 if (charData.State == CharacterState.Good)
                 {
-                    charData.State = CharacterState.Injured;
+                    charData.SetState(CharacterState.Injured);
                     ViewPortContent.transform.Find("Lore").GetComponent<Text>().text += " " + charData.Name + " est maintenant blessée.";
                     UpdateValues();
                     return;
@@ -103,7 +103,7 @@ public class MovementSceneManager : MonoBehaviour
             {*/
                 if (charData.State == CharacterState.Injured)
                 {
-                    charData.State = CharacterState.Dieded;
+                    charData.SetState(CharacterState.Dieded);
                     ViewPortContent.transform.Find("Lore").GetComponent<Text>().text += " " + charData.Name + " a succombée de ses blessures.";
                     UpdateValues();
                     return;
