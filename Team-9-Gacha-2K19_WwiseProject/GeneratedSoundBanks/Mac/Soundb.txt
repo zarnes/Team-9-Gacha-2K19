@@ -1,0 +1,77 @@
+Event	ID	Name			Wwise Object Path	Notes
+	114057136	Event_Firelog			\Default Work Unit\Event_Firelog	
+	871543252	Start_TicToc			\Default Work Unit\Start_TicToc	
+	1196647164	Start_Carriage			\Default Work Unit\Start_Carriage	
+	1822118041	Start_Hungry			\Default Work Unit\Start_Hungry	
+	2012414419	Stop_Hungry			\Default Work Unit\Stop_Hungry	
+	2170542218	Event_Vegetables			\Default Work Unit\Event_Vegetables	
+	2296627038	Stop_BabaYaga			\Default Work Unit\Stop_BabaYaga	
+	2315124534	Stop_River			\Default Work Unit\Stop_River	
+	2351498588	Event_Eat			\Default Work Unit\Event_Eat	
+	2699622244	Start_BabaYaga			\Default Work Unit\Start_BabaYaga	
+	3113608096	Event_Fish			\Default Work Unit\Event_Fish	
+	3199320663	Event_FTPS			\Default Work Unit\Event_FTPS	
+	3464303516	Event_Woods			\Default Work Unit\Event_Woods	
+	3632201782	Start_Fire			\Default Work Unit\Start_Fire	
+	3667605692	Event_Bushes			\Default Work Unit\Event_Bushes	
+	3715608165	Start_Ambiances			\Default Work Unit\Start_Ambiances	
+	3767458032	Start_River			\Default Work Unit\Start_River	
+	3988459314	Stop_Carriage			\Default Work Unit\Stop_Carriage	
+	4267364614	Stop_TicToc			\Default Work Unit\Stop_TicToc	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4910905	GCH_SFX_FTPS_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_03		89472
+	63278681	GCH_AMB_Screams_OS_0	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Screams_OS_0_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Screams_Rand\GCH_AMB_Screams_OS_0		2523200
+	88164966	GCH_SFX_Laugh_OS_04	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Laugh_OS_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BabaYaga_Bl\Lol_Rand\GCH_SFX_Laugh_OS_04		717632
+	133015107	GCH_AMB_Cracks_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Cracks_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Cracks_Rand\GCH_AMB_Cracks_OS_02		534340
+	144802948	GCH_SFX_Eating_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Eating_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Eat_Rand\GCH_SFX_Eating_OS_03		180288
+	159997249	GCH_AMB_Screams_OS_05	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Screams_OS_05_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Screams_Rand\GCH_AMB_Screams_OS_05		3260480
+	189404232	GCH_SFX_Wood_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Wood_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Woods_Rand\GCH_SFX_Wood_OS_01		72640
+	193294615	GCH_SFX_Dirt_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Dirt_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Vegetables_Rand\GCH_SFX_Dirt_OS_01		96464
+	196470791	GCH_SFX_FTPS_OS_11	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_11_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_11		89472
+	211421832	GCH_SFX_Splash_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Splash_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Fish_Rand\GCH_SFX_Splash_OS_03		118224
+	235840689	GCH_SFX_craftFinish_OS_0	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_craftFinish_OS_0_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Craft_finish_Rand\GCH_SFX_craftFinish_OS_0		90496
+	243805524	GCH_AMB_Forestnight_LP	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Forestnight_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\GCH_AMB_Forestnight_LP		12845120
+	256349680	GCH_SFX_Bushes_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Bushes_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Bushes_Rand\GCH_SFX_Bushes_OS_03		156974
+	258527105	GCH_SFX_FTPS_OS_08	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_08_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_08		89472
+	259524498	GCH_SFX_craftFinish_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_craftFinish_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Craft_finish_Rand\GCH_SFX_craftFinish_OS_02		90496
+	275115427	GCH_SFX_Wood_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Wood_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Woods_Rand\GCH_SFX_Wood_OS_02		72640
+	346115073	GCH_SFX_Bushes_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Bushes_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Bushes_Rand\GCH_SFX_Bushes_OS_02		156974
+	352519569	GCH_SFX_Eating_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Eating_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Eat_Rand\GCH_SFX_Eating_OS_02		148544
+	362185397	GCH_SFX_Splash_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Splash_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Fish_Rand\GCH_SFX_Splash_OS_01		118224
+	399610029	GCH_SFX_FTPS_OS_09	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_09_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_09		89472
+	408973227	GCH_AMB_Screams_OS_06	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Screams_OS_06_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Screams_Rand\GCH_AMB_Screams_OS_06		1867840
+	440688431	GCH_SFX_FTPS_OS_04	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_04		89472
+	453142314	GCH_SFX_Dirt_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Dirt_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Vegetables_Rand\GCH_SFX_Dirt_OS_03		96464
+	500409657	GCH_SFX_FTPS_OS_06	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_06_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_06		89472
+	504415947	GCH_SFX_LogFire_OS_04	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_LogFire_OS_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Firelog_Rand\GCH_SFX_LogFire_OS_04		281408
+	514746129	GCH_SFX_FTPS_OS_07	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_07_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_07		89472
+	544473889	GCH_SFX_Laugh_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Laugh_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BabaYaga_Bl\Lol_Rand\GCH_SFX_Laugh_OS_01		446528
+	553676841	GCH_AMB_Cracks_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Cracks_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Cracks_Rand\GCH_AMB_Cracks_OS_03		659520
+	560058366	GCH_SFX_Eating_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Eating_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Eat_Rand\GCH_SFX_Eating_OS_01		196672
+	570674595	GCH_SFX_Fire_LP	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Fire_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\GCH_SFX_Fire_LP		931904
+	581310106	GCH_SFX_LogFire_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_LogFire_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Firelog_Rand\GCH_SFX_LogFire_OS_03		281408
+	601981704	GCH_SFX_Carriage_LP	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Carriage_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loops\GCH_SFX_Carriage_LP		1019968
+	636549986	GCH_SFX_FTPS_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_02		89472
+	649133636	GCH_SFX_Bushes_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Bushes_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Bushes_Rand\GCH_SFX_Bushes_OS_01		156974
+	669014041	GCH_SFX_ticktock_LP	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_ticktock_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loops\GCH_SFX_ticktock_LP		433216
+	682514826	GCH_AMB_River_LP_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_River_LP_01_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loops\GCH_AMB_River_LP_01		4314600
+	689889741	GCH_SFX_Wood_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Wood_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Woods_Rand\GCH_SFX_Wood_OS_03		72640
+	691225187	GCH_SFX_Splash_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Splash_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Fish_Rand\GCH_SFX_Splash_OS_02		118224
+	712450372	GCH_SFX_Hungry_LP	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Hungry_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loops\GCH_SFX_Hungry_LP		1494080
+	750623107	GCH_SFX_FTPS_OS_05	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_05_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_05		89472
+	752048360	GCH_AMB_Screams_OS_04	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Screams_OS_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Screams_Rand\GCH_AMB_Screams_OS_04		2650176
+	754564552	GCH_SFX_Dirt_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Dirt_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Vegetables_Rand\GCH_SFX_Dirt_OS_02		96464
+	778636827	GCH_AMB_Heartbeat_LP	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Heartbeat_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BabaYaga_Bl\GCH_AMB_Heartbeat_LP		4988992
+	790736883	GCH_AMB_Cracks_OS_04	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Cracks_OS_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Cracks_Rand\GCH_AMB_Cracks_OS_04		638240
+	808950145	GCH_AMB_Screams_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Screams_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Screams_Rand\GCH_AMB_Screams_OS_03		2297920
+	825555949	GCH_SFX_craftFinish_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_craftFinish_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Craft_finish_Rand\GCH_SFX_craftFinish_OS_01		90496
+	866744796	GCH_AMB_Screams_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Screams_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Screams_Rand\GCH_AMB_Screams_OS_02		1409088
+	867696964	GCH_SFX_Laugh_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Laugh_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BabaYaga_Bl\Lol_Rand\GCH_SFX_Laugh_OS_02		593984
+	895348609	GCH_SFX_FTPS_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_01		89472
+	905136270	GCH_SFX_Laugh_OS_03	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_Laugh_OS_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BabaYaga_Bl\Lol_Rand\GCH_SFX_Laugh_OS_03		421952
+	941269080	GCH_SFX_LogFire_OS_02	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_LogFire_OS_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Firelog_Rand\GCH_SFX_LogFire_OS_02		281408
+	961516532	GCH_AMB_Cracks_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_AMB_Cracks_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances_Bl\Cracks_Rand\GCH_AMB_Cracks_OS_01		1102468
+	1009479887	GCH_SFX_LogFire_OS_01	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_LogFire_OS_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Firelog_Rand\GCH_SFX_LogFire_OS_01		281408
+	1010110415	GCH_SFX_FTPS_OS_10	D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Mac\SFX\GCH_SFX_FTPS_OS_10_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\FTPS_Rand\GCH_SFX_FTPS_OS_10		89472
+
