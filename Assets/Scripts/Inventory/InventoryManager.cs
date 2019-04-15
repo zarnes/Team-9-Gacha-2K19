@@ -10,7 +10,7 @@ public class InventoryManager : MonoBehaviour
 
     public void OnSlotClicked(Slot clickedSlot)
     {
-        if (selectedItem == null) //get
+        if (selectedItem == null || selectedItem.m_item == null) //get
         {
             if (clickedSlot.IsEmpty())
                 return;
@@ -25,6 +25,12 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
+            if (selectedItem.m_item.type == Item.Type.FOOD && clickedSlot.m_type == Slot.Type.COMBUSTIBLE)
+                return;
+
+            if (selectedItem.m_item.type == Item.Type.WOOD && clickedSlot.m_type == Slot.Type.INGREDIENT)
+                return;
+
             if (clickedSlot.IsEmpty()) //drop
             {
                 clickedSlot.SetItem(selectedItem.m_item, selectedItem.m_quantity);

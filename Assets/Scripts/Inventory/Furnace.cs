@@ -73,7 +73,7 @@ public class Furnace : Inventory
 
         resultItem = cm.GetCraft(items);
 
-        textFoodGain.text = "Food : " + resultItem.value;
+        //textFoodGain.text = "Food : " + resultItem.value;
     } 
 
     public void Craft()
