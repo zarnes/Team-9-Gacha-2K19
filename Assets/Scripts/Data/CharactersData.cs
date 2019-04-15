@@ -14,6 +14,7 @@ public static class CharactersData
 
     static CharactersData()
     {
+        Characters.Add(new CharacterData("Mother"));
         Characters.Add(new CharacterData("Katérina"));
         Characters.Add(new CharacterData("Anna"));
         Characters.Add(new CharacterData("Marina"));
