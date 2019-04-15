@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DEAD_BASS = 4247712563U;
         static const AkUniqueID DEAD_DRUM = 2324489794U;
         static const AkUniqueID DEAD_GUITARE = 22441161U;
         static const AkUniqueID DEAD_PIANO = 3389925521U;
@@ -23,6 +24,8 @@ namespace AK
         static const AkUniqueID EVENT_FIRELOG = 114057136U;
         static const AkUniqueID EVENT_FISH = 3113608096U;
         static const AkUniqueID EVENT_FTPS = 3199320663U;
+        static const AkUniqueID EVENT_MENU_CLOSE = 1319153178U;
+        static const AkUniqueID EVENT_MENUOPEN = 1272787271U;
         static const AkUniqueID EVENT_UI = 1049942240U;
         static const AkUniqueID EVENT_VEGETABLES = 2170542218U;
         static const AkUniqueID EVENT_WOODS = 3464303516U;
