@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{654F6AA1-D725-439D-B23C-7E60484133F8}" SchemaVersion="89">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{654F6AA1-D725-439D-B23C-7E60484133F8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{654F6AA1-D725-439D-B23C-7E60484133F8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Babayaga_Sw" ID="{9473A0B4-F768-4A90-A60B-EFBF237E9D94}">
+					<ChildrenList>
+						<Switch Name="On" ID="{75FCADDC-D989-44B3-8DF0-D35677475EF1}"/>
+						<Switch Name="Off" ID="{1BCCCDDD-4DD1-45AD-80C4-826D16A0142F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Status_Sw" ID="{59BFD718-20B8-4EF6-8F80-84C8EE12572F}">
+					<ChildrenList>
+						<Switch Name="Victory" ID="{2B26CA12-9C02-437A-9BB4-C633B27045A0}"/>
+						<Switch Name="Playing" ID="{9FEFB8A4-72FC-4449-9B3E-6587C8AC0A28}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
