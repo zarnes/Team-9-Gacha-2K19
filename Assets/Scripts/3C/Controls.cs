@@ -61,8 +61,6 @@ public class Controls : MonoBehaviour
         if (Player != null && Player.name == this.gameObject.name)
         {
             m_current_selected_object_ = Player;
-            var shaderSelection = m_current_selected_object_.GetComponent<Renderer>().material;
-            shaderSelection.SetColor("_OutlineColor",Color.green);
             return;
         }
 
@@ -76,10 +74,8 @@ public class Controls : MonoBehaviour
             m_destination_item_ = Item;
             m_pop_up_confirm.SetActive(true);
             m_pop_up_confirm.GetComponent<Bble_Confirm>().Setup(Item.m_item);
-            
             return;
         }
-        
         this.m_current_selected_object_ = null;
     }
 
