@@ -12,6 +12,4 @@ public class Inventory : MonoBehaviour
         }
         manager.OnSlotClicked(clickedSlot);
     }
-
-    
 }

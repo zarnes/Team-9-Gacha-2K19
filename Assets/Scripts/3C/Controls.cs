@@ -184,9 +184,7 @@ public class Controls : MonoBehaviour
     {
         if (m_current_selected_object_ != null && m_current_selected_object_.CompareTag("Player"))
             m_charactere_inventory_ = m_current_selected_object_.GetComponent<CharacterInventory>();
-        bool t = m_charactere_inventory_.AddItem(m_destination_item_.m_item);
-        if (!t)
-            Debug.Log("failed");
+        Destroy(m_destination_item_.gameObject);
 
     }
 }
