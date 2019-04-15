@@ -32,8 +32,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{9CFE3E94-D17C-4DE4-B06E-4FB64969716C}'
-    m_lastTimePart2: -1999192015
-    m_lastTimePsrt1: -1889414888
+    m_lastTimePart2: -1999191756
+    m_lastTimePsrt1: -1422981396
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -48,36 +48,327 @@ MonoBehaviour:
         ObjectType: 7
   EventWwu:
   - Guid: '{438AD9D3-E189-4507-AC04-ECFA15E19F2A}'
-    m_lastTimePart2: -1999192015
-    m_lastTimePsrt1: -1892267268
+    m_lastTimePart2: -1999191750
+    m_lastTimePsrt1: 1363864600
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
-    - Guid: 99d9b9d0d2b1bf469b91e9d389e61996
-      ID: -1362926625
-      Name: Play_Music
-      Path: Default Work Unit\Play_Music
+    - Guid: f9c4e4160b85054fab7fdb0a5956a8b3
+      ID: -627361604
+      Name: Event_Bushes
+      Path: Default Work Unit\Event_Bushes
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Music
+      - ElementName: Event_Bushes
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - Guid: aafc80840e73a946a86140cfad82fb4f
-      ID: -1006852569
-      Name: Play_Sound
-      Path: Default Work Unit\Play_Sound
+    - Guid: 892e85150007e64c9e378d0e35959d67
+      ID: -1943468708
+      Name: Event_Eat
+      Path: Default Work Unit\Event_Eat
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Sound
+      - ElementName: Event_Eat
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-  ExpandedItems: []
+    - Guid: 793f2456c5f4204396826f887a05b862
+      ID: 114057136
+      Name: Event_Firelog
+      Path: Default Work Unit\Event_Firelog
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_Firelog
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: d2cd94066f4f4e43a9b104c8f1e5a93a
+      ID: -1181359200
+      Name: Event_Fish
+      Path: Default Work Unit\Event_Fish
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_Fish
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: b021b9f63984c94da3df5c76f68ca12e
+      ID: -1095646633
+      Name: Event_FTPS
+      Path: Default Work Unit\Event_FTPS
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_FTPS
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 5e1de0b1bf391749a008806a90093d9e
+      ID: -2124425078
+      Name: Event_Vegetables
+      Path: Default Work Unit\Event_Vegetables
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_Vegetables
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 06f6071448222f4c9aea0244effee642
+      ID: -830663780
+      Name: Event_Woods
+      Path: Default Work Unit\Event_Woods
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_Woods
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 3b1d5365cfaa5e4491192a1ab03595e5
+      ID: 1560528335
+      Name: Play_Bass
+      Path: Default Work Unit\Play_Bass
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Bass
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: a6c145f2a91f7049af49d8d187adc7c7
+      ID: -1918508042
+      Name: Play_Drum
+      Path: Default Work Unit\Play_Drum
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Drum
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 1cb06a61b952e540b13287c4e4f7574b
+      ID: -730055704
+      Name: Play_Guitar
+      Path: Default Work Unit\Play_Guitar
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Guitar
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: a5fc64c5de2b6f4fa9eed5976c8dbbcc
+      ID: -326088614
+      Name: Play_Mus_Test
+      Path: Default Work Unit\Play_Mus_Test
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Mus_Test
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 38d5ee4f64c489428779adf01011f9ba
+      ID: 1479974693
+      Name: Play_Piano
+      Path: Default Work Unit\Play_Piano
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Piano
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 816ff46ef5c52244acb4271757f9fcc1
+      ID: -952238957
+      Name: Play_Violon
+      Path: Default Work Unit\Play_Violon
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Violon
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2824a73598ab49489ce5960f0661ea8e
+      ID: 1642680936
+      Name: Play_Voice
+      Path: Default Work Unit\Play_Voice
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Voice
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: d5925f07f5c9b24a86abbcc340e0fe77
+      ID: -579359131
+      Name: Start_Ambiances
+      Path: Default Work Unit\Start_Ambiances
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Ambiances
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e5aea14e091ca44a948d7b1d58f2cbd4
+      ID: -1595345052
+      Name: Start_BabaYaga
+      Path: Default Work Unit\Start_BabaYaga
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_BabaYaga
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: f4ca519e84ad184fa1578782e971d732
+      ID: 1196647164
+      Name: Start_Carriage
+      Path: Default Work Unit\Start_Carriage
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Carriage
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: ddb344d04c1e3248ab39e48165689441
+      ID: -662765514
+      Name: Start_Fire
+      Path: Default Work Unit\Start_Fire
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Fire
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 0330958fa151e3498f3e2c116cb3273c
+      ID: 1822118041
+      Name: Start_Hungry
+      Path: Default Work Unit\Start_Hungry
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Hungry
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: f6fd01f64f818f448030f0ba469cdbc5
+      ID: -527509264
+      Name: Start_River
+      Path: Default Work Unit\Start_River
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_River
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e7860356bf010041a245e74a9bc52186
+      ID: 871543252
+      Name: Start_TicToc
+      Path: Default Work Unit\Start_TicToc
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_TicToc
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: b131ae806eb1f74e8abc0934cfc645de
+      ID: -1998340258
+      Name: Stop_BabaYaga
+      Path: Default Work Unit\Stop_BabaYaga
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_BabaYaga
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 07b2c1557b37174db4668cf7202cc629
+      ID: -306507982
+      Name: Stop_Carriage
+      Path: Default Work Unit\Stop_Carriage
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Carriage
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: a9895ccab0f3f24caa42633c4e0cad69
+      ID: 2012414419
+      Name: Stop_Hungry
+      Path: Default Work Unit\Stop_Hungry
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Hungry
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: bfe8de8123726249bbbbe308cc01887f
+      ID: -1979842762
+      Name: Stop_River
+      Path: Default Work Unit\Stop_River
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_River
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c2a5a709b29932419f07f78bdc260ebb
+      ID: -27602682
+      Name: Stop_TicToc
+      Path: Default Work Unit\Stop_TicToc
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_TicToc
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /Team-9-Gacha-2K19_WwiseProject
+  - /Team-9-Gacha-2K19_WwiseProject/Events
+  - /Team-9-Gacha-2K19_WwiseProject/Events/Default Work Unit
   RtpcWwu:
   - Guid: '{CC73B4A8-D4A2-42B6-A649-5CACE87B4886}'
     m_lastTimePart2: -1999192015
