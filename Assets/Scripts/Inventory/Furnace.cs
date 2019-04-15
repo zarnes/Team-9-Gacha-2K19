@@ -49,7 +49,7 @@ public class Furnace : Inventory
 
         cm = new CraftManager();
         // todo error
-       // buttonCraft.onClick.AddListener(Craft);
+        //buttonCraft.onClick.AddListener(Craft);
     }
 
     private void Update()
@@ -71,8 +71,14 @@ public class Furnace : Inventory
             }
         }
 
-        resultItem = cm.GetCraft(items);
 
+        if (items.Count > 0 && !woodsSlot.IsEmpty())
+            buttonCraft.gameObject.SetActive(true);
+        else
+            buttonCraft.gameObject.SetActive(false);
+
+        resultItem = cm.GetCraft(items);
+        
         //textFoodGain.text = "Food : " + resultItem.value;
     } 
 
@@ -82,29 +88,54 @@ public class Furnace : Inventory
         StartCoroutine(bakeFoodCoroutine);
     }
 
+    public void SetActiveFoodSlots(bool active)
+    {
+        int ax = 0;
+
+        foreach (Slot s in slots)
+        {
+            if (s.GetItem() is FoodItem)
+            {
+                //s.Remove();
+                
+                slotsUI[ax].IsDisabled = active;
+                ax++;
+            }
+        }
+    }
+
+    public void ClearFoodSlots()
+    {
+        foreach (Slot s in slots)
+        {
+            if (s.GetItem() is FoodItem)
+            {
+                s.Remove();
+            }
+        }
+    }
+
     IEnumerator BakeFood()
     {
-        /*
-        if (woodsSlot.IsEmpty())
-            return;
-            */
+            
 
-        buttonCraft.enabled = false;
-
+        SetActiveFoodSlots(false);
 
         while (items.Count(c => c.cooked)<2 && !woodsSlot.IsEmpty())
         {
             foreach (Slot slot in slots)
             {
-                if (slot.GetItem() is FoodItem)
+                if (slot.IsEmpty())
+                    break;
+                    
+                if (slot.GetItem().type == Item.Type.FOOD)
                 {
                     FoodItem foodItem = (FoodItem)slot.GetItem();
+
                     if (foodItem.cooked)
                         continue;
 
                     foodItem.bakingAmount += bakingSpeed * Time.deltaTime;
-
-                    Debug.Log("cook");
 
                     bakeBar.fillAmount = foodItem.bakingAmount / foodItem.bakingDuration;
 
@@ -121,9 +152,11 @@ public class Furnace : Inventory
             yield return null;
         }
 
-        
-
-        buttonCraft.enabled = true;
+        ClearFoodSlots();
+        mealSlot.SetItem(resultItem, 1);
+        bakeBar.fillAmount = 0f;
+        SetActiveFoodSlots(true);
+        mealSlot.Add();
 
     }
 

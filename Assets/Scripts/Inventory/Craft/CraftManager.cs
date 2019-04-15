@@ -15,7 +15,25 @@ public class CraftManager : MonoBehaviour
         if (items.Count(i => i.cooked) > 0)
             return null;
 
-        FoodItem returnItem = new FoodItem(Item.Type.FOOD, "Food", true, items.Count*2);
+        FoodItem returnItem;
+
+        /*
+        foreach(FoodItem i in items)
+        {
+          
+        }*/
+
+        if (isMeat && isFish && isVegetable)
+        {
+            //soins
+            returnItem = new FoodItem(Item.Type.FOOD, "Food", true, items.Count * 2);
+        }
+        else
+        {
+            returnItem = new FoodItem(Item.Type.FOOD, "Food", true, items.Count * 2);
+        }
+
+        returnItem.icon = Resources.Load<Sprite>("Assets/Graphs/Sprites/Carotte");
         returnItem.cooked = true;
         return returnItem;
     }
