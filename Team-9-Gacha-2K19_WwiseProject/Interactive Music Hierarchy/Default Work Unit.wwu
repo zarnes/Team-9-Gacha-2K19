@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{B9B78766-60A6-435C-B550-93721C9D0284}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Bass" ID="{B5B81111-3523-4410-A849-37D07498D9CE}" ShortID="630640343">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -313,7 +320,7 @@
 										<MusicCue Name="Exit Cue" ID="{3F80434E-47E6-4446-8449-7739CCDE4009}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="19200"/>
+												<Property Name="TimeMs" Type="Real64" Value="21189.2192662146"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -628,6 +635,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Drum" ID="{351A14B4-F6CA-4B68-BFB2-B56F9807E63D}" ShortID="406446767">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -1254,7 +1268,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1886,6 +1900,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Violons" ID="{63BDC5B3-4DF2-4AC9-8D16-02B4BCA4B2F2}" ShortID="715305900">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -2310,6 +2331,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="GCH_MUS_Vio1_P3_1_LP" ID="{3AFFDCF6-2B30-487D-B50E-B37A909A4B2D}" ShortID="295592069">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
@@ -2407,6 +2435,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="GCH_MUS_Vio1_P3_2_LP" ID="{55BEECAF-EF3A-4D9F-A4DF-DB5FDEC1FBFA}" ShortID="722705328">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
@@ -2775,6 +2810,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Piano" ID="{4BE06EAA-3C0D-4D83-9DA5-81D565DFCF9F}" ShortID="788069782">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -2846,6 +2888,13 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="GCH_MUS_Pia2_P1_LP" ID="{2490F8F3-29AE-4D8C-B33B-DCEF289A20B0}" ShortID="530791878">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -2943,6 +2992,13 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="GCH_MUS_Pia2_P2_1_LP" ID="{C211F6FD-9926-4863-A4C0-404359A493AD}" ShortID="250427594">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -3040,6 +3096,13 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="GCH_MUS_Pia2_P2_2_LP" ID="{9C381B6B-BAAE-419F-9DFD-0EB104423B0B}" ShortID="609831638">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -3331,6 +3394,13 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="GCH_MUS_Pia2_P3_2_LP" ID="{697C714D-979B-45E8-BBB3-372A403F78B5}" ShortID="549885927">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -3608,7 +3678,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -3637,6 +3707,11 @@
 								<MusicSegment Name="GCH_MUS_Voic1_P1_LP" ID="{2588BA84-957E-40D3-90C7-2AE3AA1E525E}" ShortID="980154956">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="25200"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

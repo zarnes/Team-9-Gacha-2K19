@@ -36,6 +36,7 @@
 						<Action Name="" ID="{576AB8A1-0B9F-4504-B5C4-8D14FD5E27EA}" ShortID="512003894">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -502,6 +503,7 @@
 						<Action Name="" ID="{4D95C322-D45A-4DA0-BF99-71EF8CEBF6C2}" ShortID="1027015051">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -526,6 +528,7 @@
 						<Action Name="" ID="{FCBDC461-69DB-4D11-A3E6-1412236B8C3E}" ShortID="140024176">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -550,6 +553,7 @@
 						<Action Name="" ID="{73572FE1-3444-4DFC-9967-F2C88B7A2E3C}" ShortID="538786532">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -574,6 +578,7 @@
 						<Action Name="" ID="{90E29123-AC87-4918-AAE9-05E2E9183E33}" ShortID="72996641">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -598,6 +603,7 @@
 						<Action Name="" ID="{20DE753F-C40D-4599-8883-EC015BA97F4A}" ShortID="71716525">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -630,6 +636,177 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI_Rand" ID="{F40D61B8-4E8F-486C-BC3A-C0945390E3FF}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_MenuOpen" ID="{14DF86EC-26C9-4496-BCE0-A096AB406C07}">
+					<ChildrenList>
+						<Action Name="" ID="{18B925AD-67DA-4EB6-BEF6-D1FF259BBFE6}" ShortID="575818128">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass" ID="{B5B81111-3523-4410-A849-37D07498D9CE}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{256E37B6-D96B-4BE3-B461-79FF34A4F01C}" ShortID="18323743">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drum" ID="{351A14B4-F6CA-4B68-BFB2-B56F9807E63D}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1D9ED667-FBE1-420E-8506-9007C38344A4}" ShortID="365307652">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar" ID="{CA0431AF-F6FA-47D6-BE23-E966C7D050F3}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{557F97CB-CCC3-47D7-90FE-0D369F936118}" ShortID="447298710">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano" ID="{4BE06EAA-3C0D-4D83-9DA5-81D565DFCF9F}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{65528D94-BBA7-408C-A0B7-AF3EA0D98FA6}" ShortID="706703995">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Violons" ID="{63BDC5B3-4DF2-4AC9-8D16-02B4BCA4B2F2}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A6D11E22-739A-4C73-9310-9761717A4124}" ShortID="303807103">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Volume" Type="Real64" Value="-16"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Menu_Close" ID="{38C659E9-4879-423A-B1C0-887D43438DF0}">
+					<ChildrenList>
+						<Action Name="" ID="{6BFA6718-D6C8-40FF-9EF1-0101F2641191}" ShortID="491167210">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass" ID="{B5B81111-3523-4410-A849-37D07498D9CE}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FE16333A-A092-45F2-B2B2-A0D65BB1EC1D}" ShortID="157100534">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drum" ID="{351A14B4-F6CA-4B68-BFB2-B56F9807E63D}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{446A7C08-03C4-45C3-819A-BF3CCD23A6F5}" ShortID="441080239">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar" ID="{CA0431AF-F6FA-47D6-BE23-E966C7D050F3}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{837613C1-0414-449F-933B-FF916215E353}" ShortID="444970970">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano" ID="{4BE06EAA-3C0D-4D83-9DA5-81D565DFCF9F}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CEEABEE5-633F-4E4A-98E7-339CAAF46F1E}" ShortID="185236243">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Violons" ID="{63BDC5B3-4DF2-4AC9-8D16-02B4BCA4B2F2}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A82E99FC-2E6C-452E-AD05-72509AC131E9}" ShortID="837663013">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Voices" ID="{54992F10-AE5F-40C8-B83F-85BC7F1BEEC9}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_Bass" ID="{565C5FF2-57B4-4C5B-90B3-62C71187E821}">
+					<ChildrenList>
+						<Action Name="" ID="{BB472464-1511-4335-87DF-13B433ECE656}" ShortID="758515796">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GCH_SFX_Dead_Cello_OS" ID="{61012E82-7BF3-45FF-921E-A26AA0B2DDDC}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A3CA8492-7F86-43B4-8F1E-65755C9AA761}" ShortID="339091108">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass" ID="{B5B81111-3523-4410-A849-37D07498D9CE}" WorkUnitID="{B9B78766-60A6-435C-B550-93721C9D0284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

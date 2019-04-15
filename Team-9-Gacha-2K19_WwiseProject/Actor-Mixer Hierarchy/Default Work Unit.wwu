@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}" PersistMode="Standalone">
 			<ChildrenList>
 				<BlendContainer Name="Ambiances_Bl" ID="{FAAFB266-6B55-450D-86CD-FC9432DE264D}" ShortID="394727353">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -122,6 +129,11 @@
 						<Sound Name="GCH_AMB_Forestnight_LP" ID="{218C9EA9-B1FE-452D-9C06-37254983565B}" ShortID="151045674">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -159,6 +171,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -433,6 +450,11 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -819,6 +841,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Fish_Rand" ID="{978BAEED-FDA3-4CCE-BDF4-B398D044B6D1}" ShortID="740043032">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -888,6 +917,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Woods_Rand" ID="{F825AC75-65AA-4715-9A2C-420E989A2435}" ShortID="188077386">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -957,6 +993,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Eat_Rand" ID="{9162F2DB-C5C2-421F-A1E7-E8D2BE5BE9AF}" ShortID="138252154">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -1026,6 +1069,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Vegetables_Rand" ID="{0A1E6750-10A8-4BB7-86C6-3706533FE5D5}" ShortID="329604219">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -1095,6 +1145,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Craft_finish_Rand" ID="{A2C09C6A-E059-4938-A00F-FD550D463E68}" ShortID="670873465">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -1164,6 +1221,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Bushes_Rand" ID="{85BF2B6D-5AE2-4E14-9545-A5F686A80B7F}" ShortID="146078192">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
@@ -1184,6 +1248,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="GCH_SFX_Bushes_OS_01" ID="{157F6E1F-048F-4ACB-9ADF-64A750BC6840}" ShortID="649133636">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.488481503797838"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>GCH_SFX_Bushes_OS_01.wav</AudioFile>
 										</AudioFileSource>
@@ -1203,6 +1270,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="GCH_SFX_Bushes_OS_02" ID="{FEFEE188-47D5-49F7-8712-172D6406B40A}" ShortID="346115073">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.425451632340053"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>GCH_SFX_Bushes_OS_02.wav</AudioFile>
 										</AudioFileSource>
@@ -1222,6 +1292,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="GCH_SFX_Bushes_OS_03" ID="{F7953108-CC95-4677-9ECD-49AA0455F311}" ShortID="256349680">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.474156533011978"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>GCH_SFX_Bushes_OS_03.wav</AudioFile>
 										</AudioFileSource>
@@ -1396,6 +1469,75 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="GCH_SFX_Dead_Cello_OS" ID="{61012E82-7BF3-45FF-921E-A26AA0B2DDDC}" ShortID="115295693">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GCH_SFX_Dead_Cello_OS" ID="{2B80FB96-2808-4CBB-BA16-0494AF7C3520}" ShortID="346382379">
+									<Language>SFX</Language>
+									<AudioFile>GCH_SFX_Dead_Cello_OS.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GCH_SFX_Dead_Cello_OS" ID="{2B80FB96-2808-4CBB-BA16-0494AF7C3520}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Piano_dead_Rand" ID="{C860D301-E64D-4D0C-A296-E9583FC590B3}" ShortID="207478714">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GCH_SFX_Dead_Pia_OS_01" ID="{E794AD96-AF59-4CD6-BD0F-E40EC990669A}" ShortID="825488811">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Dead_Pia_OS_01" ID="{2E1A90A8-13B9-40D7-9549-3D6098A8969E}" ShortID="427825765">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Dead_Pia_OS_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Dead_Pia_OS_01" ID="{2E1A90A8-13B9-40D7-9549-3D6098A8969E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GCH_SFX_Dead_Pia_OS_02" ID="{56130647-842F-436F-A3A1-24B34E7FE793}" ShortID="41230279">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CFD3644F-EE69-44E2-A8E9-9AF16237DA4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C9F58AB-BB28-4045-B0D9-205E13B67C63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GCH_SFX_Dead_Pia_OS_02" ID="{E317779F-5919-41C2-A86C-BF08D886AA2C}" ShortID="422968683">
+											<Language>SFX</Language>
+											<AudioFile>GCH_SFX_Dead_Pia_OS_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GCH_SFX_Dead_Pia_OS_02" ID="{E317779F-5919-41C2-A86C-BF08D886AA2C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Loops" ID="{7FC0BA94-E796-4CA8-B41D-76FC1B2767C8}" ShortID="1072229790">
@@ -1403,6 +1545,11 @@
 						<Sound Name="GCH_SFX_ticktock_LP" ID="{6E7DFA1D-A0FF-4326-AB06-D775A15D07DD}" ShortID="482662817">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
