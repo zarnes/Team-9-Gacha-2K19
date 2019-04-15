@@ -34,7 +34,10 @@ public class InventoryManager : MonoBehaviour
             if(selectedItem.m_item.type == Item.Type.FOOD && selectedItem.m_item is FoodItem)
             {
                 FoodItem fi = (FoodItem)selectedItem.m_item;
-                //CharacterData.
+                CharactersData.Food += (int)fi.value;
+                selectedItem = null;
+                selectedItemSlotOrigin = null;
+                selectionIcon.sprite = null;
             }
 
             if (clickedSlot.IsEmpty()) //drop
