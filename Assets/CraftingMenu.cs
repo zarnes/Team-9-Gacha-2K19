@@ -8,7 +8,7 @@ public class CraftingMenu : MonoBehaviour
 
     public void Start()
     {
-        //CloseMenu();
+        CloseMenu();
     }
 
     public void Update()
