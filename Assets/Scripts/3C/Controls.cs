@@ -177,13 +177,14 @@ public class Controls : MonoBehaviour
     {
         m_destination_pickup_ = null;
         m_pop_up_confirm.SetActive(false);
+        
     }
 
     private void PickInInventory(Item _item)
     {
         if (m_current_selected_object_ != null && m_current_selected_object_.CompareTag("Player"))
             m_charactere_inventory_ = m_current_selected_object_.GetComponent<CharacterInventory>();
+        Destroy(m_destination_item_.gameObject);
 
-        m_charactere_inventory_.slots[0].Add(_item);
     }
 }

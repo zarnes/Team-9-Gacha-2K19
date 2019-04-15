@@ -32,8 +32,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{9CFE3E94-D17C-4DE4-B06E-4FB64969716C}'
-    m_lastTimePart2: -1999191756
-    m_lastTimePsrt1: -1422981396
+    m_lastTimePart2: -1999191682
+    m_lastTimePsrt1: -1861165270
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -48,11 +48,71 @@ MonoBehaviour:
         ObjectType: 7
   EventWwu:
   - Guid: '{438AD9D3-E189-4507-AC04-ECFA15E19F2A}'
-    m_lastTimePart2: -1999191750
-    m_lastTimePsrt1: 1363864600
+    m_lastTimePart2: -1999191682
+    m_lastTimePsrt1: -1867983662
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
+    - Guid: 9bdac3b01c91b043b33bda2e1fdf2caf
+      ID: -1970477502
+      Name: Dead_Drum
+      Path: Default Work Unit\Dead_Drum
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dead_Drum
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 811fe37754f98f4ca2c04d8d1c658a4c
+      ID: 22441161
+      Name: Dead_Guitare
+      Path: Default Work Unit\Dead_Guitare
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dead_Guitare
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c2586367e69ea14094a6583babe2eb38
+      ID: -905041775
+      Name: Dead_Piano
+      Path: Default Work Unit\Dead_Piano
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dead_Piano
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: ab740ed01e92874d94061e40247ceecf
+      ID: 885690827
+      Name: Dead_Violo
+      Path: Default Work Unit\Dead_Violo
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dead_Violo
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2dd919e6d5d3e946a19fac687af598aa
+      ID: 1345360188
+      Name: Dead_Voice
+      Path: Default Work Unit\Dead_Voice
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dead_Voice
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: f9c4e4160b85054fab7fdb0a5956a8b3
       ID: -627361604
       Name: Event_Bushes
@@ -378,18 +438,85 @@ MonoBehaviour:
     List: []
   StateWwu:
   - Guid: '{90F1AFF9-1419-41C2-A368-B0EA0EEBEF1D}'
-    m_lastTimePart2: -1999192015
-    m_lastTimePsrt1: -1889394932
+    m_lastTimePart2: -1999191682
+    m_lastTimePsrt1: -1861044750
     ParentPhysicalPath: 
     PhysicalPath: States\Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 8069389b8c652e468358c00a699fa6ce
+      ID: 2045505335
+      Name: Status_ST
+      Path: Default Work Unit\Status_ST
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Status_ST
+        ObjectType: 9
+      ValueGuids:
+      - bytes: c2b9a13f536ecb4a9ee22c9258dbd4a9
+      - bytes: 1cafad8c5bcf554f88d31a26071d4f75
+      - bytes: 5cff82ad1eb70241a5b3adf32945e872
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Playing
+        ObjectType: 8
+      - ElementName: Vic
+        ObjectType: 8
+      valueIDs: db3ba32c219c6f6ee519681e
+      values:
+      - None
+      - Playing
+      - Vic
   SwitchWwu:
   - Guid: '{654F6AA1-D725-439D-B23C-7E60484133F8}'
-    m_lastTimePart2: -1999192015
-    m_lastTimePsrt1: -1889374984
+    m_lastTimePart2: -1999191682
+    m_lastTimePsrt1: -1861030426
     ParentPhysicalPath: 
     PhysicalPath: Switches\Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: b4a0739468f7904aa60befbf237e9d94
+      ID: 2134220440
+      Name: Babayaga_Sw
+      Path: Default Work Unit\Babayaga_Sw
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Babayaga_Sw
+        ObjectType: 11
+      ValueGuids:
+      - bytes: ddcdcc1bd14dad4580c4826d16a0142f
+      - bytes: dcadfc7589d9b3448df0d35677475ef1
+      ValueIcons:
+      - ElementName: Off
+        ObjectType: 10
+      - ElementName: On
+        ObjectType: 10
+      valueIDs: 648a79373e177762
+      values:
+      - Off
+      - On
+    - Guid: 18d7bf59b820f64e8f8084c8ee12572f
+      ID: 2045505332
+      Name: Status_Sw
+      Path: Default Work Unit\Status_Sw
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Status_Sw
+        ObjectType: 11
+      ValueGuids:
+      - bytes: a4b8ef9ffc7249449b3e6587c8ac0a28
+      - bytes: 12ca262b029c7a439bb4c633b27045a0
+      ValueIcons:
+      - ElementName: Playing
+        ObjectType: 10
+      - ElementName: Victory
+        ObjectType: 10
+      valueIDs: 219c6f6e413aeda1
+      values:
+      - Playing
+      - Victory
   TriggerWwu:
   - Guid: '{25AB4792-7827-4E52-ACFB-5BEFB68B83BD}'
     m_lastTimePart2: -1999192015

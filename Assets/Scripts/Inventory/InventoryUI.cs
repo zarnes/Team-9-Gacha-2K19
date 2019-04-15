@@ -9,6 +9,7 @@ public class InventoryUI : MonoBehaviour
     public Image m_skullImage;
     public Text m_characterName;
     public Image m_characterPreview;
+    public Image m_bcg;
 
     void Start()
     {
@@ -27,6 +28,10 @@ public class InventoryUI : MonoBehaviour
             Debug.LogError("Skull image cannot be null", gameObject);
         }
         m_skullImage.gameObject.SetActive(false);
+        if(m_bcg == null){
+            Debug.LogError("No inventory background");
+        }
+        m_bcg.sprite = m_character.m_characterInfo.m_back;
         if (m_character == null)
         {
             Debug.LogError("Character cannot be null", gameObject);
@@ -39,6 +44,7 @@ public class InventoryUI : MonoBehaviour
         for(int i = 0; i < slots.Count; i++)
         {
             m_slotsUI[i].Init(slots[i]);
+            m_slotsUI[i].m_bcg.sprite = m_character.m_characterInfo.m_slot;
         }
     }
 
