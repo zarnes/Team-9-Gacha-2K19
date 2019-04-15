@@ -37,9 +37,9 @@ public class MovementSceneManager : MonoBehaviour
 
         _animator = GetComponent<Animator>();
 
-        //NextEvent(null, true);
+        NextEvent(null, true);
 
-        ReadEvent(EventsLoader.Instance.GetEvent(28));
+        //ReadEvent(EventsLoader.Instance.GetEvent(32));
     }
 
     private void Update()
