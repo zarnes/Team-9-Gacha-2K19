@@ -39,7 +39,7 @@ public class Controls : MonoBehaviour
 
         if (Character_Animator != null)
         {
-            if (m_nav_mesh_agent.velocity != Vector3.zero)
+            if (m_nav_mesh_agent.velocity.magnitude > 0.5f)
             {
                 Character_Animator.SetBool("Walk", true);
             }
