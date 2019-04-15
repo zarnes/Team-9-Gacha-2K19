@@ -547,6 +547,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Fire" ID="{83E34BD9-3225-46BC-AA12-594E3CE8B58D}">
+					<ChildrenList>
+						<Action Name="" ID="{09145A9B-E7BA-484D-93B8-515A1DA3B54F}" ShortID="693979651">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GCH_SFX_Fire_LP" ID="{864B05C6-F95A-4CCC-9B0C-E5D7D7DB41FC}" WorkUnitID="{BA4BF7F4-0B95-4E57-8F82-0A71D74DD8D7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

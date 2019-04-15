@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GGJ\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\dev\unity_workspace\Team-9-Gacha-2K19\Team-9-Gacha-2K19_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -49,6 +49,7 @@
 				<Event Id="871543252" Name="Start_TicToc" ObjectPath="\Events\Default Work Unit\Start_TicToc"/>
 				<Event Id="2296627038" Name="Stop_BabaYaga" ObjectPath="\Events\Default Work Unit\Stop_BabaYaga" MaxAttenuation="0.000000"/>
 				<Event Id="3988459314" Name="Stop_Carriage" ObjectPath="\Events\Default Work Unit\Stop_Carriage" MaxAttenuation="0.000000"/>
+				<Event Id="2526624148" Name="Stop_Fire" ObjectPath="\Events\Default Work Unit\Stop_Fire" MaxAttenuation="0.000000"/>
 				<Event Id="2012414419" Name="Stop_Hungry" ObjectPath="\Events\Default Work Unit\Stop_Hungry" MaxAttenuation="0.000000"/>
 				<Event Id="2315124534" Name="Stop_River" ObjectPath="\Events\Default Work Unit\Stop_River" MaxAttenuation="0.000000"/>
 				<Event Id="4267364614" Name="Stop_TicToc" ObjectPath="\Events\Default Work Unit\Stop_TicToc"/>
