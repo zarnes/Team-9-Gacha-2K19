@@ -52,7 +52,7 @@ public class CharacterData
     public float FoodMax = 5;
     public CharacterState State;
     
-    public CharacterData(string name, float speed = 10, float food = 3, CharacterState state = CharacterState.Dieded)
+    public CharacterData(string name, float speed = 10, float food = 3, CharacterState state = CharacterState.Good)
     {
         Name = name;
         Speed = speed;

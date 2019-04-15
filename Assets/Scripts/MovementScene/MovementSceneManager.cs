@@ -13,6 +13,8 @@ public class MovementSceneManager : MonoBehaviour
     public Transform ViewPortContent;
     public GameObject ChoicePrefab;
     public Sprite[] Smileys;
+    public Sprite[] ChildsOk;
+    public Sprite[] ChildsInjured;
 
     private Animator _animator;
 
@@ -36,9 +38,11 @@ public class MovementSceneManager : MonoBehaviour
         _animator = GetComponent<Animator>();
 
         NextEvent(null, true);
+
+        //ReadEvent(EventsLoader.Instance.GetEvent(28));
     }
 
-    /*private void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
             CharactersData.Morale += 10;
@@ -46,7 +50,7 @@ public class MovementSceneManager : MonoBehaviour
             CharactersData.Morale -= 10;
 
         UpdateValues();
-    }*/
+    }
 
     public void ReadEvent(EventData data)
     {
@@ -59,6 +63,34 @@ public class MovementSceneManager : MonoBehaviour
         {
             GameObject choiceGo = Instantiate(ChoicePrefab, ViewPortContent.transform);
             choiceGo.GetComponent<MovementChoice>().Init(choice);
+        }
+
+        if (data.Unique)
+            data.Rarity = EventRarity.Never;
+
+        if (data.Type == EventType.Moral && CharactersData.Morale < data.Value)
+        {
+            foreach(CharacterData charData in CharactersData.Characters)
+            {
+                if (charData.State == CharacterState.Good)
+                {
+                    charData.State = CharacterState.Injured;
+                    ViewPortContent.transform.Find("Lore").GetComponent<Text>().text += " " + charData.Name + " est maintenant blessée.";
+                    UpdateValues();
+                    return;
+                }
+            }
+
+            foreach(CharacterData charData in CharactersData.Characters)
+            {
+                if (charData.State == CharacterState.Injured)
+                {
+                    charData.State = CharacterState.Dieded;
+                    ViewPortContent.transform.Find("Lore").GetComponent<Text>().text += " " + charData.Name + " a succombée de ses blessures.";
+                    UpdateValues();
+                    return;
+                }
+            }
         }
     }
 
@@ -116,7 +148,7 @@ public class MovementSceneManager : MonoBehaviour
 
         if (eventData == null)
         {
-            Debug.LogError("No event found");
+            Debug.LogError("No event found (" + data.Type + ", " + data.Rarity + ", " + data.Goodness + ")");
             eventData = EventsLoader.Instance.GetEvent();
         }
 
@@ -155,6 +187,10 @@ public class MovementSceneManager : MonoBehaviour
             else
             {
                 panel.Find("Food Gauge Mask/Image").GetComponent<Image>().fillAmount = fill;
+                if (child.State == CharacterState.Good)
+                    panel.Find("Child Image").GetComponent<Image>().sprite = ChildsOk[i];
+                else
+                    panel.Find("Child Image").GetComponent<Image>().sprite = ChildsInjured[i];
             }
         }
 
