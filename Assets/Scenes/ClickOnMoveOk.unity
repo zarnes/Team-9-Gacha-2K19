@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e170468867ebb047895d0f5a85f61cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_characterInfo: {fileID: 0}
+  m_characterInfo: {fileID: 11400000, guid: 59ce7c84bfd61f04793c3a09ea8cd03b, type: 2}
   m_inventory: {fileID: 776755293}
   isDead: 0
 --- !u!114 &776755293
@@ -1585,7 +1585,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 12288
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 1913872522}
+  m_TargetTexture: {fileID: 1392881574}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -1651,7 +1651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 09755a4891f8d4526a7e0690a23dec7b, type: 3}
-  spriteLightRT: {fileID: 1913872522}
+  spriteLightRT: {fileID: 1392881574}
   intensity: 1.35
 --- !u!114 &1014726982
 MonoBehaviour:
@@ -2653,7 +2653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e170468867ebb047895d0f5a85f61cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_characterInfo: {fileID: 0}
+  m_characterInfo: {fileID: 11400000, guid: 63aa6d769afe2144b958f76512ac3d6b, type: 2}
   m_inventory: {fileID: 1206942582}
   isDead: 0
 --- !u!114 &1206942582
@@ -3182,6 +3182,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde4009891a71f5479ef1ce761c34478, type: 3}
+--- !u!84 &1392881574
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1112
+  m_Height: 490
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1407004229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4073,38 +4105,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904802113}
   m_CullTransparentMesh: 0
---- !u!84 &1913872522
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1112
-  m_Height: 490
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1989557911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7484673965735389883, guid: a08f58678b9616a41addbc1c3891e784,
