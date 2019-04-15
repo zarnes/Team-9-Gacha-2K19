@@ -41,7 +41,7 @@
 							<ConversionPlugin Name="" ID="{5425C7CD-0E9B-4C16-85EE-84349EB25262}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{6F743D9B-79F3-4E2A-844B-6E51F851E952}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{172E0C92-7FE3-4EEB-8C65-0981C8CAB8FB}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>

@@ -3,13 +3,13 @@
 	<Platform GUID="{7CCD4575-2309-43F6-B25E-ADA31EE0B156}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="872944895" Timestamp="1555312700"/>
-				<File Name="Soundb" Hash="1338803604" Timestamp="1555312700"/>
+				<File Name="Init" Hash="4139056571" Timestamp="1555318307"/>
+				<File Name="Soundb" Hash="1306254106" Timestamp="1555319405"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2693943173" Timestamp="1555312700"/>
+				<File Name="" Hash="2757412453" Timestamp="1555319405"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -17,12 +17,12 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="480713901" Timestamp="1555316042"/>
-				<File Name="Soundb" Hash="2531479200" Timestamp="1555316042"/>
+				<File Name="Soundb" Hash="2666724365" Timestamp="1555326060"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2193760215" Timestamp="1555316042"/>
+				<File Name="" Hash="1041557353" Timestamp="1555326060"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

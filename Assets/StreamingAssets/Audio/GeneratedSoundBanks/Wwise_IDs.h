@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DEAD_BASS = 4247712563U;
         static const AkUniqueID DEAD_DRUM = 2324489794U;
         static const AkUniqueID DEAD_GUITARE = 22441161U;
         static const AkUniqueID DEAD_PIANO = 3389925521U;
@@ -23,6 +24,9 @@ namespace AK
         static const AkUniqueID EVENT_FIRELOG = 114057136U;
         static const AkUniqueID EVENT_FISH = 3113608096U;
         static const AkUniqueID EVENT_FTPS = 3199320663U;
+        static const AkUniqueID EVENT_MENU_CLOSE = 1319153178U;
+        static const AkUniqueID EVENT_MENUOPEN = 1272787271U;
+        static const AkUniqueID EVENT_UI = 1049942240U;
         static const AkUniqueID EVENT_VEGETABLES = 2170542218U;
         static const AkUniqueID EVENT_WOODS = 3464303516U;
         static const AkUniqueID PLAY_BASS = 1560528335U;
@@ -37,10 +41,12 @@ namespace AK
         static const AkUniqueID START_CARRIAGE = 1196647164U;
         static const AkUniqueID START_FIRE = 3632201782U;
         static const AkUniqueID START_HUNGRY = 1822118041U;
+        static const AkUniqueID START_RABBIT = 2116251798U;
         static const AkUniqueID START_RIVER = 3767458032U;
         static const AkUniqueID START_TICTOC = 871543252U;
         static const AkUniqueID STOP_BABAYAGA = 2296627038U;
         static const AkUniqueID STOP_CARRIAGE = 3988459314U;
+        static const AkUniqueID STOP_FIRE = 2526624148U;
         static const AkUniqueID STOP_HUNGRY = 2012414419U;
         static const AkUniqueID STOP_RIVER = 2315124534U;
         static const AkUniqueID STOP_TICTOC = 4267364614U;

@@ -33,7 +33,7 @@ public class Slot
 
     public void SetItem([NotNull] Item _item, int _count = 1)
     {
-        m_itemHandler = new ItemHandler(_item, _count);
+       this.m_itemHandler = new ItemHandler(_item, _count);
 
         NotifyListeners();
     }
