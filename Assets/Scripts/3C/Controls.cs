@@ -51,12 +51,13 @@ public class Controls : MonoBehaviour
 
     }
 
-    private void OnClickLeftMouseHandler()
-    {
-    }
-
     private void OnClickRightMouseHandler()
     {
+        if(m_current_selected_object_ != null)
+        {
+            var shader = m_current_selected_object_.GetComponent<Renderer>().material;
+            shader.SetColor("_OutlineColor", Color.clear);
+        }
         var Player = GetGameObjectInRaycastAllByTag("Player");
         if (Player != null && Player.name == this.gameObject.name)
         {
@@ -85,7 +86,6 @@ public class Controls : MonoBehaviour
 
     private void OnDestroy()
     {
-        InputManager.GetInstance().OnClickLeftMouseButton -= OnClickLeftMouseHandler;
         InputManager.GetInstance().OnClickRightMouseButton -= OnClickRightMouseHandler;
     }
 

@@ -9,14 +9,15 @@
 							<ObjectRef Name="Play_Mus_Test" ID="{C564FCA5-2BDE-4F6F-A9EE-D5976C8DBBCC}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}"/>
 							<Position X="0" Y="0"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="Play_Drum" ID="{F245C1A6-1FA9-4970-AF49-D8D187ADC7C7}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}"/>
-							<Position X="1" Y="0"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Playing" ID="{8CADAF1C-CF5B-4F55-88D3-1A26071D4F75}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="On" ID="{75FCADDC-D989-44B3-8DF0-D35677475EF1}"/>
+						<CurrentSwitchRef Name="Playing" ID="{9FEFB8A4-72FC-4449-9B3E-6587C8AC0A28}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
