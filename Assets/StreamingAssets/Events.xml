@@ -567,4 +567,70 @@
 			</Choice>
 		</Choices>
 	</EventData>
+
+	<EventData>
+		<Id>28</Id>
+		<Title>Nous aussi !</Title>
+		<Lore>Un Groupe armée surgis et viens à la rencontre de la famille. Il menace celle-ci avec des fourches et des torches.
+"Donner nous toutes vos rations ! Et que ça saute !"</Lore>
+ 		<Type>Ressource</Type>
+		<Rarity>Rare</Rarity>
+		<Goodness>Neutral</Goodness>
+		<Unique>true</Unique>
+		<Choices>
+			<Choice>
+				<Intitulate>Accepter</Intitulate>
+				<Type>Target</Type>
+				<Target>29</Target>
+				<Feedback>Vous commencer à sortir vos provisions de vos bagages, cela ne semble pas calmer le peloton.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>29</Id>
+		<Title>Nous aussi !</Title>
+		<Lore>Vous craignez pour votre sécurité...</Lore>
+		<Type>Special</Type>
+		<Choices>
+			<Choice>
+				<Intitulate>Se battre</Intitulate>
+				<Type>Target</Type>
+				<Target>30</Target>
+				<Feedback>Vous essayez de luter alors que la foule en colère s'en prend à vous.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>30</Id>
+		<Title>Nous aussi !</Title>
+		<Lore>Vous essayez de luter alors que la foule en colère s'en prend à vous.</Lore>
+		<Type>Moral</Type>
+		<Value>50</Value>
+		<Choices>
+			<Choice>
+				<Intitulate>Continuer la lutte</Intitulate>
+				<Type>Target</Type>
+				<Target>31</Target>
+				<Feedback>Dans une colère noire, vous blessez un des agresseurs. La troupe prend peur et recule d'un pas.</Feedback>
+			</Choice>
+		</Choices>
+	</EventData>
+
+	<EventData>
+		<Id>31</Id>
+		<Title>Nous aussi !</Title>
+		<Lore>Après une hésitation qui vous à semblez une éternité, le groupe détale vers la forêt.</Lore>
+		<Type>Special</Type>
+		<Choices>
+			<Choice>
+				<Force>true</Force>
+				<Intitulate>Continuer</Intitulate>
+				<Type>Random</Type>
+				<Feedback>Le combat vous a vidée de votre énergie, vous vous sentez épuisée. Vous perdez 10 points de morale</Feedback>
+				<Morale>-10</Morale>
+			</Choice>
+		</Choices>
+	</EventData>
 </Events>

@@ -10,6 +10,8 @@ public class Firecamp : MonoBehaviour
     public float m_maxLightIntensity;
     public float m_currentTime = 0.0f;
 
+    public CraftingMenu m_crafting_menu;
+
     void Update()
     {
         float lightIntensityDifference = m_maxLightIntensity - m_minLightIntensity;
@@ -24,5 +26,10 @@ public class Firecamp : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("click on firecamp");
+        if (m_crafting_menu == null)
+        {
+            Debug.LogError("Crafting menu cannot be null.");
+            m_crafting_menu.ToggleMenu();
+        }
     }
 }

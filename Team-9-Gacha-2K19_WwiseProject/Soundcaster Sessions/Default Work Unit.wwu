@@ -9,6 +9,10 @@
 							<ObjectRef Name="Play_Mus_Test" ID="{C564FCA5-2BDE-4F6F-A9EE-D5976C8DBBCC}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Drum" ID="{F245C1A6-1FA9-4970-AF49-D8D187ADC7C7}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}"/>
+							<Position X="1" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>

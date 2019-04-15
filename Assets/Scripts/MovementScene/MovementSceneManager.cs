@@ -12,6 +12,9 @@ public class MovementSceneManager : MonoBehaviour
     public string OtherScene;
     public Transform ViewPortContent;
     public GameObject ChoicePrefab;
+    public Sprite[] Smileys;
+    public Sprite[] ChildsOk;
+    public Sprite[] ChildsInjured;
 
     private Animator _animator;
 
@@ -26,7 +29,7 @@ public class MovementSceneManager : MonoBehaviour
 
         Instance = this;
 
-        if (ChoicePrefab == null || ViewPortContent == null || OtherScene == "")
+        if (ChoicePrefab == null || ViewPortContent == null || OtherScene == "" || Smileys.Length == 0)
         {
             Debug.LogError("Can't load events, missing attributes", gameObject);
             return;
@@ -34,7 +37,19 @@ public class MovementSceneManager : MonoBehaviour
 
         _animator = GetComponent<Animator>();
 
-        NextEvent(null, true);
+        //NextEvent(null, true);
+
+        ReadEvent(EventsLoader.Instance.GetEvent(28));
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+            CharactersData.Morale += 10;
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+            CharactersData.Morale -= 10;
+
+        UpdateValues();
     }
 
     public void ReadEvent(EventData data)
@@ -48,6 +63,52 @@ public class MovementSceneManager : MonoBehaviour
         {
             GameObject choiceGo = Instantiate(ChoicePrefab, ViewPortContent.transform);
             choiceGo.GetComponent<MovementChoice>().Init(choice);
+        }
+
+        if (data.Unique)
+            data.Rarity = EventRarity.Never;
+
+        if (data.Type == EventType.Moral && CharactersData.Morale < data.Value)
+        {
+            System.Random r = new System.Random();
+            int[] order = { 1, 2, 3, 4, 5 };
+            for (int i = 0; i < order.Length; ++i)
+            {
+                int index = r.Next(order.Length);
+                int backup = order[i];
+                order[i] = order[index];
+                order[index] = backup;
+            }
+
+            foreach(int index in order)
+            {
+                CharacterData charData = CharactersData.Characters[index];
+            /*}
+            foreach (CharacterData charData in CharactersData.Characters)
+            {*/
+                if (charData.State == CharacterState.Good)
+                {
+                    charData.State = CharacterState.Injured;
+                    ViewPortContent.transform.Find("Lore").GetComponent<Text>().text += " " + charData.Name + " est maintenant blessée.";
+                    UpdateValues();
+                    return;
+                }
+            }
+
+            foreach (int index in order)
+            {
+                CharacterData charData = CharactersData.Characters[index];
+            /*}
+            foreach(CharacterData charData in CharactersData.Characters)
+            {*/
+                if (charData.State == CharacterState.Injured)
+                {
+                    charData.State = CharacterState.Dieded;
+                    ViewPortContent.transform.Find("Lore").GetComponent<Text>().text += " " + charData.Name + " a succombée de ses blessures.";
+                    UpdateValues();
+                    return;
+                }
+            }
         }
     }
 
@@ -70,7 +131,8 @@ public class MovementSceneManager : MonoBehaviour
     {
         if (!noAnim)
         {
-            _animator.SetTrigger("Next");
+            if (data != null && data.Type != EventType.Campement)
+                _animator.SetTrigger("Next");
             yield return new WaitForSeconds(0.5f);
         }
 
@@ -84,6 +146,7 @@ public class MovementSceneManager : MonoBehaviour
             if (data.Type == EventType.Campement)
             {
                 GetComponent<Animator>().SetTrigger("Quit");
+                yield break;
             }
             else if (data.Type == EventType.Target)
             {
@@ -103,7 +166,7 @@ public class MovementSceneManager : MonoBehaviour
 
         if (eventData == null)
         {
-            Debug.LogError("No event found");
+            Debug.LogError("No event found (" + data.Type + ", " + data.Rarity + ", " + data.Goodness + ")");
             eventData = EventsLoader.Instance.GetEvent();
         }
 
@@ -137,13 +200,34 @@ public class MovementSceneManager : MonoBehaviour
             {
                 panel.Find("Food Gauge Mask").gameObject.SetActive(false);
                 panel.Find("Food Icon").gameObject.SetActive(false);
+                panel.Find("Skull").gameObject.SetActive(true);
             }
             else
             {
                 panel.Find("Food Gauge Mask/Image").GetComponent<Image>().fillAmount = fill;
+                if (child.State == CharacterState.Good)
+                    panel.Find("Child Image").GetComponent<Image>().sprite = ChildsOk[i];
+                else
+                    panel.Find("Child Image").GetComponent<Image>().sprite = ChildsInjured[i];
             }
         }
 
-        transform.Find("Moral/Morale Gauge Mask/Image").GetComponent<Image>().fillAmount = CharactersData.Morale;
+        float moral = CharactersData.Morale;
+        Sprite smiley;
+        transform.Find("Moral/Morale Gauge Mask/Image").GetComponent<Image>().fillAmount = moral / 100;
+        if (moral < 20)
+            smiley = Smileys[0];
+        else if (moral < 40)
+            smiley = Smileys[1];
+        else if (moral < 60)
+            smiley = Smileys[2];
+        else if (moral < 80)
+            smiley = Smileys[3];
+        else if (moral < 100)
+            smiley = Smileys[4];
+        else
+            smiley = Smileys[5];
+
+        transform.Find("Moral/Smiley").GetComponent<Image>().sprite = smiley;
     }
 }

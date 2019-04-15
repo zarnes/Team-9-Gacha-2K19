@@ -15,14 +15,7 @@ public class CraftingMenu : MonoBehaviour
     {
         if (Input.GetButtonDown("OpenInventory"))
         {
-            if(craftingMenu.activeInHierarchy)
-            {
-                CloseMenu();
-            }
-            else
-            {
-                OpenMenu();
-            }
+            ToggleMenu();
         }
     }
 
@@ -34,5 +27,17 @@ public class CraftingMenu : MonoBehaviour
     public void CloseMenu()
     {
         craftingMenu.SetActive(false);
+    }
+
+    public void ToggleMenu()
+    {
+        if (craftingMenu.activeInHierarchy)
+        {
+            CloseMenu();
+        }
+        else
+        {
+            OpenMenu();
+        }
     }
 }

@@ -12,6 +12,8 @@ public class EventData
     public EventType Type = EventType.Random;
     public EventRarity Rarity = EventRarity.Random;
     public EventGoodness Goodness = EventGoodness.Random;
+    public bool Unique;
+    public int Value;
 
     public ChoiceListData Choices;
 
@@ -73,7 +75,8 @@ public enum EventType
     Ressource,
     Random,
     Special,
-    Target
+    Target,
+    Moral
 }
 
 public enum EventRarity
@@ -81,7 +84,8 @@ public enum EventRarity
     Often,
     Regular,
     Rare,
-    Random
+    Random,
+    Never
 }
 
 public enum EventGoodness
