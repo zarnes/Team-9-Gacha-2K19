@@ -14,6 +14,6 @@ public class ReturnToMenu : MonoBehaviour
     private IEnumerator GoToMenu()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu");
     }
 }

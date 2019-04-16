@@ -409,8 +409,8 @@ MonoBehaviour:
   mealSlotUI: {fileID: 1717408333235210269}
   bakingSpeed: 2
   bakeBar: {fileID: 9083862455763607207}
-  textFoodGain: {fileID: 0}
-  buttonCraft: {fileID: 0}
+  textFoodGain: {fileID: 621025734688293430}
+  buttonCraft: {fileID: 3182129447653720925}
 --- !u!1 &9083862455763607201
 GameObject:
   m_ObjectHideFlags: 0

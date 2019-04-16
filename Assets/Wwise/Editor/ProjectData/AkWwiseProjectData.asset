@@ -32,8 +32,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{9CFE3E94-D17C-4DE4-B06E-4FB64969716C}'
-    m_lastTimePart2: -1999191682
-    m_lastTimePsrt1: -1861165270
+    m_lastTimePart2: -1999191660
+    m_lastTimePsrt1: -2123338486
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -48,11 +48,23 @@ MonoBehaviour:
         ObjectType: 7
   EventWwu:
   - Guid: '{438AD9D3-E189-4507-AC04-ECFA15E19F2A}'
-    m_lastTimePart2: -1999191682
-    m_lastTimePsrt1: -1867983662
+    m_lastTimePart2: -1999191661
+    m_lastTimePsrt1: -396330218
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
+    - Guid: f25f5c56b4575b4c90b362c71187e821
+      ID: -47254733
+      Name: Dead_Bass
+      Path: Default Work Unit\Dead_Bass
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dead_Bass
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 9bdac3b01c91b043b33bda2e1fdf2caf
       ID: -1970477502
       Name: Dead_Drum
@@ -169,6 +181,42 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Event_FTPS
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e959c63879483a42b1c0887d43438df0
+      ID: 1319153178
+      Name: Event_Menu_Close
+      Path: Default Work Unit\Event_Menu_Close
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_Menu_Close
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: ec86df14c9269644bce0a096ab406c07
+      ID: 1272787271
+      Name: Event_MenuOpen
+      Path: Default Work Unit\Event_MenuOpen
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_MenuOpen
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: edfd0aef3f816b4e8bc0c8d28abeb292
+      ID: 1049942240
+      Name: Event_UI
+      Path: Default Work Unit\Event_UI
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Event_UI
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -341,6 +389,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: 857303133f4a2f4c9774ee4e0eb29b2b
+      ID: 2116251798
+      Name: Start_Rabbit
+      Path: Default Work Unit\Start_Rabbit
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Rabbit
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: f6fd01f64f818f448030f0ba469cdbc5
       ID: -527509264
       Name: Start_River
@@ -385,6 +445,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Stop_Carriage
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2f597a91c3d4094ba598964b9eec3546
+      ID: -1768343148
+      Name: Stop_Fire
+      Path: Default Work Unit\Stop_Fire
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Fire
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0

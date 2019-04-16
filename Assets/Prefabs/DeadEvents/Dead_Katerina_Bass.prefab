@@ -71,9 +71,9 @@ MonoBehaviour:
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
-  eventID: 1345360188
+  eventID: -47254733
   m_callbackData: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
-  valueGuid: 2dd919e6d5d3e946a19fac687af598aa
+  valueGuid: f25f5c56b4575b4c90b362c71187e821

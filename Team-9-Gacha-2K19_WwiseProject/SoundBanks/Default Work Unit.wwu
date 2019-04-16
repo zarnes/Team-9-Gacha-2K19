@@ -18,7 +18,6 @@
 						<ObjectRef Name="Play_Bass" ID="{65531D3B-AACF-445E-9119-2A1AB03595E5}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Start_River" ID="{F601FDF6-814F-448F-8030-F0BA469CDBC5}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Event_MenuOpen" ID="{14DF86EC-26C9-4496-BCE0-A096AB406C07}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Stop_Fire" ID="{83E34BD9-3225-46BC-AA12-594E3CE8B58D}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dead_Voice" ID="{E619D92D-D3D5-46E9-A19F-AC687AF598AA}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Start_Fire" ID="{D044B3DD-1E4C-4832-AB39-E48165689441}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Voice" ID="{35A72428-AB98-4849-9CE5-960F0661EA8E}" WorkUnitID="{438AD9D3-E189-4507-AC04-ECFA15E19F2A}" Filter="7" Origin="Manual"/>

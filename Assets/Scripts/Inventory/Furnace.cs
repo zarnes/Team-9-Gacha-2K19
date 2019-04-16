@@ -49,6 +49,8 @@ public class Furnace : Inventory
 
         cm = new CraftManager();
         // todo error
+        if(buttonCraft == null)
+            buttonCraft = GameObject.Find("ButtonFurnace").GetComponent<Button>();
         //buttonCraft.onClick.AddListener(Craft);
     }
 
